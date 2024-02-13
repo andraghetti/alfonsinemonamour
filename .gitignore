@@ -1,3 +1,47 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor and IDE files
+*.sublime*
+*.swp
+*.swo
+.vscode/
+.idea/
+*.iml
+*.esproj
+*.tmp
+*.tmp_proj
+*.log
+*.bak
+*.backup
+
+# Node modules
+node_modules/
+
+# Dist directory
+/dist
+
+# SASS Source Maps
+*.map
+
+# Environment files
+.env
+
+# Build output directory
+/build
+
+# Temporary files
+*.temp
+*.tmp
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
 # Wordpress - ignore core, configuration, examples, uploads and logs.
 # https://github.com/github/gitignore/blob/main/WordPress.gitignore
 

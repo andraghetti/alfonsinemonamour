@@ -1,0 +1,356 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<style>A:link, A:visited { text-decoration: none }
+A:hover { text-decoration: underline }
+</style>
+<style type="text/css">.menutitle{
+cursor: hand;
+margin-bottom: 2px;
+background-color: #ECECFF;
+color: #000000;
+width: 140px;
+padding: 2px;
+text-align: center;
+font-weight: bold;
+/*/*/border: 1px solid #000000;/* */
+}
+
+.submenu{
+margin-bottom: 0.5em;
+}
+</style>
+
+<script type="text/javascript">
+
+if (document.getElementById){
+document.write('<style type="text/css">\n')
+document.write('.submenu{display: none;}\n')
+document.write('</style>\n')
+}
+
+function SwitchMenu(obj){
+	if(document.getElementById){
+	var el = document.getElementById(obj);
+	var ar = document.getElementById("masterdiv").getElementsByTagName("span");
+		if(el.style.display != "block"){
+			for (var i=0; i<ar.length; i++){
+				if (ar[i].className=="submenu")
+				ar[i].style.display = "none";
+			}
+			el.style.display = "block";
+		}else{
+			el.style.display = "none";
+		}
+	}
+}
+
+</script>
+
+<script>
+
+var slideShowSpeed = 2000
+
+
+var crossFadeDuration = 3
+
+
+var Pic = new Array()
+
+Pic[0] = 'immagini/piazza_gramsci_color_2001.jpg'
+Pic[1] = 'immagini/piazza_gramsci.jpg'
+Pic[2] = 'immagini/piazza_gramsci_campanile_co.jpg' 
+Pic[3] = 'immagini/violina_ristrutturata3-2004.jpg' 
+Pic[4] = 'immagini/viulena_oggi_dal_ponte.jpg'
+Pic[5] = 'immagini/museo_monti_2.jpg'
+Pic[6] = 'immagini/museo_monti_3.jpg'
+Pic[7] = 'immagini/museo-senio.jpg'
+Pic[8] = 'immagini/pci50.jpg'
+Pic[9] = 'immagini/pci1demo.jpg'
+Pic[10] = 'immagini/aerea_gramsci2.jpg'
+Pic[11] = 'immagini/settimana/municipio_sett_rossa_gente2.jpg'
+Pic[12] = 'immagini/corriera_3_particolare.jpg'
+Pic[13] = 'immagini/aerea_alf_1944_2.jpg'
+Pic[14] = 'immagini/aerea_alfonsine_1945_2.jpg'
+
+
+
+var t
+var j = 0
+var p = Pic.length
+
+var preLoad = new Array()
+for (i = 0; i < p; i++){
+   preLoad[i] = new Image()
+   preLoad[i].src = Pic[i]
+}
+
+function runSlideShow(){
+   if (document.all){
+      document.images.SlideShow.style.filter="blendTrans(duration=2)"
+      document.images.SlideShow.style.filter="blendTrans(duration=crossFadeDuration)"
+      document.images.SlideShow.filters.blendTrans.Apply()      
+   }
+   document.images.SlideShow.src = preLoad[j].src
+   if (document.all){
+      document.images.SlideShow.filters.blendTrans.Play()
+   }
+   j = j + 1
+   if (j > (p-1)) j=0
+   t = setTimeout('runSlideShow()', slideShowSpeed)
+}
+</script>
+<title>Festa dell'Uva ad Alfonsine</title>
+<style fprolloverstyle>A:hover {color: #FF00FF; text-decoration: blink; font-weight: bold}
+</style>
+</head>
+<BODY  BGCOLOR="#FFFFFF" vlink="#0000FF" link="#0000FF" " background="immagini/sfondi/sfondo_giallino.jpg" >
+
+
+<div align="center">
+  <center>
+<table border="0" width="100%" cellspacing="0" cellpadding="9" height="1" bgcolor="#980519">
+    <tr>
+      <td width="55" align="center" height="1">
+  <p align="center"><a href="immagini/uva%20stefania..JPG"><img border="0" src="uva_stefania._small.JPG" alt="uva stefania..JPG (406661 byte)" width="125" height="93"></a></td>
+      <th width="100%" align="center" height="1" valign="middle">
+          <b>
+ <p align="center"><a href="alfonsine.htm" target="_parent"><font face="Arial" size="7" color="#FFFFFF">Alfonsine</font></a></p></b>
+      <th width="55" align="center" height="1" valign="middle">
+          <p align="center">
+          <font face="Arial, Helvetica,sans-serif"><img border="0" src="immagini/stemma_alfonsines%5B1%5D.jpg" width="55" height="65" align="absmiddle">
+          </font>
+    </tr>
+  </table>
+  </center>
+</div>
+<p align="center">&nbsp;<script src="https://connect.facebook.net/it_IT/all.js#xfbml=1"></script><fb:like href="https://alfonsinemonamour.racine.ra.it/alfonsine/Alfonsine/festa delluva_odierna.htm" send="true" width="450" show_faces="true" font="arial"></fb:like>
+<p align="center"><b><font face="arial,helvetica,sans-serif" size="6">| <a href="file:///C:/Users/acer/Desktop/Alfonsine%20web/Web/alfonsine/Alfonsine/mon-amour.htm">Ricerche
+sull'anima di Alfonsine</a> |&nbsp;<a name="Eventi" href="eventi.htm">Eventi
+vari </a>|</font></b></p>
+<div align="center">
+  <center>
+  <table border="0" width="900">
+    <tr>
+    <td width="178" height="34" align="center">
+      <p align="center"><b><font face="arial,helvetica,sans-serif" size="6"><a href="festa%20delluva.htm">La
+      storia&nbsp;della &quot;Festa dell'Uva&quot;</a>&nbsp;</font></b>
+    </td>
+    <td width="152" height="34" align="center">
+      <b><font color="#FF0000" size="6" face="arial,helvetica,sans-serif">La Festa
+      dell'Uva&nbsp;
+ dal 2000 a oggi<br>
+      (sei qui)</font></b>
+    </td>
+    <td width="189" height="34" align="center">
+      <b><a href="festa_grossa.htm"><font face="arial,helvetica,sans-serif" size="6">La
+      &quot;<i>Festa Gròsa</i>&quot;&nbsp;
+ antica festa alfonsinese</font></a></b>
+    </td>
+    <td width="222" height="34" align="center">
+      <b><a href="festa%20delluva_fascista2.htm"><font face="arial,helvetica,sans-serif" size="6">La Festa
+      dell'Uva&nbsp;<br>
+      nel periodo fascista '30-38&nbsp;</font></a></b>
+    </td>
+    <td width="161" height="34" align="center">
+      <b><font face="arial,helvetica,sans-serif" size="6"><a href="archivio_foto_FESTA_UVA.htm">Archivio
+            delle foto della
+          Festa dell'Uva</a><font color="#FF0000"><a href="giornale%20festa%20delluva.htm"></a></font></font></b>
+    </td>
+    <td width="202" height="34" align="center">
+      <b><a href="giornale%20festa%20delluva.htm"><font size="6" face="arial,helvetica,sans-serif">Il
+giornale della Festa
+dell'Uva&nbsp;&nbsp; del 1933</font></a></b>
+    </td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div align="center">
+  <center>
+<table border="0" width="980" height="1" cellpadding="10">
+  <tr>
+    <td width="100%" height="20" valign="top">
+<p align="center"><b><font face="arial,helvetica,sans-serif" size="7">La Festa
+dell'Uva&nbsp; ad Alfonsine<br>
+dal 2000 a oggi&nbsp;&nbsp;</font></b></p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="75%" align="center">
+      <p class="MsoNormal" align="left"><span style="font-style:10.0pt;column-span:windowtext"><i><font size="6" face="arial,helvetica,sans-serif">Alfonsine
+      è un paese ben strano: le feste cosiddette popolari, con qualche parvenza
+      di legame con le tradizioni, hanno dieci anni di età al massimo, o poco
+      più.&nbsp;<br>
+ Quelle vere, di un tempo, sono state abolite o dimenticate... <o:p>
+      </o:p>
+      </font>
+      </i>
+      </span></p>
+      <p class="MsoNormal" align="left"><span style="font-style:10.0pt;column-span:windowtext"><font face="arial,helvetica,sans-serif" size="6"><i>Solo
+      il carnevale resiste, anche se basato sostanzialmente sulla sfilata dei
+      carri, che ad Alfonsine risale come tradizione agli anni ’50.<o:p>
+      &nbsp;</i>
+      </font></span></p>
+      <span style="font-style:10.0pt;column-span:windowtext"><i>
+      <font size="7">
+      La Festa dell’Uva odierna è nata nel 2000</font></i></span>
+    </td>
+  </tr>
+  <tr>
+    <td width="75%" align="center">
+      <p class="MsoNormal" align="center"><font face="arial,helvetica,sans-serif" size="6"><i><span style="font-style: 10.0pt; column-span: windowtext"><br>
+      Zofia
+      Martini e
+      Stefania Marini </span></i></font></p>
+      <p class="MsoNormal" align="center"><font face="arial,helvetica,sans-serif" size="6" color="#FF0000"><span style="font-style: 10.0pt; column-span: windowtext"><i>(un
+      click o un tocco sulla foto per averne un ingrandimento)</i></span></font>
+
+    </td>
+  </tr>
+  <tr>
+    <td width="100%">
+      <p align="center"><a href="immagini/uva%20stefania..JPG"><img border="0" src="uva_stefania._small.JPG" alt="uva stefania..JPG (406661 byte)" width="649" height="482"></a>
+
+      <h1 class="x1heor9g x1qlqyl8 x1pd3egz x1a2a7pz" style="color: rgb(5, 5, 5); font-size: inherit; font-weight: inherit; margin: 0px; padding: 0px; outline: none; font-family: &quot;Segoe UI Historic&quot;, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</h1>
+
+    </td>
+  </tr>
+  <tr>
+    <td width="75%">
+      <p class="MsoNormal" style="table-border-color-dark:108.75pt"><span style="font-style:10.0pt;column-span:windowtext"><b><font size="2" face="arial,helvetica,sans-serif">&nbsp;
+      </font></b></span></p>
+      <p class="MsoNormal" style="table-border-color-dark:108.75pt"><span style="font-style:10.0pt;column-span:windowtext"><font size="6" face="arial,helvetica,sans-serif">Si richiama,
+      (solo nel nome... per carità!), a una festa inventata ad Alfonsine negli
+      anni ’30, in piena epoca fascista.&nbsp;<br>
+      Si svolge in un week-end delle prime due settimane di Ottobre.
+      </font></span></p>
+      <p align="left"><font size="6"><span style="font-style:10.0pt;column-span:windowtext"><font face="arial,helvetica,sans-serif">Il
+      </font></span><span style="font-style: 10.0pt; column-span: windowtext"><font face="arial,helvetica,sans-serif">Comitato
+      per le Festività e la Consulta Destra Senio</font><font size="2" face="arial,helvetica,sans-serif">,
+      </font> </span><span style="font-style:10.0pt;column-span:windowtext"><font face="arial,helvetica,sans-serif">che
+      in collaborazione con il Comune propose dal 2000 questa festa, e con impegno e abnegazione
+      riuscì a metterla
+      in atto, non ebbe certo mai voluto minimamente riproporre una festa
+      legata al periodo fascista.&nbsp;</font></span></font></p>
+      <p align="left"><span style="font-style:10.0pt;column-span:windowtext"><font size="6" face="arial,helvetica,sans-serif">Forse
+      immaginavano che <i><font color="#FF0000"><b>quella</b></font></i> Festa dell’Uva, ricordata dai nonni,
+      avesse una tradizione più lontana.&nbsp;</font></span></p>
+      <p align="left"><span style="font-style:10.0pt;column-span:windowtext"><font size="6" face="arial,helvetica,sans-serif"> In realtà le feste della
+      fine-vendemmia si facevano sì anche ad Alfonsine, prima del fascismo, ma
+      nelle aie dei contadini, con balli e canti, volute e organizzate dagli
+      stessi proprietari terrieri (il noto Piancastelli era un sostenitore di
+      tali feste).</font></span>
+      <p align="center"><span style="font-style: 10.0pt; column-span: windowtext"><font size="6" face="arial,helvetica,sans-serif" color="#FF0000"><b>La
+      motivazione di <i>questa</i> Festa dell'Uva XXI° sec.</b></font></span>
+      <p align="left"><font size="6"><span style="font-style: 10.0pt; column-span: windowtext"><font face="arial,helvetica,sans-serif">&quot;<i>Si
+      tratta di una festa della vendemmia o festa d'autunno<o:p>
+      </o:p>
+      . La simbolicità dell'evento entra nelle più antiche tradizioni
+      contadine, legate ai culti mediterranei;&nbsp;<br>
+      la trasformazione dell'uva in vino rappresentava il mistero della
+      metamorfosi, della trasformazione, del cambiamento, della vita dopo la
+      morte. Questa
+      festa, collocata fra la prima decade di settembre sino a circa metà
+      ottobre, nelle varie località d'Italia, vede comuni come Monteforte d'Alpone
+      (VR), festeggiare la 740 edizione, mentre, per quanto concerne il web,
+      solo sul motore di ricerca di Virgilio, alla voce festa dell'uva, sono
+      enunciati ben 17.366 &quot;siti&quot;: il vinello (soprattutto se è
+      buono) piace a molti!</i>&quot;.
+      (da un articolo apparso su &quot;Le Alfonsine&quot; N° 19 del 15 ott.
+      2004)</font></span><span style="font-style:10.0pt"><o:p>
+      </o:p>
+      </span></font></p>
+      <p align="center"><b><span style="font-style: 10.0pt; column-span: windowtext"><u><font face="arial,helvetica,sans-serif" size="6" color="#FF0000">Le
+      attività su cui si basava la nuova Festa dell'Uva di Alfonsine&nbsp;</font></u></span></b>
+      <p align="left"><span style="font-style: 10.0pt; column-span: windowtext"><font size="6" face="arial,helvetica,sans-serif">Mostre,
+      esposizioni e mercatino prodotti tipici, assaggi di vino e tutto ciò che
+      l'accompagnava, un&nbsp; concorso di pittura estemporanea.</font></span></p>
+      <p align="left"><span style="font-style: 10.0pt; column-span: windowtext"><font size="6" face="arial,helvetica,sans-serif">Una
+      serata era dedicata alla degustazioni di vini prodotti da una cantina della
+      zona, guidati da sommellier, con stuzzichini vari, formaggi e alcuni
+      salumi.</font></span></p>
+      <p align="left"><span style="font-style: 10.0pt; column-span: windowtext"><font size="6" face="arial,helvetica,sans-serif">Alla
+      domenica in piazza Monti, la &quot;vecchia&quot; piazza del paese, dal
+      pomeriggio alla sera si potevano trovare immagini d’epoca, antichi
+      attrezzi agricoli, musica e spettacolo di ballerini nel
+      segno dell'amicizia, stand di varie associazioni locali e non, e anche
+      piatti gastronomici (dolci fatti con il mosto: i classici <i><font color="#FF0000">&quot;sabadoni&quot;</font></i>)
+      e animazioni varie.&nbsp;</font></span></p>
+      <p align="center">&nbsp;</p>
+      <div align="center">
+        <table border="1" width="89" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="30%" align="center"><font size="6"><img border="0" src="immagini/festauva_carro.jpg" width="265" height="208"></font></td>
+            <td width="32%" align="center"><a href="festa_uva1.JPG"><font size="6"><img border="0" src="festa_uva1small.JPG" alt="114_1416.JPG (1489651 byte)" width="274" height="204"></font></a></td>
+            <td width="38%" align="center"><a href="festa_uva2.JPG"><font size="6"><img border="0" src="festa_uva2small.JPG" alt="114_1411.JPG (1356826 byte)" width="254" height="200"></font></a></td>
+          </tr>
+          <tr>
+            <td width="30%" align="center"><a href="festa_uva3.JPG"><font size="6"><img border="0" src="festa_uva3small.JPG" alt="113_1399.JPG (1452077 byte)" width="260" height="202"></font></a></td>
+            <td width="32%" align="center"><a href="festa_uva4.JPG"><font size="6"><img border="0" src="festa_uva4small.JPG" alt="113_1391.JPG (1060667 byte)" width="275" height="199"></font></a></td>
+            <td width="38%" align="center"><a href="immagini/festa_uva5.JPG"><font size="6"><img border="0" src="festa_uva5small.JPG" alt="113_1369.JPG (470998 byte)" width="253" height="192"></font></a></td>
+          </tr>
+          <tr>
+            <td width="30%" align="center"><a href="immagini/Alfonsine%202000/festa%20dell&apos;uva%202013.jpg"><font size="6"><img border="0" src="immagini/Alfonsine%202000/festa_delluva_2013_small.jpg" alt="festa dell'uva 2013.jpg (99145 byte)" width="260" height="173"></font></a></td>
+            <td width="32%" align="center"><a href="immagini/festauva2016.jpg"><font size="6"><img border="0" src="immagini/festauva2016_small.jpg" alt="festauva2016.jpg (41189 byte)" width="270" height="174"></font></a></td>
+            <td width="38%" align="center"><a href="immagini/festauva%202012.jpg"><font size="6"><img border="0" src="immagini/festauva_2012_small.jpg" alt="festauva 2012.jpg (47123 byte)" width="257" height="169"></font></a></td>
+          </tr>
+        </table>
+      </div>
+      <p align="center"><b><font color="#FF0000" size="6" face="arial,helvetica,sans-serif">Nel
+      2022</font></b></p>
+      <p align="center"><img border="0" src="immagini/FESTA-DELL-UVA%20%202022.jpg.png" width="439" height="622">
+    </td>
+  </tr>
+</table>
+    </td>
+  </tr>
+</table>
+  </center>
+</div>
+<div align="center">
+  <center>
+  <table border="0" width="980">
+    <tr>
+    <td width="178" height="34" align="center">
+      <p align="center"><b><a href="festa%20delluva.htm"><font size="6" face="arial,helvetica,sans-serif">La
+      storia&nbsp;della &quot;Festa dell'Uva&quot;</font></a><font size="6" face="arial,helvetica,sans-serif">&nbsp;</font></b>
+    </td>
+    <td width="152" height="34" align="center">
+      <b><font color="#FF0000" size="6" face="arial,helvetica,sans-serif">La Festa
+      dell'Uva&nbsp;
+ dal 2000 a oggi<br>
+      (sei qui)</font></b>
+    </td>
+    <td width="189" height="34" align="center">
+      <b><a href="festa_grossa.htm"><font size="6" face="arial,helvetica,sans-serif">La
+      &quot;<i>Festa Gròsa</i>&quot;&nbsp;
+ antica festa alfonsinese</font></a></b>
+    </td>
+    <td width="222" height="34" align="center">
+      <b><a href="festa%20delluva_fascista2.htm"><font size="6" face="arial,helvetica,sans-serif">La Festa
+      dell'Uva&nbsp;<br>
+      nel periodo fascista '30-38&nbsp;</font></a></b>
+    </td>
+    <td width="161" height="34" align="center">
+      <b><a href="archivio_foto_FESTA_UVA.htm"><font size="6" face="arial,helvetica,sans-serif">Archivio
+            delle foto della
+          Festa dell'Uva</font></a></b>
+    </td>
+    <td width="202" height="34" align="center">
+      <b><a href="giornale%20festa%20delluva.htm"><font size="6" face="arial,helvetica,sans-serif">Il
+giornale della Festa
+dell'Uva&nbsp;&nbsp; del 1933</font></a></b>
+    </td>
+    </tr>
+  </table>
+  </center>
+</div>
+<p align="center">&nbsp;<script src="https://connect.facebook.net/it_IT/all.js#xfbml=1"></script><fb:like href="https://alfonsinemonamour.racine.ra.it/alfonsine/Alfonsine/festa delluva_odierna.htm" send="true" width="450" show_faces="true" font="arial"></fb:like>
+<p align="center"><b><font face="arial,helvetica,sans-serif" size="6">| <a href="file:///C:/Users/acer/Desktop/Alfonsine%20web/Web/alfonsine/Alfonsine/mon-amour.htm">Ricerche
+sull'anima di Alfonsine</a> |&nbsp;<a name="Eventi" href="eventi.htm">Eventi
+vari </a>|</font></b></p>
+</body>
+</html>

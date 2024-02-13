@@ -1,0 +1,958 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="it">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Mino Gessi</title>
+<style>A:link, A:visited { text-decoration: none }
+A:hover { text-decoration: none }
+</style>
+
+<style type="text/css">.menutitle{
+cursor: hand; cursor: pointer;
+margin-bottom: 2px;
+background-color: #ECECFF;
+color: #000000;
+width: 160px;
+padding: 2px;
+text-align: center;
+font-weight: bold;
+/*/*/border: 1px solid #000000;/* */
+}
+
+.submenu{
+margin-bottom: 0.5em;
+}
+</style>
+
+<style type="text/css">BODY {
+	SCROLLBAR-FACE-COLOR: #31638C; SCROLLBAR-HIGHLIGHT-COLOR: #31638C; SCROLLBAR-SHADOW-COLOR: #31638C; SCROLLBAR-3DLIGHT-COLOR: #31638C; SCROLLBAR-ARROW-COLOR: #ffcc33; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #31638C}
+</style>
+
+<script type="text/javascript">
+
+if (document.getElementById){
+document.write('<style type="text/css">\n')
+document.write('.submenu{display: none;}\n')
+document.write('</style>\n')
+}
+
+function SwitchMenu(obj){
+	if(document.getElementById){
+	var el = document.getElementById(obj);
+	var ar = document.getElementById("masterdiv").getElementsByTagName("span");
+		if(el.style.display != "block"){
+			for (var i=0; i<ar.length; i++){
+				if (ar[i].className=="submenu")
+				ar[i].style.display = "none";
+			}
+			el.style.display = "block";
+		}else{
+			el.style.display = "none";
+		}
+	}
+}
+
+</script>
+<script Language="Javascript">
+<!--    
+
+var isIE=document.all?true:false;
+var isDOM=document.getElementById?true:false;
+current = 0;
+PicVar = 0;
+
+PicVal = new Array();
+TitVal = new Array();
+DatVal = new Array();
+TxtVal = new Array();
+
+PicVal[PicVar] = "immagini/baraco1_particolare1.jpg";
+TitVal[PicVar] = "Gente di Alfonsine sul luogo dell'incendio.";
+DatVal[PicVar] = "Gennaio 1924";
+TxtVal[PicVar++] = "Non ne è stato ancora individuato il nome di qualcuno";
+
+PicVal[PicVar] = "immagini/baraco1_particolare3.jpg";
+TitVal[PicVar] = "Gente di Alfonsine sul luogo dell'incendio.";
+DatVal[PicVar] = "Gennaio 1924";
+TxtVal[PicVar++] = "Non ne è stato ancora individuato il nome di qualcuno";
+
+PicVal[PicVar] = "immagini/baraco3.jpg";
+TitVal[PicVar] = "Gente di Alfonsine sul luogo dell'incendio.";
+DatVal[PicVar] = "Gennaio 1924";
+TxtVal[PicVar++] = "Gente del Carraretto Venturi sulle ceneri del teatro Calderoni";
+
+
+PicVal[PicVar] = "immagini/seganti.jpg";
+TitVal[PicVar] = "Gruppo di persone riconosciute dalle foto precedenti";
+DatVal[PicVar] = "Gennaio 1924";
+TxtVal[PicVar++] = "La signora con un bambino in braccio e uno davanti si chiamava Angela Faccani detta l'Angiulina, moglie di Arturo Seganti, che faceva il falegname a due passi dal teatro. Il figlio piccolo in braccio è Nadalì (Natale Seganti), il bambino in piedi è il figlio più grande Angioletto (Angelo Seganti); l'Angiulina era sorella di Maria Faccani detta 'la biastména'; un'altra sorella era Domenica Faccani detta la Minghina, che aveva sposato Menelik (di cognome Bosi), che sarà incaricato della società elettrica di accendere e spegnere le nuovi luci elettriche (1925). Menelik è quello dietro sullo sfondo col cappello. La bella signora in nero è Mercedes";
+
+PicVal[PicVar] = "immagini/teatro_angiulina_seganti.jpg";
+TitVal[PicVar] = "I Seganti";
+DatVal[PicVar] = "Gennaio 1924";
+TxtVal[PicVar++] = "La signora con un bambino in braccio e uno davanti si chiamava Angela Faccani detta l'Angiulina, moglie di Arturo Seganti, che faceva il falegname a due passi dal teatro. Il figlio piccolo in braccio è Nadalì (Natale Seganti), il bambino in piedi è il figlio più grande Angioletto (Angelo Seganti)";
+
+
+PicVal[PicVar] = "immagini/baraco2_particolare1.jpg";
+TitVal[PicVar] = "Gente di Alfonsine sul luogo dell'incendio";
+DatVal[PicVar] = "Gennaio 1924";
+TxtVal[PicVar++] = "Non ne è stato ancora individuato il nome di qualcuno";
+
+PicVal[PicVar] = "immagini/baraco2_particolare2.jpg";
+TitVal[PicVar] = "Gente di Alfonsine sul luogo dell'incendio.";
+DatVal[PicVar] = "Gennaio 1924";
+TxtVal[PicVar++] = "La signora in fondo era la 'Minghina' Domenica Faccani, moglie di 'Menelik'. Non ne è stato ancora individuato il nome degli altri";
+
+
+
+function Show_foto(newpic) {
+  if(isDOM)document.getElementById("_foto").src = PicVal[newpic];
+  else if(isIE) document._foto.src = PicVal[newpic];
+  document.form_foto.testo_foto.value=TxtVal[newpic];
+  document.form_foto.data_foto.value=DatVal[newpic];
+  SelectionBox = document.form_foto.menudrop;
+  SelectionBox.options[newpic].selected = true;
+  current = newpic;
+}
+function Random_foto() {
+  TotalImages = document.form_foto.menudrop.options.length;
+  current = Math.floor(Math.random()*TotalImages);
+  Show_foto(current);
+}
+function Previous_foto() {
+  TotalImages = document.form_foto.menudrop.options.length;
+  current--;
+  if(current<0) current = TotalImages - 1;
+  Show_foto(current);
+}
+function Next_foto() {
+  TotalImages = document.form_foto.menudrop.options.length;
+  current++;
+  if (current>=TotalImages) current = 0;
+  Show_foto(current);
+}
+// -->
+</script>
+
+<style fprolloverstyle>A:hover {color: #FF00FF}
+</style>
+<!--<base target="principale">-->
+
+</head>
+
+<body background="immagini/sfondi/sfondo_giallino.jpg" vlink="#0000FF" alink="#FF00FF">
+
+
+
+
+  <table border="0" width="100%" cellspacing="0" cellpadding="9" height="1" bgcolor="#980519">
+    <tr>
+      <td width="55" align="center" height="1">
+  <p align="center">
+
+      <font FACE="Trebuchet MS" SIZE="2">
+      <img border="0" src="immagini/mino_gessi.jpg" width="50" height="71">
+      </font>
+      </td>
+      <th width="100%" align="center" height="1" valign="middle">
+          <b>
+ <p align="center"><a href="alfonsine.htm" target="_parent"><font face="Arial" size="7" color="#FFFFFF">Alfonsine</font></a></p></b>
+      <th width="55" align="center" height="1" valign="middle">
+          <p align="center">
+          <font face="Arial, Helvetica,sans-serif"><img border="0" src="immagini/stemma_alfonsines%5B1%5D.jpg" width="55" height="65" align="absmiddle">
+          </font>
+    </tr>
+  </table>
+
+<p align="center"><b><font face="arial,helvetica,sans-serif" size="6">| <a href="mon-amour.htm" target="_top">Alfonsine</a>|
+</font><a href="Famiglie/albero_genealogico_gessi.htm" target="_top"><font size="6" face="arial,helvetica,sans-serif" color="#0000FF">Albero
+genealogico Famiglia Gessi</font></a>
+<font color="#0000FF" size="6" face="arial,helvetica,sans-serif">
+      |</font></b> 
+</p>
+
+       <p align="center">&nbsp;
+  <p align="center">
+       <b><font face="arial,helvetica,sans-serif" size="6"><script src="https://connect.facebook.net/it_IT/all.js#xfbml=1"></script><fb:like href="https://alfonsinemonamour.racine.ra.it/alfonsine/Alfonsine/mino_gessi.htm" send="true" width="450" show_faces="true" font="arial"></fb:like>        </font></b>
+  </p>
+
+<div align="center">
+  <center>
+
+<table border="0" width="755" cellspacing="0" height="1">
+  <tr>
+    <td width="122" valign="top" height="112">
+      <div align="center">
+        <center>
+        <table border="0" width="125" cellpadding="10">
+          <tr>
+      <td width="162" align="left" valign="top">
+    
+  <!--webbot bot="Include"
+        U-Include="alfonsine_new3.htm" TAG="BODY" startspan -->
+<!-- start of freefind search box html -->
+<table cellpadding=10 cellspacing=0 border=0 width="208" >
+<tr>
+	<td <!-- start of freefind search box html width="219" -->
+<table cellpadding=0 cellspacing=0 border=0 width="215" >
+<tr>
+ <b>
+      <font size="1" face="arial,helvetica,sans-serif">
+	<td  style="font-family: Arial, Helvetica, sans-serif; font-size: 7.5pt; " width="215">
+		<form style="margin:0px; margin-top:4px;" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+ <b>
+      <font size="6" face="arial,helvetica,sans-serif">
+		<input type="hidden" name="bcd" value="&#247;"><input type="hidden" name="_charset_" value=""><input type="hidden" name="pid" value="r"><input type="hidden" name="si" value="78629214">
+      </font></b>
+ </font>
+        <p align="center"><font face="arial,helvetica,sans-serif" size="6">cerca&nbsp; in questo sito&nbsp;</font>
+ <b>
+      <font face="arial,helvetica,sans-serif" size="6">
+      <br>
+      </font><font face="arial,helvetica,sans-serif" size="6">
+		<input type="submit" value="ricerca" name="ricerca" style="font-size: 24 pt">
+      </font>
+    </b>
+      <font size="6" face="arial,helvetica,sans-serif">
+ <br>
+		<input type="text" name="query" size="24">
+        &nbsp;<br>
+ </font>
+        </b>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</form>
+	</td>
+</tr>
+<tr>
+	<td  style="font-family: Arial, Helvetica, sans-serif; font-size: 7.5pt; ">
+    &nbsp;
+	</td>
+</tr>
+</table>
+<!-- end of freefind search box html -->
+<div id="masterdiv" style="width: 219; height: 1344">
+
+	<div class="menutitle" onclick="SwitchMenu('sub1')" style="width: 219; height: 105"><b><font face="Arial, Helvetica,sans-serif" size="6" color="#0000FF">Cenni
+      Geografici</font></b></div>
+    <span class="submenu" id="sub1">
+        <font face="Arial, Helvetica,sans-serif" size="6"><br>
+        - </font> <a href="archivio_foto_mappe.htm" target="_top"><font face="Arial, Helvetica,sans-serif" size="6">Mappe Storiche<br>
+        </font>
+        <font face="Arial, Helvetica,sans-serif" size="4">
+        <br>
+        </font>
+        </a><font face="Arial, Helvetica,sans-serif" size="6">- <a href="alfonsine.pdf" target="_top">Mappa
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Alfonsine</a> </font> <a href="archivio_foto_mappe.htm" target="_top"><font face="Arial, Helvetica,sans-serif" size="6"><br>
+        </font>
+        <font face="Arial, Helvetica,sans-serif" size="4">
+        <br>
+        </font>
+        </a><font face="Arial, Helvetica,sans-serif" size="6">- </font> <a href="dove.htm" target="_top"> <font face="Arial, Helvetica,sans-serif" size="6"> Dov'è Alfonsine&nbsp;<br>
+        </font>
+        <font face="Arial, Helvetica,sans-serif" size="4">
+        <br>
+        </font>
+        </a>
+        <font face="Arial, Helvetica,sans-serif" size="6">
+		- <a href="http://www.meteoemiliaromagna.it/previ3.php" target="_blank">Che
+        tempo&nbsp; fa&nbsp;&nbsp;</a><br>
+        </font>
+        <font face="Arial, Helvetica,sans-serif" size="4">
+        <br>
+        </font><font face="Arial, Helvetica,sans-serif" size="6">
+        - <a href="popolazione.htm" target="_top">Popolazione</a><br>
+        &nbsp;&nbsp;</font></span>
+	<div class="menutitle" onclick="SwitchMenu('sub2')" style="width: 219; height: 72"><font face="Arial, Helvetica,sans-serif" size="6" color="#0000FF">Cenni
+      Storici</font></div>
+       <span class="submenu" id="sub2">
+ <font face="Arial, Helvetica,sans-serif" size="6"><br>
+ - </font> <a href="fetonte.htm" target="_top"><font face="Arial, Helvetica,sans-serif" size="6">Il mito di Fetonte<br>
+ </font>
+ <font face="Arial, Helvetica,sans-serif" size="4">
+ <br>
+ </font>
+ </a>
+ <font face="Arial, Helvetica,sans-serif" size="6">
+ - </font> <a href="diomede.htm" target="_top"><font face="Arial, Helvetica,sans-serif" size="6">Etrusca o celtica?&nbsp;<br>
+ </font>
+ <font face="Arial, Helvetica,sans-serif" size="4">
+ <br>
+ </font>
+ </a><font face="Arial, Helvetica,sans-serif" size="6">-&nbsp;</font><a href="Marini%20alla%20ricerca%20di%20Spina%20I.htm" target="_top">
+ <font face="Arial, Helvetica,sans-serif" size="6">
+ Spina
+       I<br>
+ </font>
+ <font face="Arial, Helvetica,sans-serif" size="4">
+ <br>
+ </font>
+       </a>
+ <font face="Arial, Helvetica,sans-serif" size="6">
+       - <a href="centurie.htm">La centuriazione</a> 
+       <a href="Marini%20alla%20ricerca%20di%20Spina%20I.htm" target="_top"><br>
+       </a>
+ </font>
+ <font face="Arial, Helvetica,sans-serif" size="4">
+ <br>
+ </font><font face="Arial, Helvetica,sans-serif" size="6">
+       - </font> <a href="nome_alfonsine2.htm" target="_top"> <font face="Arial, Helvetica,sans-serif" size="6"> L'origine del
+ nome<br>
+ </font>
+ <font face="Arial, Helvetica,sans-serif" size="4">
+ <br>
+ </font>
+</a>
+ <font face="Arial, Helvetica,sans-serif" size="6">
+		- <a href="chiesa_alfonsine.htm" target="_top"> Alfonso Calcagnini&nbsp;<br>
+ e la Chiesa S. Maria&nbsp;<br>
+ </a></font><a href="chiesa_alfonsine.htm" target="_top"><font face="Arial, Helvetica,sans-serif" size="4"><br></font></a>
+ <font face="Arial, Helvetica,sans-serif" size="6">
+       - </font> <a href="mulino_passetto.htm" target="_top"><font face="Arial, Helvetica,sans-serif" size="6">Il mulino del
+ &nbsp;&nbsp;
+ Passetto<br>
+ </font>
+ <font face="Arial, Helvetica,sans-serif" size="4">
+ <br>
+ </font><font face="Arial, Helvetica,sans-serif" size="6">
+       - </font> </a> <font face="Arial, Helvetica,sans-serif" size="6"> <a href="chiavicone.htm" target="_top">Il Chiavicone<br>
+
+ <br>
+
+       </a> 
+       - </font> <a href="madonnaboschi%20origini.htm" target="_top"><font face="Arial, Helvetica,sans-serif" size="6">La Madonna del&nbsp;Bosco<br></font>
+ <font face="Arial, Helvetica,sans-serif" size="4">
+       <br>
+ </font>
+ </a> 
+ <font face="Arial, Helvetica,sans-serif" size="6"> 
+        - </font> <a href="archivio_foto_mappe.htm" target="_top"><font face="Arial, Helvetica,sans-serif" size="6">Mappe&nbsp;
+ Storiche</font>
+ <font face="Arial, Helvetica,sans-serif" size="4">
+       <br><br>
+ </font>
+ </a>
+ <font face="Arial, Helvetica,sans-serif" size="6">
+        - <a href="stemma.htm" target="_parent">Nascita del&nbsp;&nbsp;&nbsp; comune
+ e dello stemma di Alfonsine</a></span> 
+ 
+ </font><font face="Arial, Helvetica,sans-serif" size="4">
+ &nbsp;<br>
+ &nbsp;</font>    
+        
+       <div class="menutitle" onclick="SwitchMenu('sub16')" style="width: 219; height: 98"><font face="Arial, Helvetica,sans-serif" size="6" color="#0000FF">Alfonsine
+        nel Novecento</font></div>
+        <span class="submenu" id="sub16">
+                <font face="Arial, Helvetica,sans-serif" size="6"><br>
+                - <a href="famiglie.htm" target="_top">Le famiglie<br>
+                <br>
+                </a>
+        		- <a href="aeree.htm" target="_top"> Foto aeree<br>
+                <br>
+                </a>
+              - <a href="strade,%20ponti%20edifici%20pubblici.htm" target="_top"> Strade,
+                ponti<br>
+                <br>
+                </a>
+		         - <a href="edifici%20importanti.htm" target="_top"> Edifici importanti<br>
+                &nbsp;<br>
+                </a>  
+                &nbsp;<a href="i_moti_della.htm">- La &quot;Settimana
+                Rossa&quot;</a>  
+                &nbsp;<br>
+                <br>
+                <a href="fascismo%20alfonsinese.htm">- Le origini del fascismo e
+                dell'antifascismo</a><br>
+                <br>
+                <a href="casa%20del%20fascio%20assalto%20del%2025%20luglio.htm">-
+                La caduta del fascismo<br>
+                </a></font><a href="casa%20del%20fascio%20assalto%20del%2025%20luglio.htm"><font face="Arial, Helvetica,sans-serif" size="1">&nbsp;<br>
+                </font>
+                <font face="Arial, Helvetica,sans-serif" size="6"><br>
+                </font></a><a href="guerra/index.htm">
+                <font face="Arial, Helvetica,sans-serif" size="6">- La 2°
+                Guerra Mondiale</font></a><font face="Arial, Helvetica,sans-serif" size="6"><br>
+                <br>
+                <a href="resistenza%20alfonsinese.htm">
+                - L'origine della&nbsp; Resistenza alfonsinese<br>
+                </font><font face="Arial, Helvetica,sans-serif" size="1"><br>
+                </font><font face="Arial, Helvetica,sans-serif" size="6"><br>
+                </font></a><a href="esecuzioni%20contro%20fascisti%20o%20spie%20.htm"><font face="Arial, Helvetica,sans-serif" size="6">-
+                Esecuzioni sommarie<br>
+                <br>
+                </font><font face="Arial, Helvetica,sans-serif" size="1">&nbsp;<br>
+                </font></a><font face="Arial, Helvetica,sans-serif" size="6"><a href="guerra/index.htm">-
+                La ricostruzione</a><br>
+                <br>
+                </font></span>
+    <font size="2">&nbsp;&nbsp;&nbsp;&nbsp;</font>
+                <font face="Arial, Helvetica,sans-serif" size="6"> 
+                <div class="menutitle" onclick="SwitchMenu('sub19')" style="width: 219; height: 94" ><a href="personaggi.htm"><font face="Arial, Helvetica,sans-serif" size="6">Personaggi
+          alfonsinesi</font></a></div> 
+
+                <div class="menutitle" onclick="SwitchMenu('sub27')" style="width: 219; height: 88" ><a href="FOTODIGRUPPO.htm" target="_top" <font face="Arial, Helvetica,sans-serif" size="4"><font face="Arial, Helvetica,sans-serif" size="6">Foto
+                  di gruppo</font></a></div>
+
+<div class="menutitle" onclick="SwitchMenu('sub22')" style="width: 218; height: 94"><a href="mon-amour.htm" target="_top"><font face="Arial, Helvetica,sans-serif" size="6">Alfonsine
+      mon amour</font></a></div>
+<div class="menutitle" onclick="SwitchMenu('sub32')" style="width: 218; height: 52"><a href="video.htm" target="_top"><font face="Arial, Helvetica,sans-serif" size="6">I video</font></a></div>
+<div class="menutitle" onclick="SwitchMenu('sub18')" style="width: 218; height: 92"><a href="indice_foto.htm" target="_top"><font face="Arial, Helvetica,sans-serif" size="6">Archivio
+        fotografico</font></a></div>
+<div class="menutitle" onclick="SwitchMenu('sub21')" style="width: 219; height: 88"><a href="archivio%20gentes%20di%20alfonsine.htm" target="_top"><font face="Arial, Helvetica,sans-serif" size="6">Giornalino
+      locale</font></a></div>
+	
+</div>
+
+
+</table>
+
+
+<!--webbot bot="Include" endspan i-checksum="7026" -->
+      </td>
+          </tr>
+          <tr>
+            <td width="162"></td>
+          </tr>
+        </table>
+        </center>
+      </div>
+      <p>&nbsp;
+    </td>
+  <center>
+
+    <td width="556" valign="top" height="112" style="text-indent: 3; margin-right: 2">
+      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="100%">
+            <p align="center"><b><font face="arial,helvetica,sans-serif" size="6">Un
+            alfonsinese, guerriero solitario contro i fascisti di Alfonsine fin dal
+      1923.<br>
+            </font><font face="Times New Roman" size="7" color="#FF0000">Giacomo
+      &quot;Mino&quot; Gessi</font></b><font face="Times New Roman" size="7" color="#FF0000"><br>
+            </font><font face="arial,helvetica,sans-serif" size="6"><i>un uomo di carattere<br>
+            La sua memoria rischia di volare nel vento, come il suo corpo, a
+      Dachau, in un forno crematorio, il 6 febbraio 1945</i></font></p>
+
+      <font FACE="Trebuchet MS" SIZE="2">
+      <p ALIGN="center">
+      <img border="0" src="immagini/mino_gessi.jpg" width="349" height="502">
+      </font>
+      <p ALIGN="center"><font size="6"><i><font face="arial,helvetica,sans-serif">Giacomo
+      “Mino” Gessi&nbsp;<br>
+      a 34 anni,</font> <font face="arial,helvetica,sans-serif">nel 1924
+      al tempo dello scontro con i Faccani.</font></i></font>
+
+<div align="center">
+
+<table border="0" width="760" cellspacing="0" cellpadding="10" height="380">
+  <tr>
+    <td width="100%" valign="top" height="329" style="text-indent: 3; margin-right: 2">
+      <p align="left"><font face="Tahoma" color="#FF0000" size="6"><i>a cura di Luciano Lucci ( <a href="mailto:(lucci@racine.ra.it">lucci@racine.ra.it</a>
+      )&nbsp;<BR>
+      Molte informazioni per questo articolo sono tratte dal libro di Enzio
+      Strada &quot;Mino Gessi: L'idea e la forza&quot; ed &quot;Il Ponte
+      Vecchio&quot;&nbsp;&nbsp; anno 2000.</i></font></p>
+      <p align="left"><b><font face="Times New Roman" size="7" color="#FF0000">La vita</font></b></p>
+    <p class="MsoNormal" style="text-indent:11.35pt"><i><b><font face="Times New Roman" size="6" color="#FF0000">Personaggio
+    eroico, guerriero con carattere.<o:p>
+    </o:p>
+    </font>
+    </b></i></p>
+    <p class="MsoNormal" style="text-indent:11.35pt"><font face="Times New Roman" size="6">Giacomo
+    “Mino” Gessi fu perseguitato dai fascisti locali, fin dal 1923. <o:p>
+    </o:p>
+    </font></p>
+    <p class="MsoNormal" style="text-indent:11.35pt" align="justify"><font face="Times New Roman" size="6">Di
+    famiglia benestante, proprietari di terre ma benvoluti da tutti, di
+    tradizione repubblicana, Mino Gessi<span style="mso-spacerun: yes">&nbsp; </span>nel
+    1911 emigrò in America, come un bohémien alla ricerca dell’avventura.
+    Finì presto i soldi, e il padre Eugenio dovette inviargli tremila lire per
+    il biglietto di ritorno. Un debito che bonariamente gli ricordava facendo
+    gracchiare il pappagallo che Mino aveva portato a casa dal viaggio, ogni
+    volta che lui entrava in casa “<i>treméla frenc, treméla frenc</i>”. A
+    24 anni fu col fratello Beno e il cognato Ferruccio Mossotti in prima fila
+    nella sommossa della Settimana Rossa alfonsinese. Fallita la sommossa, in
+    seguito alla repressione, Mino fu imprigionato (mentre suo fratello Beno e
+    il cognato riuscirono a fuggire in Svizzera).<span style="mso-spacerun: yes"><br>
+    &nbsp;</span>Rimase
+    in carcere a Pesaro per 6 mesi.<o:p>
+    &nbsp;</font></p>
+    <p align="center"><a href="immagini/settimana/municipio_sett_rossa_gente.jpg" target="_top"><font size="6"><img border="0" src="immagini/municipio_sett_rossa_gente_small.jpg" alt="municipio_sett_rossa_gente.jpg (279642 byte)" width="729" height="462"></font></a></p>
+    <p align="center"><font face="arial,helvetica,sans-serif" size="6"><i>La
+    &quot;Settimana rossa&quot; ad Alfonsine: giugno 1914<br>
+    Piazza Monti: il Municipio incendiato<br>
+    </i><font color="#FF0000"><i>(un click o un tocco sulla foto per avere un ingrandimento)</i></font></font></p>
+    <p class="MsoNormal" style="text-indent:11.35pt" align="justify"><font face="Times New Roman" size="6">Fu<span style="mso-spacerun: yes">&nbsp;
+    </span>interventista per l’entrata in guerra dell’Italia nel 1915, da
+    bravo repubblicano, andò volontario anche se riformato. Indirizzato dal
+    padre non ci pensò due volte<span style="mso-spacerun: yes">&nbsp; </span>“<i>per
+    difendere la patria in un momento di supremo pericolo</i>”. Quando tornò,
+    Alfonsine era più povera (come del resto tutta l’Italia del dopoguerra)<span style="mso-spacerun: yes">&nbsp;
+    </span>con i cittadini in gran parte disoccupati e in guerra tra loro. Fu
+    attratto così dalla proposta di Mussolini di costituire un movimento che
+    potesse rilanciare repubblicanesimo e socialismo, in chiave più
+    nazionalista e con maggior dinamismo di quanto facevano i partiti di
+    allora.&nbsp;</font></p>
+    <p class="MsoNormal" style="text-indent:11.35pt" align="justify"><font face="Times New Roman" size="6">Aderì
+    a questo nuovo movimento, ma ben presto si trovò attorniato da personaggi
+    che non stimava, giovani squalificati, violenti, spesso imboscati e
+    disfattisti, che odiavano quelli come lui, andati in guerra volontari e ora
+    fascisti per un ideale, mentre a loro interessava il proprio tornaconto.&nbsp;</font>
+    </td>
+  </tr>
+</table>
+</div>
+<div align="center">
+<table border="0" width="100%" cellpadding="18">
+  <tr>
+    <td width="100%" valign="top" style="text-indent: 3; margin-right: 2">
+      <p align="center"><b><font face="Times New Roman" size="6">Un
+      guerriero samurai, uno Jeti
+      come Obi Uan Chenobi, o
+      come Clint Eastwood nei film di Sergio Leone in uno scenario da Far West</font></b></p>
+      <p align="left"><font size="6"><font face="arial,helvetica,sans-serif">&nbsp;<o:p>
+      </font><font face="Times New Roman" size="6">
+    Amante della libertà e della giustizia, oltre che della tolleranza, uscì
+    dal movimento fascista e divenne il loro più acerrimo oppositore. <o:p>
+    &nbsp;</font><font face="arial,helvetica,sans-serif" size="2"></o:p>
+      </font></font></p>
+      <p ALIGN="JUSTIFY"><font size="6" face="Times New Roman">Fu come un guerriero samurai, in uno scenario da Far
+      West, incapace di subire ingiustizie, coraggioso, altero, una testa dura,
+      anticonformista, sfidò apertamente i fascisti alfonsinesi e rispose alle
+      loro aggressioni, pistola in pugno per difendersi; come il cavaliere
+      solitario di un vecchio western che lottava contro le prepotenze e le
+      ingiustizie sui più deboli; (quei film e quei personaggi sono sempre stati
+      la passione degli alfonsinesi... e non a caso).</font></p>
+      <p ALIGN="JUSTIFY"><font size="6"><font face="Times New Roman">Dentro il PNF
+      appena nato ad Alfonsine, fine estate del 1922, si sviluppò uno scontro
+      politico forte. Da una parte gli ex-repubblicani ed ex-combattenti della 1°
+      Guerra Mondiale che avevano aderito manifestando simpatie per i programmi
+      dei Fasci italiani di Combattimento fin dal 1919 (come i fratelli Mino e
+      Beno Gessi), e dall’altra i RAS locali (Sasdelli e Abele Faccani e
+      Alberani), che avevano assoldato, per i loro scopi di potere, giovani
+      violenti e desiderosi di guadagnarsi un posto nella nuova società.&nbsp;Alle violente scorribande delle
+      squadracce fasciste il Gessi oppose una resistenza individuale. Ciò lo
+      porterà a scontrarsi fisicamente due volte con i caporioni del fascio
+      alfonsinese. </font><span style="font-size:10.5pt;line-height:107%;font-family:
+&quot;Helvetica&quot;,sans-serif;color:#1D2129;background:white"><o:p>
+      </o:p>
+      </span></font></p>
+    <p align="left"><b><i><font face="Times New Roman" size="6" color="#FF0000">Lo
+    scontro politico del 13 gennaio 1923</font></i></b>
+      <p ALIGN="JUSTIFY"><font size="6"><font face="Times New Roman">Il
+      partito fascista di Alfonsine si era screditato per la gente che lo
+      componeva e per gli atti di violenza esercitati. Perciò la sezione era stata
+      sciolta, ma il Sasdelli si era di nuovo proposto come 'rifondatore'.
+      Il 13 gennaio 1923, vigilia del Congresso Provinciale Fascista, vi fu un
+      colpo di mano nella riunione del fascio di Alfonsine, una sfacciataggine,
+      un insulto al metodo democratico: il nuovo partito dei cosiddetti
+      “rifondatori” aveva mostrato il suo vero volto. Uno dei primi a
+      capirlo ad Alfonsine fu proprio Mino Gessi che, quella sera,&nbsp;aveva
+      assistito, impotente ed incredulo al “blitz”, che aveva imposto come
+      segretario Abele Faccani. Senza indugio, il 15 gennaio 1923 Mino Gessi
+      prese carta e penna e scrisse al Dottor Giuseppe Frignani della
+      Federazione Fascista di Ravenna&nbsp;definendo, letteralmente, il
+      comportamento di Sasdelli e soci come un atto di “brigantaggio”.</font><span style="font-size:10.5pt;line-height:107%;font-family:
+&quot;Helvetica&quot;,sans-serif;color:#1D2129;background:white"><o:p>
+      &nbsp;
+      </span></font></p>
+      <p class="MsoNormal" style="text-indent: 11.35pt" align="justify"><font face="Times New Roman" size="6"> Ecco
+      il testo della lettera:</font></p>
+      <p class="MsoNormal" style="text-align:justify"><i style="mso-bidi-font-style:
+normal"><span style="mso-bidi-font-size: 10.0pt"><font size="6">Alfonsine 15
+      .1.1923.<o:p>
+      </o:p>
+      </font>
+      </span></i></p>
+      <p class="MsoNormal" style="text-align:justify"><font size="6"><i style="mso-bidi-font-style:
+normal"><span style="mso-bidi-font-size: 10.0pt">Egregio Signor Frignani,</span></i><span style="mso-bidi-font-size: 10.0pt"><i style="mso-bidi-font-style: normal; font-size: 12.0pt; mso-bidi-font-size: 10.0pt">&nbsp;</i><i style="mso-bidi-font-style:
+normal"><br>
+      La sorte del nostro Fascio è decisa.</i><i style="mso-bidi-font-style: normal; font-size: 12.0pt; mso-bidi-font-size: 10.0pt">
+      </i><i style="mso-bidi-font-style:
+normal">Oriani è arrivato una sera e alla mattina l’epurazione, la
+      ricostituzione, la nomina del Direttorio erano già fatte.</i><i style="mso-bidi-font-style: normal; font-size: 12.0pt; mso-bidi-font-size: 10.0pt">
+      </i><i style="mso-bidi-font-style:
+normal">Sono state convocate in sede una quarantina di persone delle quali
+      trentasette contrarie alla corrente di Mariani e solo tre favorevoli.</i><i style="mso-bidi-font-style: normal; font-size: 12.0pt; mso-bidi-font-size: 10.0pt">
+      </i><i style="mso-bidi-font-style:
+normal">Ed è naturale che sia riuscito eletto Faccani, Samaritani, suo genero
+      Lucherini e compagni; tutto questo nonostante le proteste di Oriani
+      specialmente per Faccani.</i><i style="mso-bidi-font-style: normal; font-size: 12.0pt; mso-bidi-font-size: 10.0pt">
+      </i><i style="mso-bidi-font-style:
+normal">Ad Alfonsine succede<span style="mso-spacerun:yes">&nbsp; </span>quel
+      che non succede in nessuna parte d’Italia; che l’assemblea nostra è
+      sempre privata del voto e non può eleggersi il proprio Direttorio.</i><i style="mso-bidi-font-style: normal; font-size: 12.0pt; mso-bidi-font-size: 10.0pt">
+      </i></span><i style="mso-bidi-font-style:
+normal"><span style="mso-bidi-font-size: 10.0pt">Il paese è
+      scandalizzato e giudica la manovra per sfuggire al voto dell’assemblea
+      un episodio di brigantaggio. Siamo così accomodati peggio di prima; perché
+      l’assemblea sostiene la precedente questione, che essa vuole nominarsi
+      il proprio Direttorio , e ciò è giusto.&nbsp;<br>
+      Per disciplina di partito, noi non tenteremo nulla; ma è certo che noi
+      tutti non possiamo dare il nostro entusiasmo ad una causa che non
+      sentiamo.<o:p>
+      </o:p>
+      </span></i></font></p>
+      <h4><font size="6">Per il gruppo&nbsp;<i style="mso-bidi-font-style:
+normal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt"><br>
+      </span><span style="mso-bidi-font-size: 10.0pt">
+      F°: Mino Gessi</span></i><span style="mso-bidi-font-size: 10.0pt"><span style="mso-bidi-font-style: normal">, </span><i style="mso-bidi-font-style:
+normal">Ancarani Leonardo</i><i style="mso-bidi-font-style: normal; font-size: 12.0pt; mso-bidi-font-size: 10.0pt">,
+      </i><i style="mso-bidi-font-style:
+normal">Antonio&nbsp;<br>
+      </i><i>(</i></span><font face="Times New Roman"><i>il
+      cognome non è decifrabile con cer</i></font><i><span style="mso-bidi-font-size: 10.0pt">tezza).<o:p>
+      &nbsp;</span></i></font></h4>
+      <p ALIGN="JUSTIFY"><font size="6"><font face="Times New Roman">Intanto i
+      fascisti avevano tentato di dividere e impadronirsi dell’Associazione
+      ex-combattenti: qui la convivenza tra fascisti e non fascisti era
+      difficile, tanto che alcuni fascisti arrivarono a uscire dalla Sezione e a
+      crearne un’altra. Ciò creò confusione fra tanti e comunque il
+      Direttivo della Sezione di Alfonsine degli ex-combattenti, composto dai
+      fratelli Gessi e dal Mossotti e da altri, pubblicò <b><font color="#FF0000"> il 18 luglio 1923</font></b> un
+      manifesto dove si denunciava il fatto che i fascisti avevano ricevuto
+      l’ordine dai caporioni locali di creare&nbsp; una nuova Associazione
+      degli ex-combattenti, e che a questa avevano aderito solo in 8 su 250.</font><span style="font-size:10.5pt;line-height:107%;font-family:
+&quot;Helvetica&quot;,sans-serif;color:#1D2129;background:white"><o:p>
+      </o:p>
+      </span></font></p>
+      <p ALIGN="JUSTIFY"><font size="6"><font face="Times New Roman">&nbsp;Lo scontro
+      da politico divenne fisico e sfociò <font color="#FF0000"><b> il 20 luglio 1923</b></font> in una sparatoria
+      in cui rimase ferito ad una gamba rimase ferito Abele Faccani, segretario
+      del Partito fascista di Alfonsine, probabilmente da un colpo accidentale
+      partito dalla pistola del suo camerata Sasdelli. Incolpati di ciò, i
+      fratelli Gessi e il cognato Mossotti finirono in carcere per due mesi.
+      Tornati liberi, rientrarono coraggiosamente ad Alfonsine. La situazione
+      alfonsinese si fece sempre più pesante.&nbsp;<br>
+      La scarcerazione di Beno e Mino Gessi non piacque ai fascisti locali. Essi
+      si sfogarono prendendo di mira il teatro-cinema di Eugenio Gessi, padre di
+      Beno e Mino, che subì una prima irruzione il <font color="#FF0000"><b> 9 settembre del 1923</b></font> (era in
+      programma il drammone Pia de’ Tolomei).&nbsp;<br>
+      Alcuni squadristi della sala cinematografica affollata salirono sul palco
+      e spararono diversi colpi di pistola a scopo intimidatorio. Le pallottole
+      sibilarono sopra la testa degli spettatori.&nbsp;<br>
+      (I due noti squadristi furono individuati da un'indagine dei carabinieri:
+      Amadei Ferdinando e Baccarini Antonio, che subirono solo la sospensione
+      per sei mesi dal Partito Fascista).&nbsp;<br>
+      Tra il pubblico fu il panico. Nel fuggi-fuggi generale, il tentativo
+      concitato all’uscita di scavalcare una rete col filo spinato fece sì
+      che in molti si ferirono, tra i quali cinque donne e anche un bambino di 8
+      anni. Il giorno dopo una donna GeltrudeTaddei, nata Antonellini, fece
+      pubblicamente in piazza Monti il nome dei fascisti che avevano sparato.
+      Per questo venne subito schiaffeggiata e malmenata da Romildo Sasdelli,<br>
+      La notte del <font color="#FF0000"><b> 2 gennaio 1924</b></font> tre individuo con passamontagna e dal volto
+      coperto abbatterono la porta di una signora in via Mazzini, ritenuta
+      amante di Mino Gessi. Entrati con rivoltella in pugno cercavano il Gessi.&nbsp;</font><span style="font-size:10.5pt;line-height:107%;font-family:
+&quot;Helvetica&quot;,sans-serif;color:#1D2129;background:white"><br>
+      </span></font></p>
+      <p ALIGN="JUSTIFY"><font size="6" face="Times New Roman">Il giorno dopo il
+      <b><font color="#FF0000"> 3
+      gennaio 1924</font></b>, alle 3 di notte, forzarono l’ingresso e incendiarono il
+      teatro cinematografo ‘Calderoni’ (è baracò), cosi detto perché su
+      richiesta della famiglia Gessi, era stato progettato e realizzato tutto in
+      legno dal falegname Antonio Calderoni.</font></p>
+      <div align="center">
+        <table border="0" width="100%">
+          <tr>
+          <td width="100%">
+            <p align="center"><a href="immagini/baraco1.jpg"><font size="6"><img border="2" src="immagini/baraco1_small6.jpg" alt="baraco1.jpg (117021 byte)" width="668" height="437"></font></a>
+      <p align="center"><font face="arial,helvetica,sans-serif" size="6"><i>Il
+      Teatro-Cinematografo &quot;Aurora&quot; detto e' baracò, dei Gessi,
+      incendiato e distrutto dai fascisti il 3 gennaio 1924<b><br>
+      </b>
+      </i><font color="#FF0000"><i>(un click o un tocco sulla foto per avere un ingrandimento)</i></font></font>
+          </td>
+          </tr>
+          <tr>
+    <td width="100%" height="270" valign="top" align="center">
+      <p align="center">
+<a href="file:///C:/Users/Luciano/AppData/Local/Temp/FrontPageTempDir/wpeB.jpg"><font size="6"><img border="0" src="immagini/mino%20teatro%20nomi.jpg" alt="wpeB.jpg (115003 byte)" width="702" height="447"></font></a>
+      <p align="center">
+&nbsp;
+    </td>
+          </tr>
+        </table>
+      </div>
+      <p ALIGN="center"><a href="immagini/milizia%20%20teatro%20gessi.jpg"><font size="6"><img border="0" src="immagini/milizia__teatro_gessi_small.jpg" alt="milizia  teatro gessi.jpg (92753 byte)" width="400" height="531"></font></a></p>
+      <p ALIGN="JUSTIFY"><font size="6"><font face="Times New Roman">Il <font color="#FF0000"><b> 2 marzo
+      </b></font> (era domenica) <font color="#FF0000"><b>del
+      1924</b></font> Abele Faccani, segretario
+      del fascio, col fratello Giuseppe (Pinén) verso
+      le 18 incontrarono casualmente, sotto la rampa del fiume della Violina, Mino Gessi, col quale già avevano avuto una scontro violento un anno
+      prima.&nbsp; </font></font></p>
+      <table border="0" width="710" cellpadding="5" height="1" style="font-family: Times New Roman; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial">
+        <tbody>
+          <tr>
+            <td width="371" valign="top" height="119">
+              <p ALIGN="JUSTIFY"><font face="Times New Roman" size="6">Il Gessi
+              stava andando a prendere i sigari allo spaccio dei Graziani: il
+              primo negozio sotto il portico a sinistra nella foto qui di fianco.
+              Si incontrarono proprio in questo spiazzetto subito giù dalla
+              rampa e subito fu inevitabile lo scontro. Continuarono dentro al
+              negozio e nel retrobottega. La titolare della tabaccheria Luisa
+              Mazzotti non era presenta, ma c'era la sorella Angela (di 'Maestar')
+              che aveva un negozio di tessuti adiacente.&nbsp;</font></p>
+            </td>
+            <td width="309" valign="top" height="119">
+              <p align="center"><b><font size="6" face="arial,helvetica,sans-serif"><img border="0" src="immagini/violina_rampe_gessi.jpg" width="362" height="560"></font></b></p>
+            </td>
+          </tr>
+          <tr>
+            <td width="680" valign="top" height="119" colspan="2">
+              <p ALIGN="JUSTIFY"><font face="Times New Roman" size="6">Questa
+              cercò di separare i contendenti, probabilmente prendendo le
+              difese del Gessi, che era solo contro due, e diede una spinta ad
+              Abele il quale cadde a terra (era ancora convalescente per una
+              ferita da arma da fuoco alla gamba avuta nello scontro precedente
+              sempre con Giacomo Gessi).</font>
+              <p ALIGN="JUSTIFY"><font face="Times New Roman" size="6">Il Gessi
+              riuscì allora a estrarre la pistola e a sparare due colpi che
+              colpirono Giuseppe Faccani a un polmone, e anche Abele.&nbsp;</font></td>
+          </tr>
+        </tbody>
+      </table>
+      <p ALIGN="JUSTIFY"><font face="Times New Roman" size="6">Abele verrà
+      ricoverato all'ospedale di Bologna dove dopo 15 giorni morirà di
+      infezione alla ferita.</font></p>
+      <p ALIGN="center"><font size="6"><a href="immagini/funerale%20faccani%20abele.jpg"><img border="0" src="immagini/funerale_faccani_abele_small.jpg" alt="funerale faccani abele.jpg (610814 byte)" width="712" height="503"><br>
+      </a><i>Alfonsine: funerale di Abele Faccani</i></font></p>
+      <p ALIGN="JUSTIFY"><font face="Times New Roman" size="6">Giuseppe (Pinén)
+      rimarrà in ospedale fino al 29 marzo.</font></p>
+      <p ALIGN="JUSTIFY"><font face="Times New Roman" size="6">&nbsp;Gessi,
+      ferito alla testa e al volto per le percosse ricevute, riuscì a riparare
+      presso un contadino amico e, aiutato da varie persone, fuggì in Francia,
+      dove iniziò la sua battaglia antifascista.<br>
+      </font></p>
+      <p class="MsoBodyText3" ALIGN="justify"><font face="Times New Roman" size="6"> La famiglia continuò a subire una
+      ininterrotta serie di angherie e violenze, che si riversarono anche su
+      quei cittadini, capaci ancora di un minimo di opposizione. Fu incendiata
+      la boaria dei Gessi di Taglio Corelli, boicottata l’attività economica
+      della famiglia, picchiati tutti coloro che avevano relazioni con i Gessi.
+      Mino fu processato in contumacia e condannato a 21 anni.</font></p>
+      <p align="center"><b><font size="6" face="Times New Roman" color="#FF0000">Mino
+      Gessi a Nizza con Sandro Pertini</font></b></p>
+      <p align="justify" class="MsoBodyText3"><font face="Times New Roman" size="6">A Nizza
+      in Francia aiutò amici e fuorusciti a stare insieme e ad agire per
+      accelerare la caduta del fascismo. Fu amico di tanti espatriati da cui si
+      fece benvolere: Luigi Campolonghi (socialista), Alceste De Ambris (ex-sindacalista-rivoluzionario,
+      compagno di D’Annunzio nell’impresa di Fiume, ruppe subito nel ’22
+      con Mussolini di cui diventò un acerrimo nemico), Sandro Pertini, Pietro
+      Nenni e tutti
+      gli altri coi quali creò la Lega per i Diritti dell’Uomo (LIDU). Rimase
+      comunque repubblicano e aderente a tale partito, ma quando i repubblicani
+      si opposero alla creazione di un fronte unito antifascista (non volevano i
+      comunisti), si adoperò a creare un nuovo partito: “Azione Repubblicana
+      Socialista”, che potesse unire le varie idee rivoluzionarie
+      dell’epoca.<o:p>
+      &nbsp;</font></p>
+      <p align="center">
+      <a href="immagini/gessi_babini.jpg" target="_self"><font size="6"><img border="0" src="immagini/gessi_babini_small2.jpg" alt="gessi_babini.jpg (31511 byte)" width="398" height="616"></font></a>
+      <p align="center"><font size="6"><i><font face="arial,helvetica,sans-serif">Mino
+      Gessi a sinistra con Primo Babini&nbsp;<br>
+      (e’ Pepa) a Nizza a cavallo degli anni '20-'30.</font> <font FACE="Trebuchet MS">La Lancia Lambda è di
+    Mino, acquistata dopo anni di lavoro, con la quale faceva servizi, per
+    campare.</font>
+      </i></font>
+      <p align="justify" class="MsoBodyText3"><font face="Times New Roman" size="6">
+      </o:p>
+      </font></p>
+      <p align="justify" class="MsoBodyText3"><font face="Times New Roman" size="6">Nell’immediato
+      dopoguerra dall’unione di&nbsp; tale nucleo con Giustizia e Libertà,
+      nascerà il Partito d’Azione. <o:p>
+      </o:p>
+      </font></p>
+      <p align="justify" class="MsoBodyText3"><font face="Times New Roman" size="6">Mino
+      Gessi visse sempre sotto pressione: subì aggressioni e il carcere anche
+      in Francia. Fu sempre controllato e richiesto dalla polizia fascista italiana, la
+      quale si adoperava per infiltrare sue spie nei gruppi clandestini. Come
+      tanti altri dirigenti antifascisti, anche Gessi si trovò a frequentare e
+      ad ospitare inconsapevolmente alcuni infiltrati dell’OVRA, che ne
+      avevano carpito l’amicizia, rendendo difficile la sua attività
+      politica.</font>
+    </td>
+  </tr>
+</table>
+</div>
+<div align="center">
+<table border="0" width="100%" cellpadding="12">
+  <tr>
+  
+
+    <td width="100%" style="text-indent: 3; margin-right: 2">
+      <b>
+      <p ALIGN="CENTER"><font face="Times New Roman" size="6" color="#FF0000">Internato in un campo di concentramento dal governo
+      collaborazionista di Vichy,</font></b><font size="6" color="#FF0000"><font face="Times New Roman">
+      <b>e
+      poi consegnato ai nazisti, a Dachau</b></font></font></p>
+
+    <p align="justify" class="MsoBodyText3"><font face="Times New Roman" size="6">Con l’avvento del
+    governo collaborazionista di Vichy in Francia, Gessi fu imprigionato perché
+    &quot;ascoltava DeGaulle alla radio inglese&quot; (1941) e poi internato nel
+    famigerato campo di concentramento francese a Vernet, sui Pirenei, vicino a
+    Tolosa: &quot;come individuo pericoloso per la sicurezza pubblica&quot;
+    (1942). Quando poi dopo la caduta di Mussolini nel luglio ’43, i nazisti
+    divennero ancora più spietati verso gli italiani antifascisti, obbligarono
+    il governo francese a consegnare gli italiani.</font></p>
+<p align="JUSTIFY" class="MsoBodyText3"><font face="Times New Roman" size="6">Mino Gessi fu avviato nel campo di sterminio di Dachau, nell’estate
+del 1944, dove morì, malato di tifo, in un forno crematorio.
+Sopravvisse fino a un paio di mesi prima che arrivassero gli americani (28
+aprile 1945). A 54 anni, ormai indebolito, rimase anche in quella situazione
+tenace, generoso, e coerentemente antifascista, come ebbe a testimoniare con una
+lettera alla famiglia un suo compagno di sventura, deportato a Dachau, poi
+sopravvissuto.</font></p>
+    <table border="0" width="100%">
+      <tr>
+        <td width="50%"><a href="immagini/elenco%20dachau%20gessi.jpg"><font size="6"><img border="0" src="immagini/elenco_dachau_gessi_small.jpg" alt="elenco dachau gessi.jpg (244970 byte)" width="290" height="427"></font></a></td>
+        <td width="50%">
+          <p align="center"><a href="immagini/elenco%20dachau%20gessi%20pag%2014.jpg"><font size="6"><img border="0" src="immagini/elenco_dachau_gessi_pag_14_small.jpg" alt="elenco dachau gessi pag 14.jpg (168984 byte)" width="303" height="423"></font></a></td>
+      </tr>
+    </table>
+<p align="center"><font face="arial,helvetica,sans-serif" color="#FF0000" size="6"><i>(Cliccare
+o toccare sulle foto per averne un ingrandimento)</i></font></p>
+<p align="justify" class="MsoBodyText3"><font face="Times New Roman" size="6">&quot;<i>Era deperito ma aveva un morale altissimo e una cieca speranza di
+rivedere i suoi cari e la sua terra finalmente libera dal fascismo. Aveva una
+forte tempra e un cuore d’oro da galantuomo. Nei pochi mesi che ebbi il
+piacere di averlo vicino mi è stato di conforto e di guida. Prima di ammalarci
+entrambi ci eravamo promesso - scambievolmente – che chi fosse sopravvissuto,
+avrebbe portato il nostro ultimo saluto ai parenti</i>&quot; (Fernando
+Giulianelli)</font></p>
+
+    <table border="0" width="98%" cellpadding="8">
+      <tr>
+        <td width="100%" align="center"><font size="6"><img border="0" src="immagini/cippo-gessi.jpg" width="517" height="322"></font>
+          <p><font size="6"><i><font face="arial,helvetica,sans-serif">Cagnes-sur-Mer (Nizza)&nbsp;:
+      la lapide, dedicata ai resistenti morti per la patria, porta anche il nome
+      di Giacomo (Jacques) Gessi. I Francesi, a pochi anni dalla fine della
+      guerra (1948), dettero a Gessi questo onore</font>. <font face="arial,helvetica,sans-serif" size="1">&nbsp;</font>
+          </i></font>
+          <p><font size="6"><font face="arial,helvetica,sans-serif"><i>Solo nel 2000
+          il Comune di Alfonsine gli ha dedicato una via ed ha inserito il suo
+          nome in un monumento al'ingresso del cimitero locale. </i> </font><b></o:p>
+          </b></font></p>
+        </td>
+      </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+    <td width="100%" style="text-indent: 3; margin-right: 2">
+      <p ALIGN="CENTER"><font face="Times New Roman" size="6" color="#FF0000"><b>Mino Gessi: fu un mito, allora, per molti
+      alfonsinesi;</b></font></p>
+      <p ALIGN="CENTER"><font face="Times New Roman" size="6" color="#FF0000"><b>lo può essere ancora oggi</b></font></p>
+      <p ALIGN="JUSTIFY"><font face="Times New Roman" size="6">Non si tratta solo
+      di conservare la memoria di quei giorni, ma soprattutto di scoprire il
+      carattere, l’anima degli alfonsinesi, in particolare tramite quelli che
+      hanno dato il meglio di sé e che possono alimentare, anche se non più
+      presenti tra noi, stati di <b>grazia</b>, di <b>carattere</b>, di <b>forza</b>
+      e di <b>felicità</b> per chi vive in questo paese e vuole succhiare il
+      meglio che c’è nell’aria.</font></p>
+      <p ALIGN="JUSTIFY"><b><font face="Times New Roman" size="6">Mino Gessi</font></b><font face="Times New Roman" size="6">,
+      come tutti i <b>guerrieri</b>, <b>eroi</b>, <b>pionieri</b>, da qualsiasi
+      parte provengano, anche dal passato, non vanno considerati come simboli
+      esterni, cartoline ingiallite da mettere nei musei, ma vanno scoperti come
+      <b>generatori di esperienze vitali.</b></font></p>
+      <p ALIGN="JUSTIFY"><font face="Times New Roman" size="6">Mino Gessi è come
+      un prototipo di guerriero, non del tutto un militante e neanche un
+      militare (anche se paradossalmente fu sia appartenente al Partito
+      Repubblicano, sia idealista e interventista-volontario nella prima guerra
+      mondiale)</font></p>
+      <p ALIGN="JUSTIFY"><font face="Times New Roman" size="6">Il significato di
+      &quot;<b>guerriero</b>&quot; qui va inteso <b>come uno capace di generare
+      lampi di carattere</b>, e Mino Gessi lo fu.</font></p>
+      <p ALIGN="JUSTIFY"><font face="Times New Roman" size="6">Fu emblema dell’anima
+      romagnola, libertaria e tollerante, ma anche passionale e selvaggia,
+      difensore della propria famiglia e di sé stesso, coraggioso, contro le
+      ingiustizie e ogni prepotenza, non proprio uno stinco di santo, ma capace
+      anche di unire il proprio destino a quelli che lottarono contro il
+      fascismo come sistema.</font></p>
+      <p ALIGN="JUSTIFY"><font face="Times New Roman" size="6">La sua figura ci
+      insegna ad essere capaci di imprudenza creativa (una specie di sostanze
+      divina, abbastanza rara oggi), e davanti alle difficoltà e agli ostacoli
+      ad alzare il tiro, e poi alzarlo ancora. Le cose essenziali della vita –
+      l’amore, l’amicizia, l’avventura, la morte – avvengono fuori dagli
+      schemi, e dalle regole, e il pioniere-cowboy è più affascinante del
+      burocrate. Mino Gessi fu come un pioniere che operò in tutte le zone
+      calde dell’esperienza umana del suo tempo, quella dei <b>grandi sogni </b>(l’<i><b>America</b></i>
+      come luogo mitico in cui emigrare), dei grandi <b>eventi rivoluzionari</b>
+      e delle grandi <b>passioni civili</b>, (la &quot;<i><b>Settimana Rossa</b></i>,
+      la &quot;<i><b>Grande Guerra</b></i>&quot;), delle <b>grandi tragedie</b>,
+      (il <b><i>fascismo</i></b>, il <i><b>nazismo</b></i> e i <b><i>campi di
+      sterminio</i></b>), delle <b>grandi</b> <b>rivolte</b> (l’<i><b>antifascismo</b></i>).</font></p>
+      <p ALIGN="JUSTIFY"><font face="Times New Roman" size="6">Mino Gessi fu un
+      pioniere e un guerriero in quanto visse sempre sotto pressione; nonostante ciò mantenne la capacità di irradiare una specie di stato di
+      grazia, di entusiasmo, di forza, tanto da diventare quasi una leggenda
+      alfonsinese.</font></p>
+      <p ALIGN="JUSTIFY"><font face="Times New Roman" size="6">La figura di Mino
+      Gessi piace soprattutto perché, pur essendo una figura sociale dipendente
+      dalla storia (settimana rossa, fascismo, antifascismo, campi di sterminio
+      nazisti), il suo fascino e la sua singolarità sono stati tali,
+      indipendentemente dalla storia.&nbsp;</font></p>
+      <p ALIGN="JUSTIFY"><font face="Times New Roman" size="6">In realtà Mino
+      Gessi non è mai stato un emigrante in senso storico, ma quasi più un
+      bohémien-hippy, non fu un antifascista tradizionale, (difatti non è mai
+      stato riconosciuto da alcun partito)</font></p>
+      <p ALIGN="JUSTIFY"><font face="Times New Roman" size="6">&nbsp;Eppure riesce
+      a esprimere qualcosa di misterioso, affascinante come i cavalieri buoni e
+      solitari dei film western, di singolarmente unico: alla ricerca di un’identità,
+      assaggiò, sì, qualche boccone dall’intero banchetto di teorie
+      politiche, anarchia, repubblicanesimo, socialismo, comunismo, ma non
+      appartenne mai interamente a nessuno partito: per tradizione famigliare di
+      ideali repubblicani, fu anche attratto all’inizio dal carattere
+      organizzativo e attivo del primo fascismo, da cui si distaccò subito: il
+      suo successivo antifascismo fu più istintivo, individualista, contro gli
+      opportunisti e i vigliacchi che si impadronirono del paese di Alfonsine,
+      con la violenza e l’illegalità.</font></p>
+      <p ALIGN="JUSTIFY"><font face="Times New Roman" size="6">Solo contro tutti
+      arrivò allo scontro armato, per difendersi. Il fascismo come sistema
+      divenne il suo nemico, perché gli impediva di tornare a casa dalla sua
+      famiglia, rovinava la sua famiglia e i suoi concittadini nello spirito
+      oltre che nel corpo.</font></p>
+      <p ALIGN="JUSTIFY"><font face="Times New Roman" size="6">Dovette affrontare,
+      ancora da solo, la sua ultima sfida contro la più potente macchina di
+      morte che c’era sulla terra in quel tempo: il nazismo tedesco e i suoi
+      campi di concentramento.</font></p>
+      <p ALIGN="JUSTIFY"><font face="Times New Roman" size="6">La sua forza e il
+      suo carattere questa volta non bastarono, ma la sua idea della vita sì,
+      perché è arrivata fino a noi.</font></p>
+      <p ALIGN="justify"><font face="Times New Roman" size="6">E se qualcuno oggi potesse
+      incontrarlo, si appassionerebbe ancora alle sue vicende, alla sua
+      personalità, alle sue idee.&nbsp;</font></p>
+      <p ALIGN="justify"><FONT face="Tahoma" size="6" color="#FF0000"><i>a cura di Luciano Lucci ( <a href="mailto:(lucci@racine.ra.it">lucci@racine.ra.it</a>
+      )&nbsp;<BR>
+      Molte informazioni per questo articolo sono tratte dal libro di Enzio
+      Strada &quot;Mino Gessi: L'idea e la forza&quot; ed &quot;Il Ponte
+      Vecchio&quot;&nbsp;&nbsp; anno 2000.</i></FONT></p>
+    </td>
+  </tr>
+</table>
+
+</div>
+        </td>
+      </tr>
+    </table>
+  </center>
+    </td>
+  </center>
+  </tr>
+</table>
+</div>
+
+       <p align="center">&nbsp;
+  <p align="center">
+       <b><font face="arial,helvetica,sans-serif" size="6"><script src="https://connect.facebook.net/it_IT/all.js#xfbml=1"></script><fb:like href="https://alfonsinemonamour.racine.ra.it/alfonsine/Alfonsine/mino_gessi.htm" send="true" width="450" show_faces="true" font="arial"></fb:like>        </font></b>
+  </p>
+
+<p align="center"><b><font face="arial,helvetica,sans-serif" size="6">| <a href="mon-amour.htm" target="_top">Alfonsine</a>|
+</font><a href="Famiglie/albero_genealogico_gessi.htm" target="_top"><font size="6" face="arial,helvetica,sans-serif" color="#0000FF">Albero
+genealogico Famiglia Gessi</font></a>
+<font color="#0000FF" size="6" face="arial,helvetica,sans-serif">
+      |</font></b> 
+</p>
+
+</body>
+
+</html>
