@@ -1,0 +1,404 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="it">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Battaglia aerea su Alfonsine 1944</title>
+<style fprolloverstyle>A:hover {color: #FF00FF; text-decoration: blink}
+</style>
+<style fprolloverstyle>A:hover {color: #FF00FF; text-decoration: none}
+</style>
+<style>A:link, A:visited { text-decoration: none }
+A:hover { text-decoration: none }
+</style>
+
+<style type="text/css">.menutitle{
+cursor: hand; cursor: pointer;
+margin-bottom: 2px;
+background-color: #ECECFF;
+color: #000000;
+width: 160px;
+padding: 2px;
+text-align: center;
+font-weight: bold;
+/*/*/border: 1px solid #000000;/* */
+}
+
+.submenu{
+margin-bottom: 0.5em;
+}
+</style>
+
+<script type="text/javascript">
+
+if (document.getElementById){
+document.write('<style type="text/css">\n')
+document.write('.submenu{display: none;}\n')
+document.write('</style>\n')
+}
+
+function SwitchMenu(obj){
+	if(document.getElementById){
+	var el = document.getElementById(obj);
+	var ar = document.getElementById("masterdiv").getElementsByTagName("span");
+		if(el.style.display != "block"){
+			for (var i=0; i<ar.length; i++){
+				if (ar[i].className=="submenu")
+				ar[i].style.display = "none";
+			}
+			el.style.display = "block";
+		}else{
+			el.style.display = "none";
+		}
+	}
+}
+
+</script>
+
+<script Language="Javascript">
+<!--    
+
+var isIE=document.all?true:false;
+var isDOM=document.getElementById?true:false;
+current = 0;
+PicVar = 0;
+
+PicVal = new Array();
+TitVal = new Array();
+DatVal = new Array();
+TxtVal = new Array();
+
+
+PicVal[PicVar] = "immagini/chiesa_1884.jpg"
+TitVal[PicVar] = "La chiesa e il piazzale nel 1884";
+DatVal[PicVar] = "1884";
+TxtVal[PicVar++] = "Da un disegno del 1884: l'angolo della chiesa";
+
+PicVal[PicVar] = "immagini/1910unificate2.jpg";
+TitVal[PicVar] = "Il piazzale della chiesa";
+DatVal[PicVar] = "1910";
+TxtVal[PicVar++] = "La Chiesa, la Canonica, il piazzale, la casa Salvatori, il Palazzo Lanconelli, la casa d'la Niculena con il caffé";
+
+PicVal[PicVar] = "immagini/chiesa_900_tigre_renzo_rid.jpg"
+TitVal[PicVar] = "La chiesa e il piazzale";
+DatVal[PicVar] = "1910";
+TxtVal[PicVar++] = "La Chiesa Santa Maria, a destra della chiesa la canonica e il palazzo Lanconelli";
+
+PicVal[PicVar] = "immagini/pasticceria_niculena_rid.jpg";
+TitVal[PicVar] = "L'angolo del piazzale della chiesa.";
+DatVal[PicVar] = "1915";
+TxtVal[PicVar++] = "il Caffé, d'la Niculéna, nei primi del '900. Era detto anche il caffé degli anarchici. Nello sfondo il Municipio e una delle due Palazzine dette Pescherie. Il municipio non era ancora dotato di balcone";
+
+PicVal[PicVar] = "immagini/chiesa-1910_2_rid.jpg";
+TitVal[PicVar] = "La chiesa S. Maria nei primi del '900";
+DatVal[PicVar] = "1915-20";
+TxtVal[PicVar++] = "La chiesa, la canonica e l'angolo del piazzale. Si noti il lampione: siamo ancora all'epoca dell'illuminazione a gas, cioè prima del 1925";
+
+PicVal[PicVar] = "immagini/palazzo_lanconelli.jpg"
+TitVal[PicVar] = "Il palazzo dei Lanconelli";
+DatVal[PicVar] = "1920";
+TxtVal[PicVar++] = "Qui abitava la famiglia Lanconelli (la maestra Idina). In affitto ai piani superiori il sarto Zirolam de Mor sposato a una Manuvlaza, sorella della Maria Faccani, mamma della Romana Mascanzoni";
+
+PicVal[PicVar] = "immagini/chiesa1929.jpg";
+TitVal[PicVar] = "La chiesa S. Maria";
+DatVal[PicVar] = "1929";
+TxtVal[PicVar++] = "La foto è scattata dalla palazzina di sinistra delle pescherie, di cui si notano le colonne";
+
+PicVal[PicVar] = "immagini/caffe_niculena_particolare.jpg";
+TitVal[PicVar] = "Il Caffé Nazionale, d'la Niculéna";
+DatVal[PicVar] = "1930";
+TxtVal[PicVar++] = "L'angolo del piazzale della chiesa con corso Garibaldi: si nota oltre al Caffé d'la Niculéna il negozio di profumeria e da barbiere di Enrico Scudellari, Ricco d'Scudlér. Sulla destra una visione completa e insolita di tutto lo Stradone (corso Garbaldi)";
+
+PicVal[PicVar] = "immagini/auto_polvere_rid.jpg";
+TitVal[PicVar] = "L'angolo del piazzale della chiesa";
+DatVal[PicVar] = "1930";
+TxtVal[PicVar++] = "il Caffé Nazionale, d'la Niculéna, e lo Stradone non asfaltato, con una delle poche auto di allora in curva. A destra il tendaggio dal caffé Tavalazzi e i portici";
+
+PicVal[PicVar] = "immagini/festa_dell'uva_1934_rid.jpg"
+TitVal[PicVar] = "Palazzo Lanconelli e Cffé Niculéna";
+DatVal[PicVar] = "1934";
+TxtVal[PicVar++] = "Festa dell'Uva 1934: il palazzo Lanconelli, poi case di Faggioli con negozio del barbiere e il caffé d'la Niculéna. Infine il corso Garibaldi. Al centro del piazzale l'autopista";
+
+PicVal[PicVar] = "immagini/piazza_distrutta.jpg"
+TitVal[PicVar] = "Il lato est della piazza distrutta ";
+DatVal[PicVar] = "1945";
+TxtVal[PicVar++] = "La viulena e il lato est della piazza, compresa la chiesa, distrutte nel dopo guerra";
+
+PicVal[PicVar] = "immagini/Alfonsine 2000/piazza-monti-50.jpg";
+TitVal[PicVar] = "Piazza Monti";
+DatVal[PicVar] = "1960";
+TxtVal[PicVar++] = "La piazza Monti dal lato sud, il caffé Tavalazzi, tratto di Corso Garibaldi";
+
+PicVal[PicVar] = "immagini/Alfonsine 2000/piazzale-chiesa-sacro-cuore.jpg";
+TitVal[PicVar] = "la Chiesa Sacro Cuore";
+DatVal[PicVar] = "1960";
+TxtVal[PicVar++] = "La chiesa del Sacro Cuore negli anni '60 vista dal balcone del bar Tavalazzi";
+
+PicVal[PicVar] = "immagini/Alfonsine 2000/piazza-monti-oggi.jpg";
+TitVal[PicVar] = "Piazza Monti";
+DatVal[PicVar] = "2000";
+TxtVal[PicVar++] = "Piazza Monti: non c'è stata ancora la ristrutturazione del 2004";
+
+PicVal[PicVar] = "immagini/Alfonsine 2000/chiesa-sacro-cuore.jpg";
+TitVal[PicVar] = "la Chiesa del Sacro Cuore nel 2000";
+DatVal[PicVar] = "2000";
+TxtVal[PicVar++] = "La chiesa del Sacro Cuore";
+
+function Show_foto(newpic) {
+  if(isDOM)document.getElementById("_foto").src = PicVal[newpic];
+  else if(isIE) document._foto.src = PicVal[newpic];
+  document.form_foto.testo_foto.value=TxtVal[newpic];
+  document.form_foto.data_foto.value=DatVal[newpic];
+  SelectionBox = document.form_foto.menudrop;
+  SelectionBox.options[newpic].selected = true;
+  current = newpic;
+}
+function Random_foto() {
+  TotalImages = document.form_foto.menudrop.options.length;
+  current = Math.floor(Math.random()*TotalImages);
+  Show_foto(current);
+}
+function Previous_foto() {
+  TotalImages = document.form_foto.menudrop.options.length;
+  current--;
+  if(current<0) current = TotalImages - 1;
+  Show_foto(current);
+}
+function Next_foto() {
+  TotalImages = document.form_foto.menudrop.options.length;
+  current++;
+  if (current>=TotalImages) current = 0;
+  Show_foto(current);
+}
+// -->
+</script>
+</head>
+
+<body background="immagini/sfondi/sfondo_giallino.jpg" vlink="#0000FF">
+<table border="0" width="100%" cellspacing="0" cellpadding="9" height="1" bgcolor="#980519">
+    <tr>
+      <td width="55" align="center" height="1">
+  <p align="center"><font size="6"><img border="0" src="immagini/Aerei%20perduti/aereo-atterrato-a-saline-sa.jpg" width="91" height="69"></font></td>
+      <th width="100%" align="center" height="1" valign="middle">
+          <b>
+ <p align="center"><a href="alfonsine.htm" target="_parent"><font face="Arial" color="#FFFFFF" size="7">Alfonsine</font></a></p></b>
+      <th width="55" align="center" height="1" valign="middle">
+          <p align="center">
+          <font face="Arial, Helvetica,sans-serif" size="6"><img border="0" src="immagini/stemma_alfonsines%5B1%5D.jpg" width="55" height="65" align="absmiddle">
+          </font>
+    </tr>
+  </table>
+
+  
+
+<p align="center"><font size="6"><b><font face="arial,helvetica,sans-serif">|
+      <a href="alfonsine.htm">Alfonsine</a> |&nbsp;</font></b><font face="arial,helvetica,sans-serif" size="6"><b><A href="mon-amour.htm">Ricerche
+      sull'anima di Alfonsine</A> |<br>
+      </b>
+
+      </font>&nbsp;&nbsp;</font>
+</p>
+
+        <p align="center">
+        <font size="6">
+        <b><a href="Cafe%20d%20cai/Antonio%20Pagani%20Cai.htm" target="_top"><font face="Arial" color="#FF0000">Un
+        libro su Alfonsine </font><font color="#0000FF" face="Arial" size="6">
+        &quot;E' Café d'Cài&quot;&nbsp;</font></a></b><font face="Arial" size="6"><a href="Cafe%20d%20cai/Antonio%20Pagani%20Cai.htm" target="_top"><font color="#FF0000"><i>(clicca
+        o tocca qui, è tutto sul web)</i></font></a></font>&nbsp;<br>
+        <b><font face="Comic Sans MS,arial, helvetica, sans-serif">Questo
+        sito è ideato e gestito interamente da <a href="mailto:lucci@racine.ra.it"> Luciano Lucci</a></font>
+        </b></font></p>
+
+<div align="center">
+  <center>
+  <table border="0" width="950" cellpadding="10">
+    <tr>
+      <td width="100%" align="center">
+        <p align="center"><b>
+      <font color="#FF0000" face="arial,helvetica,sans-serif" size="7">La
+      battaglia aerea sopra Alfonsine&nbsp;<br>
+      del 28 marzo 1944</font> </b></p>
+      </center>
+      <p align="left"><b><i><font face="arial,helvetica,sans-serif" size="6">a
+      cura di Luciano Lucci,&nbsp;</font></i></b>
+      <p align="center"><b><i><font face="arial,helvetica,sans-serif" size="6"><font color="#FF0000">con
+      la preziosa documentazione di Enzo Lanconelli&nbsp;</font>  <a href="http://www.aereiperduti.net/approfondimenti/santalberto.php">http://www.aereiperduti.net/</a>&nbsp;</font></i></b></td>
+  </tr>
+  <center>
+  <tr>
+    <td width="100%">
+      <p align="center"><font size="6"><img border="0" src="immagini/Aerei%20perduti/aereo-atterrato-a-saline-sa.jpg" width="788" height="610"></font></p>
+      <p align="justify"><font face="arial,helvetica,sans-serif" size="6">&nbsp;&nbsp;&nbsp;
+      Nel 2005 un vecchio amico alfonsinese Tonino Pagani, pubblicò un libro,
+      da me curato, “E Café d’ Cai”, che raccontava la storia di
+      Alfonsine e di lui ragazzino dal 1930 al 1945.&nbsp;</font></p>
+      <p align="justify"><font face="arial,helvetica,sans-serif" size="6">Tra le
+      tante cose, narrò di una battaglia aerea tra un ‘caccia’ americano
+      Lightning e uno tedesco Messerschmitt che si svolse sopra il cielo di
+      Alfonsine.</font></p>
+      <p align="justify"><font size="6"><font face="arial,helvetica,sans-serif">Mi
+      scrisse <b><font color="#FF0000">Enzo Lanconelli</font></b>,&nbsp;a cui
+      avevo dato il libro di Tonino Pagani, da anni esperto e appassionato
+      ricercatore di Aerei Perduti, cioè velivoli militari precipitati per
+      cause belliche in Romagna tra il 1942 e il 1945.</font><o:p>
+      &nbsp;</font>
+      </p>
+      <p align="justify"><font size="6"><font face="arial,helvetica,sans-serif">&quot;<i>Si
+      tratta dello scontro del 28 marzo 1944. Unici errori di Pagani sono l'ora
+      dello scontro (dice le quattro del pomeriggio, ma è impossibile in quanto
+      i bombardieri con le scorte, partendo dalla Puglia e dovendo tornare
+      indietro, qua da noi transitavano sempre dalle 11 alle 13 circa) e
+      sull'identità dei &quot;tedeschi&quot;, che in realtà erano italiani
+      dell'”Aeronautica nazionale repubblicana&quot;. Gli
+      italiani volavano in quel periodo con i caccia Macchi 205, in questo caso essendo
+      il primo gruppo caccia ha ragione Tonino Pagani a dire che erano di color
+      nero, perché erano verniciati a tre
+      toni di grigio, gli stessi toni dei caccia tedeschi.&quot;</i>&nbsp;&nbsp;</font></font>
+      </p>
+      <p align="justify"><font size="6"></o:p>
+      </font>
+      </p>
+      <p align="justify"><font face="arial,helvetica,sans-serif" size="6"><font color="#FF0000">Così
+      l'aveva raccontato Tonino d'Cai a pag. 34 del libro:</font><br>
+      <i>
+      <br>
+      &quot;... Nella nostra zona ci furono pochissimi attacchi aerei dei caccia
+      tedeschi, ben riconoscibili perché di colore nero,&nbsp;&nbsp;ma un
+      giorno sulle quattro del pomeriggio, dall'argine del fiume dove noi ci riparavamo, assistemmo ad
+      uno scontro fra un Messerschmitt e un Lightning. L'aereo tedesco riuscì
+      ad accodarsi al caccia statunitense e, colpendolo ripetutamente ad un
+      motore, arrivò ad abbatterlo. Il pilota americano riuscì lo stesso ad
+      atterrare, anche senza carrello. Si fermò a cinquanta metri da una casa
+      contadina in un terreno arato, uscì fuori illeso e si dileguò nelle
+      campagne; sapemmo poi che fu catturato a Sant'Alberto dai Carabinieri di
+      quel paese. <font color="#FF0000"> Noi riuscimmo ad arrivare in bicicletta fino all'aereo
+      abbattuto, guardammo dove era stato colpito, ci affacciammo alla cabina e
+      ci rendemmo conto che era predisposto per essere guidato da un solo
+      pilota, e che, vicino ai comandi, a portata di mano, c'erano anche le leve
+      per far funzionare le armi di bordo che uscivano all'esterno della cabina:
+      quattro mitraglie installate nell'apparecchio. </font> Stavamo per tornare a casa,
+      avevamo percorso solo cinquecento metri che arrivarono delle camionette
+      tedesche, ma noi potemmo continuare indisturbati il nostro cammino sulla
+      via del ritorno.” Così
+      sfruttando le ricerche di Enzo Lanconelli...</i></font></p>
+      <i>
+      <p align="justify"><font face="arial,helvetica,sans-serif" size="6">Il 28
+      marzo 1944 una formazioni di B-17 e B-24 (bombardieri americani), scortata
+      da vari 'caccia' P-38 Lightning sorvolava le Valli di Comacchio a est di
+      Alfonsine verso Argenta, diretta verso nord.</font></p>
+      <p align="justify"><font size="6"><font face="arial,helvetica,sans-serif">&nbsp;&nbsp;I
+      piloti italiani del 1° Gruppo della ricostituita &quot;Aeronautica
+      Nazionale Repubblicana&quot;&nbsp;
+      erano sempre all'erta su
+      segnalazioni radar, per intercettare formazioni di bombardieri pesanti. La
+      loro base era a Campoformido, vicino a Udine.</font></font></p>
+      <p align="justify"><font face="arial,helvetica,sans-serif" size="6">Alle
+      ore 11 segnalata la grossa formazione di bombardieri in arrivo, decollarono
+      con la partecipazione di cinquantatre Mc.205. per&nbsp; Il primo scontro
+      avvenne all'altezza delle paludi di Comacchio, mentre la formazione
+      americana si scindeva in due distinti gruppi diretti uno a nord e l'altro
+      a nord-est.&nbsp;</font></p>
+      <p align="justify"><font face="arial,helvetica,sans-serif" size="6">Il '27th
+      Fighter Squadron' (squadra di 'caccia' americani)&nbsp; fu affrontato
+      separatamente da circa venticinque caccia italiani quaranta miglia a sud
+      di Venezia; nella battaglia, durata 'mezz'ora, vennero abbattuti i Tenenti&nbsp;<b>James
+      L. Rodolff</b>&nbsp;(P-38 H Serial Number 42-67067) e&nbsp;<b>Kenneth E.
+      Hartwig</b>&nbsp;(P-38 H serial Number 42-67035), mentre gli americani
+      dichiararono due vittorie certe ed una probabile.&nbsp;</font></p>
+      <p align="justify"><font face="arial,helvetica,sans-serif" size="6">In
+      definitiva, lo scontro determinò la perdita di due Lightning e di due
+      Macchi, ed i due piloti americani riuscirono entrambi a salvarsi;
+      catturati, terminarono la guerra allo Stalag Luft 1 a Barth-Vogelsand.&nbsp;</font></p>
+      <p align="justify"><b><font face="arial,helvetica,sans-serif" size="6" color="#FF0000">Ma
+      oggi ne sappiamo molto di più e abbiamo anche la foto dell'aereo
+      abbattuto, e due nomi di piloti americani</font></b></p>
+      <p align="justify"><font face="arial,helvetica,sans-serif" size="6">Nel
+      corso del combattimento il Sott. Ten. Sajeva che si trovava in catena con
+      altri piloti della 1° squadriglia italiana intenti ad attaccare in linea
+      di fila una parte di quella grossa formazione di bombardieri, si accorse
+      che l'impianto Dragher per l'erogazione dell'ossigeno era andato
+      improvvisamente in avaria: si convinse, purtroppo, che era impossibile
+      continuare ad operare ulteriormente nell'aria rarefatta degli 8.000 m. di
+      quota. Aveva pochi secondi di autonomia a disposizione per portarsi a
+      livelli più respirabili. Mise in affondata il Macchi 205 ed alla massima
+      velocità cercò di riportarsi sui 4.000 m. dove l'ossigeno non è più
+      indispensabile per la sopravvivenza.&nbsp;</font></p>
+    </center>
+      <p align="left"><font size="6"><font face="arial,helvetica,sans-serif">Giunto
+      sui 5.000 m. avvistò, a quota leggermente inferiore, un Lightning
+      solitario che faceva rotta a sud, in direzione cioè opposta a quella dei
+      bombardieri americani. Forse era un caccia di scorta che aveva qualche
+      avaria e tentava, come Sajeva, di riportarsi a casa.&nbsp;</font></font></p>
+      <p align="left"><font size="6"><font face="arial,helvetica,sans-serif"> Sajeva virò
+      rapidamente, e si portò ben presto in coda al P-38 centrandogli al
+      secondo attacco il motore destro che iniziò a lasciare una scia
+      sfilacciata di fumo con conseguente perdita di velocità e di quota. Al
+      terzo attacco l'aereo americano era praticamente inutilizzabile, non
+      reagiva più e volava sui duecento metri di altezza col Macchi 205 che, a
+      quota leggermente superiore, controllava ogni suo movimento. Sajeva non
+      volle finire l'avversario limitandosi a controllare ogni sua mossa, un
+      comportamento cavalleresco. L'aereo americano compì alcune piccole virate
+      a destra e a sinistra come se cercasse qualcosa a cui affidarsi per
+      risolvere rapidamente una situazione certamente critica.&nbsp;</font></font></p>
+      <p align="left"><font size="6"><font face="arial,helvetica,sans-serif"> Sajeva comprese
+      le difficoltà del suo &quot;nemico&quot; e gli concesse un po' di respiro
+      per facilitare le sue intenzioni, virando alla larga senza perderlo di
+      vista. Improvvisamente, il Lightning tirò giù i flaps, diminuì ancora
+      la velocità e atterrò a carrello retratto in un prato. La gioia per la
+      riuscita della manovra si manifestò sinceramente nel cuore del pilota
+      italiano che cabrò per qualche centinaio di metri, compiendo un'ampia
+      virata e &quot;puntando&quot; sull'ormai inoffensivo apparecchio nemico,
+      nel tradizionale segno di saluto aviatorio.&nbsp;</font><font face="arial,helvetica,sans-serif" size="6"><br>
+      (<i>fonte: libro di Nino
+      Arena &quot;L'Aeronautica Nazionale Repubblicana&quot;</i>)<br>
+      </font></font></p>
+    <center>
+      <p align="justify"><font size="6"><font face="arial,helvetica,sans-serif">Il
+      P-38 abbattuto da Sajeva atterrò presso la cittadina di Sant'Alberto e
+      quello fu&nbsp; proprio uno dei dei caccia di scorta del 1st Fighter Group
+      andati perduti quel giorno. Due
+      veline della Guardia Nazionale Repubblicana conservate in Archivio di
+      Stato a Ravenna datate 28 marzo 1944 riportano che in quella data, alle
+      ore 12,30, in località &quot;<b><i><font color="#FF0000">Asseligne di S.Alberto atterrava
+      aeroplano caccia bimotore americano</font></i></b>&quot;. La velina successiva
+      riporta che il pilota veniva catturato lo stesso giorno alle 20,45.&nbsp;</font></font></p>
+      <p align="justify"><font face="arial,helvetica,sans-serif" size="6">Si
+      tratta senza alcun dubbio del P-38 atterrato in località &quot;<font color="#FF0000"><i>Le
+      Saline</i></font>&quot; (situate nel territorio attualmente chiamato &quot;<font color="#FF0000">cassa di
+      colmata del Lamone</font>&quot;, notare la storpiatura del nome, nda) del quale
+      fortunatamente è giunta fino a noi la foto che pubblichiamo per la prima
+      volta.</font></p>
+      <p align="justify"><font face="arial,helvetica,sans-serif" size="6">Documenti
+      tedeschi sugli aerei alleati abbattuti nei territori da loro occupati sono
+      precisi nell'affermare che in data 28 marzo 1944 due Lightning sono caduti
+      nel territorio di Ravenna: dei due, uno è finito in mare, presumibilmente
+      a poca distanza dalla costa.&nbsp;</font></p>
+      <p align="justify"><font size="6"><b><font color="#FF0000" face="arial,helvetica,sans-serif">E’
+      obiettivamente impossibile stabilire quale dei due piloti del 1st Fighter
+      Group sia atterrato presso Sant'Alberto e chi si sia lanciato in mare, dal
+      momento che entrambi furono presi prigionieri.&nbsp;</font></b><font face="arial,helvetica,sans-serif"><br>
+      (Resta invece
+      alquanto improbabile che il pilota costretto all'atterraggio da Sajeva sia
+      finito a Massalombarda come riporta Nino Arena, nel libro qui già citato)
+      </font></font></center></i></td>
+  </tr>
+  <tr>
+    <td width="100%"></td>
+  </tr>
+  </table>
+</div>
+
+  
+
+  <p align="center"><font size="6"><b><font face="arial,helvetica,sans-serif">|
+      <a href="alfonsine.htm">Alfonsine</a> |&nbsp;</font></b><font face="arial,helvetica,sans-serif"><b><A href="mon-amour.htm">Ricerche
+      sull'anima di Alfonsine</A> |
+      </b>
+
+      </font>
+  </font>
+</p>
+
+</body>
+
+<!--webbot bot="HTMLMarkup" startspan --><!--webbot bot="HTMLMarkup" endspan --><!--webbot bot="HTMLMarkup" startspan --><!--webbot bot="HTMLMarkup" endspan -->
