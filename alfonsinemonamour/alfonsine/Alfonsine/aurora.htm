@@ -1,0 +1,1314 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="it">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Il cinema Aurora</title>
+<style fprolloverstyle>A:hover {color: #FF00FF}
+</style>
+<style>A:link, A:visited { text-decoration: none }
+A:hover { text-decoration: none }
+</style>
+
+<style type="text/css">.menutitle{
+cursor: hand; cursor: pointer;
+margin-bottom: 2px;
+background-color: #ECECFF;
+color: #000000;
+width: 160px;
+padding: 2px;
+text-align: center;
+font-weight: bold;
+/*/*/border: 1px solid #000000;/* */
+}
+
+.submenu{
+margin-bottom: 0.5em;
+}
+</style>
+
+<script type="text/javascript">
+
+if (document.getElementById){
+document.write('<style type="text/css">\n')
+document.write('.submenu{display: none;}\n')
+document.write('</style>\n')
+}
+
+function SwitchMenu(obj){
+	if(document.getElementById){
+	var el = document.getElementById(obj);
+	var ar = document.getElementById("masterdiv").getElementsByTagName("span");
+		if(el.style.display != "block"){
+			for (var i=0; i<ar.length; i++){
+				if (ar[i].className=="submenu")
+				ar[i].style.display = "none";
+			}
+			el.style.display = "block";
+		}else{
+			el.style.display = "none";
+		}
+	}
+}
+
+</script>
+<script Language="Javascript">
+<!--    
+
+var isIE=document.all?true:false;
+var isDOM=document.getElementById?true:false;
+current = 0;
+PicVar = 0;
+
+PicVal = new Array();
+TitVal = new Array();
+DatVal = new Array();
+TxtVal = new Array();
+
+PicVal[PicVar] = "immagini/baraco1_particolare1.jpg";
+TitVal[PicVar] = "Gente di Alfonsine sul luogo dell'incendio.";
+DatVal[PicVar] = "Gennaio 1924";
+TxtVal[PicVar++] = "Non ne è stato ancora individuato il nome di qualcuno";
+
+PicVal[PicVar] = "immagini/baraco1_particolare3.jpg";
+TitVal[PicVar] = "Gente di Alfonsine sul luogo dell'incendio.";
+DatVal[PicVar] = "Gennaio 1924";
+TxtVal[PicVar++] = "Non ne è stato ancora individuato il nome di qualcuno";
+
+PicVal[PicVar] = "immagini/baraco3.jpg";
+TitVal[PicVar] = "Gente di Alfonsine sul luogo dell'incendio.";
+DatVal[PicVar] = "Gennaio 1924";
+TxtVal[PicVar++] = "Gente del Carraretto Venturi sulle ceneri del teatro Calderoni";
+
+
+PicVal[PicVar] = "immagini/seganti.jpg";
+TitVal[PicVar] = "Gruppo di persone riconosciute dalle foto precedenti";
+DatVal[PicVar] = "Gennaio 1924";
+TxtVal[PicVar++] = "La signora con un bambino in braccio e uno davanti si chiamava Angela Faccani detta l'Angiulina, moglie di Arturo Seganti, che faceva il falegname a due passi dal teatro. Il figlio piccolo in braccio è Nadalì (Natale Seganti), il bambino in piedi è il figlio più grande Angioletto (Angelo Seganti); l'Angiulina era sorella di Maria Faccani detta 'la biastména'; un'altra sorella era Domenica Faccani detta la Minghina, che aveva sposato Menelik (di cognome Bosi), che sarà incaricato della società elettrica di accendere e spegnere le nuovi luci elettriche (1925). Menelik è quello dietro sullo sfondo col cappello. La bella signora in nero è Mercedes";
+
+PicVal[PicVar] = "immagini/teatro_angiulina_seganti.jpg";
+TitVal[PicVar] = "I Seganti";
+DatVal[PicVar] = "Gennaio 1924";
+TxtVal[PicVar++] = "La signora con un bambino in braccio e uno davanti si chiamava Angela Faccani detta l'Angiulina, moglie di Arturo Seganti, che faceva il falegname a due passi dal teatro. Il figlio piccolo in braccio è Nadalì (Natale Seganti), il bambino in piedi è il figlio più grande Angioletto (Angelo Seganti)";
+
+
+PicVal[PicVar] = "immagini/baraco2_particolare1.jpg";
+TitVal[PicVar] = "Gente di Alfonsine sul luogo dell'incendio";
+DatVal[PicVar] = "Gennaio 1924";
+TxtVal[PicVar++] = "Non ne è stato ancora individuato il nome di qualcuno";
+
+PicVal[PicVar] = "immagini/baraco2_particolare2.jpg";
+TitVal[PicVar] = "Gente di Alfonsine sul luogo dell'incendio.";
+DatVal[PicVar] = "Gennaio 1924";
+TxtVal[PicVar++] = "La signora in fondo era la 'Minghina' Domenica Faccani, moglie di 'Menelik'. Non ne è stato ancora individuato il nome degli altri";
+
+
+
+function Show_foto(newpic) {
+  if(isDOM)document.getElementById("_foto").src = PicVal[newpic];
+  else if(isIE) document._foto.src = PicVal[newpic];
+  document.form_foto.testo_foto.value=TxtVal[newpic];
+  document.form_foto.data_foto.value=DatVal[newpic];
+  SelectionBox = document.form_foto.menudrop;
+  SelectionBox.options[newpic].selected = true;
+  current = newpic;
+}
+function Random_foto() {
+  TotalImages = document.form_foto.menudrop.options.length;
+  current = Math.floor(Math.random()*TotalImages);
+  Show_foto(current);
+}
+function Previous_foto() {
+  TotalImages = document.form_foto.menudrop.options.length;
+  current--;
+  if(current<0) current = TotalImages - 1;
+  Show_foto(current);
+}
+function Next_foto() {
+  TotalImages = document.form_foto.menudrop.options.length;
+  current++;
+  if (current>=TotalImages) current = 0;
+  Show_foto(current);
+}
+// -->
+</script>
+
+</head>
+
+<body background="immagini/sfondi/sfondo_giallino.jpg" vlink="#000080" link="#000080" alink="#FF00FF">
+<div align="center">
+  <center>
+  <table border="0" width="100%" cellspacing="0" cellpadding="9" height="1" bgcolor="#980519">
+    <tr>
+      <td width="55" align="center" height="1">
+  <p align="center"><a href="immagini/aurora%20affresco%20entrata.jpg"><img border="0" src="immagini/aurora_affresco_entrata_small.jpg" alt="aurora affresco entrata.jpg (520587 byte)" width="86" height="55"></a></td>
+      <th width="100%" align="center" height="1" valign="middle">
+          <b>
+ <p align="center"><a href="alfonsine.htm" target="_parent"><font face="Arial, Helvetica,sans-serif" size="7" color="#FFFFFF">Alfonsine</font></a></p></b>
+      <th width="55" align="center" height="1" valign="middle">
+          <p align="center">
+          <font face="Arial, Helvetica,sans-serif"><img border="0" src="immagini/stemma_alfonsines%5B1%5D.jpg" width="55" height="65" align="absmiddle">
+          </font>
+    </tr>
+  </table>
+
+  </center>
+</div>
+<div align="center">
+  <center>
+
+<table border="0" width="950" cellspacing="1" cellpadding="15" height="1">
+  <tr>
+    <td width="100%" height="332" valign="top">
+      <p align="center"><b><FONT face="Arial, Helvetica,sans-serif" size="6">
+      | <a href="alfonsine.htm">Alfonsine</a>
+      | </FONT> <a href="edifici%20importanti.htm"><font face="arial,helvetica,sans-serif" size="6"> Gli
+      edifici importanti&nbsp;dal '900 ad oggi</font><font size="6" face="arial,helvetica,sans-serif" color="#0000FF">&nbsp;|</font></a><FONT face="Arial, Helvetica,sans-serif" size="6">&nbsp;<a href="mon-amour.htm"><br>
+      | Ricerche
+      sull'anima di Alfonsine</a>
+      | <A href="lazzaretto.htm">Il Lazzaretto</A>
+      |</FONT></b>
+      <p align="center">
+        <b><font face="Arial, Helvetica,sans-serif" size="7" color="#FF0000">I teatri e cinema
+        alfonsinesi dall'800 ad oggi</font></b>
+      <p align="center">
+        <FONT face="Arial, Helvetica,sans-serif" size="6">
+        &nbsp;</FONT>
+
+      <div align="center">
+        <center>
+
+      <table border="0" width="820">
+        <tr>
+          <td width="90">
+            <p align="left"><b><font face="Arial, Helvetica,sans-serif" size="6">Nell'800</font></b></td>
+          <td width="180" align="center">
+            <p align="center"><b><a href="teatrocamerani.htm"><font size="6" face="Arial, Helvetica,sans-serif">Il
+            Teatro Camerani</font></a></b></td>
+          <td width="210" align="center">
+            <p align="center"><b><a href="teatromassaroli.htm"><font size="6" face="Arial, Helvetica,sans-serif">La
+            sala Massaroli</font></a></b></td>
+          <td width="317" align="center">
+            <p align="center"><b><a href="teatrocalderoni.htm"><font size="6" face="Arial, Helvetica,sans-serif">Il
+            Teatro Calderoni (e baracò)</font></a></b></td>
+        </tr>
+      </table>
+
+        </center>
+      </div>
+
+      <table border="0" width="100%">
+        <tr>
+          <td width="100%"><b><font face="Arial, Helvetica,sans-serif" size="6" color="#FF0000">Nell'900</font></b></td>
+          <td width="100%" align="center">
+            <b><FONT face="Arial, Helvetica,sans-serif" size="6">Il Teatro<br>
+            Cinema Aurora <font color="#FF0000" face="arial,helvetica,sans-serif" size="6"><i>(sei
+            qui)</i></font></FONT></b></td>
+          <td width="100%" align="center">
+            <p align="center"><b><a href="corso.htm"><font size="6" face="Arial, Helvetica,sans-serif">Il
+            Teatro<br>
+            Cinema del Corso</font></a></b></td>
+          <td width="100%" align="center">
+            <font size="6">
+            <b>
+            <font face="Arial, Helvetica,sans-serif">
+            Il cinema
+            parrocchiale&nbsp;<br>
+            </font>
+            </b>
+            <font face="Arial, Helvetica,sans-serif">
+            <i>(scheda in costruzione)</i></font></font></td>
+          <td width="100%" align="center">
+            <FONT face="Arial, Helvetica,sans-serif" size="6"><b>
+            Il teatro
+            parrocchiale &quot;Monti&quot;</b>&nbsp;<br>
+            <i>(scheda in
+            costruzione)</i></FONT></td>
+          <td width="100%" align="center">
+            <font size="6">
+            <b>
+            <font face="Arial, Helvetica,sans-serif">Il cinema
+            Gulliver </font> </b>
+            <font face="Arial, Helvetica,sans-serif"><i>(scheda in costruzione)</i></font></font></td>
+        </tr>
+      </table>
+      <p style="text-autospace:justify" align="center"><b><font face="Arial, Helvetica,sans-serif" color="#FF0000" size="7">Il
+      cinema “Aurora”: un mito alfonsinese</font></b></p>
+      <p style="text-autospace:justify" align="center"><b><font face="Arial, Helvetica,sans-serif" color="#FF0000" size="7">Nato
+      e distrutto tre volte</font></b></p>
+       <p align="center">
+       <b><font face="arial,helvetica,sans-serif" size="6"> <script src="https://connect.facebook.net/it_IT/all.js#xfbml=1"></script><fb:like href="https://alfonsinemonamour.racine.ra.it/alfonsine/Alfonsine/aurora.htm" send="true" width="450" show_faces="true" font="arial"></fb:like></font></b>
+       </p>
+      <p style="text-autospace:justify" align="center">&nbsp;</p>
+  </center>
+      <table border="0" width="100%" height="1" cellpadding="7">
+        <tr>
+          <td width="100%" height="1" valign="top" colspan="2">
+      <p align="justify"><i><font size="6" face="Arial, Helvetica,sans-serif">Il
+      cinema è quel posto dove gli umani del ventesimo secolo si incontravano
+      per sognare. Il cinema è un posto sacro come un tempio. Ad Alfonsine il
+      cino era sempre pieno di rumore, fumo e bucce di arachidi. Nelle prime
+      file c'erano i teppisti, in galleria gli aspiranti tali e gli innamorati,
+      in mezzo ci stavano i gruppi di amici che si davano la voce, nelle ultime
+      file c'erano tutti gli altri.</font></i></p>
+      <p align="justify"><i><font size="6" face="Arial, Helvetica,sans-serif">E
+      poi THE END, si accendono le luci ed è tutto finito<o:p>
+      </o:p>
+      </font>
+      </i></p>
+      <p align="justify"><i><font size="6" face="Arial, Helvetica,sans-serif">&nbsp;È al cinema (e per fortuna non soltanto al
+      cinema) che varie generazioni di alfonsinesi hanno imparato a sognare e a
+      pensare che le cose potevano anche andare in un'altra maniera. Se il
+      bisogno di trasformare la realtà ha ancora un qualche senso, credo lo si
+      debba in buona parte al cinema.&nbsp;</font></i></p>
+        </td>
+
+        </tr>
+  <center>
+
+        <tr>
+          <td width="100%" height="39" valign="top" colspan="2">
+
+<p style="text-autospace:justify" align="center"><font face="Arial, Helvetica,sans-serif" size="6" color="#FF0000"><b>La
+storia del cinema ‘Aurora’ è la storia del ‘900 alfonsinese</b></font></p>
+        </td>
+        </tr>
+        <tr>
+          <td width="100%" height="1" valign="top">
+      <p align="justify"><font size="6" face="Arial, Helvetica,sans-serif">Tutto
+cominciò alla fine dell’800, quando un possidente terriero e uomo di spicco
+in paese Eugenio Gessi, in società con Sebastiano Santoni, decise di costruire un
+      teatro-cinematografo, tra i primi
+a nascere in Romagna, un primato per Alfonsine.&nbsp;</font>
+  </center>
+      <p align="left"><FONT face="Arial, Helvetica,sans-serif" size="6"> Lo fece costruire tutto in legno
+da un falegname di nome Antonio Calderoni, e la gente lo chiamò amichevolmente <a href="teatrocalderoni.htm"> ‘e
+baracò’</a>, il baraccone.&nbsp;&nbsp;<FONT face="arial,helvetica,sans-serif" size="4"><BR>
+      </FONT></FONT><font color="#FF0000" face="arial,helvetica,sans-serif" size="6">(vedasi '<A href="teatrocalderoni.htm">teatro
+      Calderoni</A>'&nbsp;</font><FONT face="Arial, Helvetica,sans-serif" size="6"> <FONT color="#FF0000" face="arial,helvetica,sans-serif" size="3"><BR>
+      </FONT></FONT><A href="teatrocalderoni.htm" target="_top"> <font face="arial,helvetica,sans-serif" size="6"> cliccando
+      o toccando qui</font></A>
+      <FONT face="Arial, Helvetica,sans-serif" size="6"> <FONT face="arial,helvetica,sans-serif" size="3">
+      </FONT><FONT color="#FF0000"> o nel
+      Sommario)</FONT></FONT></p>
+  <center>
+
+      <p align="justify"><font size="6" face="Arial, Helvetica,sans-serif">
+      Era situato nella piazza principale la Piazza Monti e aveva forma
+      ottagonale. Poi fu ben presto trasferito <FONT color="#FF0000"> in via Carraretto
+      Venturi</FONT>. Lì si andava la domenica a vedere le
+storie e le comiche in pellicola muta. Quando il fascismo andò al potere ci
+furono notevoli divergenze tra alcuni della famiglia Gessi e i fascisti locali.&nbsp;</font></p>
+      <p align="justify"><font size="6" face="Arial, Helvetica,sans-serif">I fratelli Giacomo e Beno
+      Gessi, figli di Eugenio, insieme al cognato Ferruccio Mossotti ebbero uno scontro duro
+      con i capi del partito fascista di Alfonsine.</font></p>
+      <p align="justify"><font size="6" face="Arial, Helvetica,sans-serif">Questi nelle figure di Abele
+      Faccani segretario del partito fascista di alfonsine e di Sasdelli
+      Romildo, fermarono Ferruccio Mossotti e i suoi cognati Mino e Beno Gessi: nella concitazione partì un colpo dalla
+rivoltella del camerata Sasdelli, fondatore del partito fascista ad Alfonsine,
+che si conficcò nella gamba del suo segretario politico Abele Faccani.&nbsp;</font></p>
+      <p align="justify"><font color="#FF0000" size="6" face="Arial, Helvetica,sans-serif">Era il 20 luglio
+      1923.&nbsp;</font></p>
+      <p align="justify"><font size="6" face="Arial, Helvetica,sans-serif"> Abele Faccani incolpò Beno e Giacomo
+      Gessi, il
+      quale dichiarò nel processo che non era stato il suo
+      revolver a colpire Abele.</font></p>
+      <p align="justify"><font size="6" face="Arial, Helvetica,sans-serif">Dopo due mesi di detenzione dei
+      fratelli Gessi furono messi in libertà provvisoria, con l'invito a non
+      risiedere ad Alfonsine.</font></p>
+      <p align="justify"><font size="6" face="Arial, Helvetica,sans-serif" color="#FF0000"><b>Il 9
+settembre del 1923</b></font></p>
+      <p align="justify"><font size="6" face="Arial, Helvetica,sans-serif">La
+      scarcerazione di Beno e Mino Gessi non piacque ai fascisti locali. Essi si
+      sfogarono prendendo di mira il teatro-cinema di Eugenio Gessi, che subì una prima irruzione
+      il 9
+settembre del 1923 (era in programma il drammone Pia de’ Tolomei). Alcuni
+squadristi della sala cinematografica affollata salirono sul palco e spararono
+diversi colpi di pistola a scopo intimidatorio.&nbsp;</font></p>
+      <p align="justify"><font size="6" face="Arial, Helvetica,sans-serif"> Le pallottole che sibilarono
+sopra la testa degli spettatori. (I due noti squadristi furono individuati da
+      un'indagine dei carabinieri: Amadei Ferdinando e Baccarini Antonio, che
+      subirono solo la sospensione per sei mesi dal Partito Fascista). Tra il pubblico fu il panico. Nel fuggi-fuggi generale, il
+tentativo concitato all’uscita di scavalcare una rete col filo spinato fece sì
+che in molti si ferirono, tra i quali cinque donne e anche un bambino di 8 anni.&nbsp;</font></p>
+      <p align="center"><FONT face="Arial, Helvetica,sans-serif" size="6"><img border="0" src="immagini/gertrude_taddei.jpg" width="480" height="416"></FONT></p>
+      <p align="center"><i><font size="6" face="Arial, Helvetica,sans-serif">Gertrude
+      Antonellini&nbsp;<br>
+ sposata Taddei</font></i></p>
+      <p align="justify"><font size="6" face="Arial, Helvetica,sans-serif">
+      Il giorno dopo una donna Taddei Geltrude, nata Antonellini, fece
+      pubblicamente in piazza Monti il nome dei fascisti che avevano sparato.
+      Per questo venne subito schiaffeggiata e malmenata da Romildo Sasdelli,
+      membro di spicco del direttorio del fascio alfonsinese.&nbsp;</font></p>
+      <p align="justify"><font size="6" face="Arial, Helvetica,sans-serif">In dicembre del 1923 al processo
+      i fratelli Gessi furono scagionati per mancanza di prove. Uno dopo l'altro
+      rientrarono in paese.&nbsp;</font>
+<p align="justify">
+
+<FONT size="6" face="Arial, Helvetica,sans-serif" color="#FF0000"><b>Il 4 gennaio 1924</b></FONT>
+</p>
+<p align="justify"><font size="6" face="Arial, Helvetica,sans-serif">Sparsasi la voce della loro
+scarcerazione,&nbsp; gli squadristi si scagliarono ancora contro il
+cinema &quot;Baracò&quot; e lo incendiarono completamente.&nbsp;</font></p>
+          </CENTER>
+        </td>
+
+<td width="34%" height="1" valign="top">
+  <p align="center"><FONT face="Arial, Helvetica,sans-serif" size="6"><img border="0" src="Famiglie/Gessi/Gessi-Eugenio.jpg" width="375" height="547">
+  </FONT>
+  <p align="center" style="text-autospace: justify" class="MsoNormal"><i><font face="Arial, Helvetica,sans-serif" size="6">Eugenio Gessi</font></i></p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p align="center"><a href="immagini/baraco1.jpg"><FONT face="Arial, Helvetica,sans-serif" size="6"><img border="0" src="immagini/baraco_small.jpg" alt="baraco.jpg (35747 byte)" width="403" height="282"></FONT></a></p>
+  <p align="center" style="text-autospace: justify" class="MsoNormal"><FONT face="Arial, Helvetica,sans-serif" size="6"><i>e baracò dopo
+  l'incendio del 1924<br>
+  </i>
+  <font color="#FF0000"><i>(un click o un tocco per avere l'ingrandimento)</i></font></FONT>
+  <p align="center">&nbsp;
+  <p align="center"><FONT face="Arial, Helvetica,sans-serif" size="6"><img border="0" src="immagini/mino_gessi.jpg" width="333" height="489">
+  </FONT>
+  <p align="center" style="text-autospace: justify" class="MsoNormal"><i><a href="mino_gessi.htm"><FONT face="Arial, Helvetica,sans-serif" size="6">Mino Gessi&nbsp;
+  <font color="#FF0000" face="arial,helvetica,sans-serif" size="1"><br>
+ </font>
+  </FONT><font color="#FF0000" face="arial,helvetica,sans-serif" size="6">(clicca
+  o
+  tocca </font><FONT face="Arial, Helvetica,sans-serif" size="6" color="#FF0000">per saperne di più)</FONT>
+  </a></i>
+  <p align="center">&nbsp;
+  <p align="center"><a href="immagini/cippo%20gessi.jpg"><FONT face="Arial, Helvetica,sans-serif" size="6"><img border="0" src="immagini/cippo_gessi_small.jpg" alt="cippo gessi.jpg (326709 byte)" width="412" height="259"></FONT></a>
+  <p align="center"><FONT face="Arial, Helvetica,sans-serif" size="6"><a href="immagini/cippo%20gessi.jpg"><i>Il
+  cippo in Francia che ricorda Giacomo Gessi<br>
+  <br>
+  </i></a><font color="#FF0000"><i>(un click o un tocco per avere
+  l'ingrandimento)</i></font>
+  </FONT>
+  <p align="center">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="134%" height="1" valign="top" colspan="2">
+<p align="justify"><FONT size="6" face="Arial, Helvetica,sans-serif" color="#FF0000"><b>Il 2 marzo del 1924</b></FONT></p>
+<p align="justify"><font size="6" face="Arial, Helvetica,sans-serif">Dopo un mese di continue minacce e
+provocazioni, oltre che aggressioni, i nuovi episodi violenti sfociarono
+in un conflitto a fuoco nel centro di Alfonsine tra Mino Gessi, da poco sfuggito
+a un’imboscata nel Borgo Gallina-Seganti, ( e per questo andava in giro armato),
+e Abele Faccani, istigato dal fratello Giuseppe. Era un pomeriggio del 2 marzo
+1924, quando Mino Gessi, recatosi alla tabaccheria Graziani, sotto i portici a
+ridosso dell’argine del Senio, nel paese vecchio, fu aggredito dai fratelli
+Faccani. Malmenato e quasi sopraffatto dalle botte, estrasse la pistola e ferì
+Abele e il fratello. Sanguinante, fuggì, e fu costretto alla latitanza, quindi
+all’emigrazione politica nel sud della Francia. (Antifascista conseguente,
+verrà consegnato ai tedeschi dai collaborazionisti francesi e finito in un
+forno nel lager di Dachau il 6 febbraio 1945).</font></p>
+  <p align="justify"><font size="6" face="Arial, Helvetica,sans-serif"> Mentre Giuseppe Faccani si rimise
+dal colpo di rivoltella al polmone, Abele morì dopo due settimane,
+all’ospedale di Bologna, per infezione alla ferita da arma da fuoco.&nbsp;</font>
+  <p align="justify"><FONT size="6" face="Arial, Helvetica,sans-serif">&nbsp;</FONT>
+        </td>
+
+        </tr>
+        <tr>
+          <td width="100%" height="30" valign="top" colspan="2">
+
+<p align="center"><font face="Arial, Helvetica,sans-serif" size="6">La
+descrizione dettagliata della foto del 'baracò' incendiato</font></p>
+
+<table border="0" width="100%">
+  <tr>
+    <td width="100%">
+      <p align="center">
+<a href="">
+<FONT face="Arial, Helvetica,sans-serif" size="6">
+<IMG border=1 id="_foto" NAME="_foto" SRC="immagini/baraco3.jpg" align="absmiddle" width="792" height="644">
+</FONT>
+</a>
+    </td>
+  </tr>
+</table>
+        </td>
+        </tr>
+        <tr>
+          <td width="100%" height="30" valign="top" colspan="2">
+
+<p style="text-autospace:justify" align="center"><b><font face="Arial, Helvetica,sans-serif" color="#FF0000" size="7">L’origine
+del nome del cinema Aurora</font></b></p>
+        </td>
+        </tr>
+        <tr>
+          <td width="66%" height="166" valign="top">
+      <p align="justify"><font size="6" face="Arial, Helvetica,sans-serif">Passata
+la fase repressiva del fascismo contro la sua famiglia, Eugenio Gessi, che non
+poté più vedere il proprio figlio Mino, condannato in contumacia a 24 anni,
+non si diede per vinto e nel 1926 fece ricostruire il cinema-teatro. Lo chiamò
+&quot;Aurora&quot; non si sa se facesse riferimento alla nave ribelle che avviò
+la rivoluzione russa nell’ottobre del 1917, sparando il colpo che diede il
+segnale per la conquista del Palazzo d'Inverno di San Pietroburgo, o se fosse un
+auspicio per una nuova era fuori dal fascismo.&nbsp;</font>
+      <p align="justify"><font size="6" face="Arial, Helvetica,sans-serif"> Per aggirare le ire dei fascisti
+l’iniziativa fu realizzata a nome di una cooperativa proprietari, un gruppo di
+artigiani amici del Gessi, mentre in realtà era lui il finanziatore unico
+dell’operazione.&nbsp;</font></p>
+        </td>
+
+<td width="34%" height="166" valign="top">
+  <p align="center"><a href="immagini/lazzaretto%20con%20scritta%20aurora.jpg"><FONT face="Arial, Helvetica,sans-serif" size="6"><img border="0" src="immagini/lazzaretto_con_scritta_aurora_small.jpg" alt="lazzaretto con scritta aurora.jpg (100601 byte)" width="408" height="584"></FONT></a></td>
+        </tr>
+        <tr>
+          <td width="66%" height="166" valign="top">
+      <p align="justify"><font size="6" face="Arial, Helvetica,sans-serif"> La popolazione manifestò la propria solidarietà
+frequentandolo immediatamente.</font>
+        </td>
+
+  <center>
+
+<td width="34%" height="166" valign="top">
+  <FONT face="Arial, Helvetica,sans-serif" size="6">
+  <img border="0" src="immagini/aurora2.jpg" width="414" height="238">
+  </FONT>
+  <p align="center" style="text-autospace: justify" class="MsoNormal"><i><font face="Arial, Helvetica,sans-serif" size="6">Il teatro Aurora
+  da una foto aerea del 1938</font></i></td>
+        </tr>
+        <tr>
+          <td width="66%" height="166" valign="top">
+      <p align="center">
+      <a href="immagini/Alfonsine%202000/aurora_lolli.jpg"><FONT face="Arial, Helvetica,sans-serif" size="6"><img border="0" src="immagini/aurora_lolli_small.jpg" alt="aurora_lolli.jpg (110927 byte)" width="454" height="373"></FONT></a>
+      <p align="center" style="text-autospace: justify" class="MsoNormal"><i><font face="Arial, Helvetica,sans-serif" size="6">L'unica&nbsp;
+      foto del cinema Aurora&nbsp;<br>
+      nel Lazzaretto</font>
+      </i>
+        </td>
+
+<td width="34%" height="166" valign="top">
+  <a href="immagini/Alfonsine%202000/aurora2.jpg"><FONT face="Arial, Helvetica,sans-serif" size="6"><img border="0" src="immagini/aurora2_small1.jpg" alt="aurora2.jpg (42176 byte)" width="414" height="249"></FONT></a>
+  <p align="center" style="text-autospace: justify" class="MsoNormal"><i><font face="Arial, Helvetica,sans-serif" size="6">Il teatro Aurora
+  da una foto aerea del 1938</font></i></td>
+        </tr>
+        <tr>
+          <td width="100%" height="54" valign="top" colspan="2">
+
+<p align="center"><b><font face="Arial, Helvetica,sans-serif" size="7" color="#FF0000">Orchestra&nbsp;
+Cinema Aurora</font></b></p>
+<p align="center"><i><font face="Arial, Helvetica,sans-serif" size="6" color="#FF0000">(per
+ingrandire l'immagine cliccare o toccare sopra)</font></i></p>
+<table border="0" width="100%" height="545">
+  <tr>
+    <td width="100%" height="82">
+      <p align="left"><font size="6"><FONT face="Arial, Helvetica,sans-serif"><b><i><font color="#FF0000">Da
+      sinistra: </font> </i></b>
+      <i><font face="arial,helvetica,sans-serif">Armando
+      Galletti marito della Jolanda, Alvaro Calderoni, Vittorio Pagani (Vittorio
+      d'Stevan), Caravita (?), in piedi (?) al
+      contrabbasso, seduto Menotti al violino, Libero Dragoni alla batteria
+      (Libero d'Bagatèn), in piedi Ettore Gessi babbo di Marcello Gessi, seduto
+      Ottorino Cairoli al violino (Turò d'Campanèn) , in piedi Luigi Calderoni
+      (al trombone), seduto Enea Faccani al violino (Enea d'Pirlinbec) babbo di
+      Fino Faccani, Mario Bonetti al violino, babbo </font></i></FONT><i><FONT face="arial,helvetica,sans-serif" size="6">di
+      Enzo e <FONT face="Arial, Helvetica,sans-serif">della Giuliana</FONT></FONT><FONT face="Arial, Helvetica,sans-serif" size="6">,</FONT><FONT face="arial,helvetica,sans-serif" size="2"> 
+      </FONT><font face="arial,helvetica,sans-serif"> moglie di
+      Tumiatti e mamma dei Tumiatti, (?).</font></i></font>
+      <p align="left"><b><font face="Arial, Helvetica,sans-serif" size="6">&nbsp;</font></b></td>
+  </tr>
+  <tr>
+    <td width="100%" height="455">
+      <p align="center"><i><font face="Arial, Helvetica,sans-serif" size="6" color="#FF0000">Per
+ingrandire l'immagine cliccare o toccare sopra l'immagine</font></i>
+      </p>
+      <p align="center"><a href="immagini/orchestra_aurora.jpg" target="_blank"><FONT face="Arial, Helvetica,sans-serif" size="6"><img border="2" src="orchestra_aurora_small.jpg" alt="orchestra_aurora.jpg (190152 byte)" width="870" height="595"></FONT></a>
+      </p>
+    </td>
+  </tr>
+</table>
+        </td>
+        </tr>
+        <tr>
+          <td width="100%" height="54" valign="top" colspan="2">
+<p style="text-autospace:justify" align="center"><b><span style="font-style:16.0pt;mso-bidi-font-style:
+12.0pt"><font face="Arial, Helvetica,sans-serif" color="#FF0000" size="7">Aurora contro Corso<o:p>
+</o:p>
+</font></span></b></p>
+        </td>
+        </tr>
+        <tr>
+          <td width="66%" height="166" valign="top">
+      <p align="justify"><font size="6" face="Arial, Helvetica,sans-serif">I
+fascisti intanto tenevano feste e veglioni in una nuova costruzione in Corso
+Garibaldi, che chiamavano Cinema ‘Littorio’. In realtà era un cinema teatro
+      costruito dai fratelli Minarelli (Tereo e Luigi).&nbsp; La sorte di entrambi i cinema
+fu quella terribile di tutto il paese: ai primi di febbraio del 1945 i tedeschi
+fecero abbattere con cariche esplosive tutto il paese a destra del Senio.</font>
+      <p align="center"><a href="immagini/veglione_corso.jpg"><font face="Arial, Helvetica,sans-serif" size="6"><img border="0" src="immagini/veglione_corso_small.jpg" alt="veglione_corso.jpg (195384 byte)" width="440" height="527"></font>
+      </a>
+      </p>
+      <p align="center" style="text-autospace: justify" class="MsoNormal"><i><font face="Arial, Helvetica,sans-serif" size="6">Un
+      veglione al cinema del Corso</font></i></p>
+      <p align="center" style="text-autospace: justify"><FONT face="Arial, Helvetica,sans-serif" size="6"><i>(disegno
+      di Tullio Samaritani)</i><br>
+      </FONT>
+        </td>
+
+<td width="34%" height="166" valign="top">
+  <p align="center"><a href="immagini/corso.jpg"><FONT face="Arial, Helvetica,sans-serif" size="6"><img border="0" src="immagini/corso_small.jpg" alt="corso.jpg (172661 byte)" width="401" height="431"></FONT></a>
+  <p align="center" style="text-autospace: justify" class="MsoNormal"><i><font face="Arial, Helvetica,sans-serif" size="6">Il
+  cinema del Corso prima della guerra</font></i><p align="center" style="text-autospace: justify"><i><FONT face="Arial, Helvetica,sans-serif" size="6">(disegno
+  di Tullio Samaritani)</FONT></i></td>
+        </tr>
+      </table>
+<p style="text-autospace:justify" align="center"><b><span style="font-style:16.0pt;mso-bidi-font-style:
+12.0pt"><font face="Arial, Helvetica,sans-serif" size="7" color="#FF0000">La terza rinascita nel
+dopoguerra<o:p>
+</font></span></b></p>
+<p style="text-autospace:justify" align="center"><font size="6"><b><span style="font-style:16.0pt;mso-bidi-font-style:
+12.0pt"><font face="Arial, Helvetica,sans-serif">&nbsp;
+</font></span></b><img border="0" src="immagini/Alfonsine%202000/inizio-costruzione-aurora.jpg" width="869" height="662"><b><span style="font-style:16.0pt;mso-bidi-font-style:
+12.0pt"><font face="Arial, Helvetica,sans-serif" size="4"></o:p>
+</font></span></b></font></p>
+<p align="justify"><font size="6" face="Arial, Helvetica,sans-serif">L'Aurora
+rinacque dalle macerie una terza volta quando nel 1947 un altro dei figli di
+Eugenio Gessi, Ottorino, reduce e partigiano della 28° Brigata Garibaldi di
+Bulow, decise di&nbsp; far rinascere il cinema di suo padre, su sollecitazione
+della nuova giunta social-comunista.</font></p>
+<p align="center" style="text-autospace: justify"><FONT face="Arial, Helvetica,sans-serif" size="6"><img border="0" src="Famiglie/Gessi/gessi_ottorino_solo.jpg" width="515" height="598"></FONT></p>
+<p align="center" style="text-autospace: justify" class="MsoNormal"><i><font face="Arial, Helvetica,sans-serif" size="6">Ottorino
+Gessi (1922-2006) nel 2006</font></i></p>
+<p align="justify"><font size="6" face="Arial, Helvetica,sans-serif"> Affrontò la ricostruzione dell’Aurora,
+questa volta nella zona nuova, alla sinistra del fiume Senio, in base al Piano
+di Ricostruzione progettato, a nome della nuova amministrazione social-comunista,
+dal famoso architetto Giuseppe Vaccaro.&nbsp;</font></p>
+<p align="center" style="text-autospace: justify"><a href="Famiglie/Gessi/aurora_1948.jpg"><FONT face="Arial, Helvetica,sans-serif" size="6"><img border="0" src="Famiglie/Gessi/aurora_1948_small.jpg" alt="aurora_1948.jpg (100333 byte)" width="779" height="500"></FONT></a></p>
+<p align="center" style="text-autospace: justify" class="MsoNormal"><font size="6"><b><i><font face="Arial, Helvetica,sans-serif">Il
+cinema Aurora nel 1950</font></i></b><i><font face="Arial, Helvetica,sans-serif" size="2" color="#FF0000"><br>
+</font><font face="Arial, Helvetica,sans-serif" color="#FF0000">
+Per
+ingrandire l'immagine cliccare o toccare sopra&nbsp;</font></i>
+</font>
+        </p>
+<p align="justify"><font size="6" face="Arial, Helvetica,sans-serif">Con
+la guerra fredda ormai in atto, attorno alla questione cinema si venne a
+riproporre una nuova divisione politica.&nbsp;</font></p>
+<p align="justify"><font face="Arial, Helvetica,sans-serif" size="6">Un primo
+documento dell'ottobre 1946</font></p>
+        <p align="justify"><font size="6" face="Arial, Helvetica,sans-serif">Si
+        ha notizia di una lettera prefettizia inviata ai fratelli Minarelli
+        Tereo e Luigi, che avendo licenza di gestire un cinema-teatro fin da
+        prima della guerra (&quot;Teatro del Corso&quot;), avevano chiesto di
+        costruire un teatro in Destra Senio. Si sa che avevano improvvisato
+        nell'immediato dopoguerra proiezioni cinematografiche nel cortiletto di
+        fianco al caffé (che avevano aperto e che sarà poi gestito da loro
+        stessi fino agli anni '60).&nbsp;<br>
+        La lettera citata in questo documento del C.C. negava ai Minarelli il
+        permesso di costruire un teatro-cinema, e probabilmente li richiamava a
+        cessare le proiezioni, non avendo il nullaosta del Comune. Va detto che
+        nello stesso periodo il Sig. Armando Polli aveva iniziato a gestire
+        proiezioni cinematografiche nel casone delle macchine in via Tranvia,
+        nella sinistra Senio.</font></p>
+<p align="center"><font size="6"><a href="immagini/aurora--doc-1946.jpg"><img border="1" src="immagini/aurora--doc-1946_small.jpg" alt="aurora--doc-1946.jpg (381375 byte)" width="750" height="320"><br>
+</a><i><font face="Arial, Helvetica,sans-serif" color="#FF0000">Per
+ingrandire cliccare o toccare sopra l'immagine</font></i>
+</font>
+        </p>
+<p align="justify">&nbsp;</p>
+<p align="center"><b><font face="Arial, Helvetica,sans-serif" color="#FF0000" size="7">Un
+secondo documento&nbsp;<br>
+ del 29 dicembre 1946<br>
+</font></b></p>
+<p align="justify"><font size="6" face="Arial, Helvetica,sans-serif">Ecco qui
+di seguito un
+ordine del giorno approvato all'unanimità dal C.C., in cui si approva l'idea di
+favorire nel Centro di Alfonsine la nascita di un nuovo Teatro-cinema. </font></p>
+<p align="center"><font size="6"><a href="immagini/aurora--doc2-1946.jpg"><img border="1" src="immagini/aurora--doc2-1946_small.jpg" alt="aurora--doc2-1946.jpg (369048 byte)" width="750" height="847"><br>
+</a><i><font face="Arial, Helvetica,sans-serif" color="#FF0000">Per
+ingrandire cliccare o toccare sopra l'immagine</font></i>
+</font>
+        </p>
+        <p align="justify"><b><i><font size="6" face="Arial, Helvetica,sans-serif"><br>
+        </font>
+        </i></b><font size="6" face="Arial, Helvetica,sans-serif">Dice anche che la Giunta ha interpellato l'attuale conduttore del
+        cinema (quello in via Tranvia improvvisato nel mese immediato alla fine
+        della guerra) sig. Polli<i>  <font color="#FF0000"> &quot;ed altri che per il passato espressero
+        il desiderio di costruire tale edificio. A talora le proposte del sig.
+        Polli sono quelle che maggiormente si conciliano con le esigenze della
+        cittadinanza&quot;</font>.</i></font></p>
+        <p align="justify"><font size="6" face="Arial, Helvetica,sans-serif">Inoltre<i>
+        &quot;<font color="#FF0000">si attendono le proposte di quanti vorranno intraprendere detta
+        iniziativa</font>&quot;.<br>
+        </i>Forse
+        il sig. Ottorino Gessi, che sarà poi colui che costruirà il Cinema
+        Aurora, aveva già avanzato qualche proposta.</font></p>
+        <p align="center"><b><font color="#FF0000" face="Arial, Helvetica,sans-serif" size="7">Un
+        terzo documento del 7 aprile 1947</font><font face="Arial, Helvetica,sans-serif" size="6"><br>
+        </font></b></p>
+<p align="justify"><font size="6"><span style="text-transform: uppercase"><font face="Arial, Helvetica,sans-serif">è </font></span>
+<font face="Arial, Helvetica,sans-serif">
+la delibera del Consiglio
+Comunale del 5 aprile 1947,
+che
+impegnava il comune a non permettere, per almeno tre anni di aggiungere un altro
+locale del genere, come d'altra parte prevedeva il Piano di Ricostruzione.</font></font></p>
+        <table border="0" width="100%">
+          <tr>
+            <td width="81%" valign="top">
+              <table border="0" width="100%" cellpadding="8">
+                <tr>
+                  <td width="34%" valign="top"><font face="Arial, Helvetica,sans-serif" size="6"><i>N°
+                    60&nbsp; &quot;Realizzazione del piano di ricostruzione
+                    degli abitanti di questo Comune.<br>
+                    Convenzione per ricostruzione di un cinema teatro.</i></font>
+                    <p>&nbsp;</p>
+                    <p align="center"><font size="6"><font face="Arial, Helvetica,sans-serif"><i>Pubblicata
+                    il 6 aprile 1947</i><b><br>
+                    </b>
+                    </font>
+                    <i><font face="Arial, Helvetica,sans-serif" color="#FF0000">Per
+ingrandire cliccare o toccare sopra l'immagine</font></i>
+                    </font>
+                    <p align="center"><a href="immagini/aurora-delibera-intera-1947.jpg"><font size="6"><img border="1" src="immagini/aurora-delibera-intera-1947_small.jpg" alt="aurora-delibera-intera-1947.jpg (1146161 byte)" width="304" height="1334"></font></a>
+                    <p align="center"><i><font face="Arial, Helvetica,sans-serif" size="6" color="#FF0000">Per
+ingrandire cliccare o toccare sopra l'immagine</font></i>
+                    </p>
+                  </td>
+  </center>
+                <td width="66%" valign="top">
+                  <p align="left"><font size="6">&nbsp;L'ordine del giorno reca</font></p>
+
+  <center>
+
+<p align="center"><font size="6">Il Consiglio Comunale</font></p>
+  </center>
+                  <p align="left"><font size="6">Vista la deliberazione Consigliare n° 45 in
+                  data 22-XII-1946 (vedi foto sopra <i>ndr</i>) vistata dalla
+                  Prefettura il 10 2 1947 con n° 1723 Dir IV relativa alla
+                  costruzione di un Cinema Teatro,<br>
+                  Visto che la costruzione di detto Teatro deve rispondere alle
+                  norme stabilite dal piano di ricostruzione degli abitati di
+                  questo Comune, reso esecutivo dal competente Ministero dei
+                  Lavori Pubblici con Decreto in data 29 7 1946 N° 1543 Div XIX,&nbsp;<br>
+                  Visto che in ottemperanza a quanto stabilito dalla
+                  deliberazione sopracitata questa Amministrazione ha dato larga
+                  diffusione all'avviso concernente la presentazione delle
+                  domande per la costruzione del Cinema-Teatro previsto dal
+                  piano di ricostruzione,&nbsp;<br>
+                  Tenuto presente che il citato avviso è stato pure pubblicato
+                  in fogli annuari legali della Provincia n° 23 e 30,<br>
+                  Visto che il sig. Gessi Ottorino è stato l'unico a presentare
+                  il progetto.<br>
+                  Visto che la Commissione Tecnica Comunale ha ritenuto detto
+                  progetto rispondente alle norme stabilite dal piano di
+                  ricostruzione e alle esigenze locali;<br>
+                  Considerato che l'iniziativa privata, sollecitata da questa
+                  amministrazione alla costruzione di un nuovo Cinema-Teatro, ha
+                  dato palese dimostrazione di indifferenza,<br>
+                  Tenuto che trattasi di opera di vasta mole e conseguentemente
+                  di vasto impiego di mezzi finanziari</font></p>
+                  <p align="left"><font size="6">Visto che questa Amministrazione onde ottenere
+                  la realizzazione del piano di ricostruzione non ha potuto
+                  derogare dall'inserimento delle clausole contenute nello
+                  schema di convenzione che forma parte integrante e sostanziale
+                  della presente deliberazione.<br>
+                  A voti unanimi espressi per alzata di mano,</font></p>
+                  <p align="center"><font size="6">Delibera</font></p>
+                  <p align="left"><font size="6">1) di approvare la seguente convenzione per la
+                  costruzione di un Cinema Teatro da stipularsi fra questo
+                  Comune e il sig. Gessi Ottorino, domiciliato e residente in
+                  Alfonsine proprietario del progetto Motto T.A, progetto già
+                  ritenuto dalla Commissione Tecnico Comunale conforme alle
+                  norme stabilite dal piano di ricostruzione e rispondente alle
+                  esigenze locali<br>
+                  a) il Comune di Alfonsine alienerà l'area destinata alla
+                  costruzione del Cinema Teatro ai proprietari del progetto
+                  Motto T.A. al prezzo che sarà convenuto tra le parti. La
+                  compravendita sarà stipulata non appenaq avrà avuto
+                  l'approvazione dell'autorità tutoria.<br>
+                  b) I proprietari del progetto Motto T.A. dovranno costruire su
+                  detta area il Cinema Teatro come dal progetto stesso e con le
+                  variazioni che eventualmente saranno suggerite dalla
+                  Commissione aggiudicatrice del Concorso.<br>
+                  c) La costruzione sarà effettuata gradualmente:<br>
+                  Il primo blocco comprendente la parte del palcoscenico
+                  antistante la platea di una profondità di m. 3, il golfo
+                  mistico della capacità di 40-50 orchestrali, la sala platea
+                  della capacità di circa 1000 posti, un vestibolo comprensivo
+                  di guardaroba, servizio bar e altri proservizi, tutte le
+                  strutture della galleria entro l'anno 1947. Il secondo blocco
+                  comprendente la galleria con relativi servizi entro l'anno
+                  1949. Il terzo blocco comprendente l'atrio e il caffé bar
+                  entro l'anno 1951. Il quarto blocco comprendente il
+                  palcoscenico con relative attrezzature entro l'anno 1954.<br>
+                  d) La costruzione resta subordinata alla condizione che il
+                  Comune si impegni a non far concedere nuove licenze per la
+                  costruzione o gestione di cinema teatri oltre quelli oggi
+                  esistenti e a revocare la licenza attualmente intestata al
+                  sig. Polli Armando e ciò al momento della fine della
+                  concessione del capannone sito in via Borse a condizioni che
+                  il sig. Polli Armando non usufruisca attualmente della licenza
+                  dell'ex Cinema Aurora, nel qual caso non dovrà essergli
+                  lasciato un nullaosta per altra licenza. Altresì il Comune si
+                  impegna a non concedere permessi o a approvare domande per la
+                  costruzione nel suo territorio, escluso s'intende le frazioni
+                  lontane dal centro urbano, di locali ad uso Cinema Teatro.<br>
+                  Il divieto di concedere nuovi licenze e permessi di
+                  costruzione cui sopra cesserà due anni dopo il primo
+                  spettacolo che sarà dato nel costruendo cinema.<br>
+                  I permessi e le licenze per spettacoli all'aperto (arene) non
+                  potranno essere volturati a persone diverse dagli eventuali
+                  intestatari, inoltre non potranno essere concesse nuove
+                  licenze per spettacoli all'aperto e nel caso che quelli
+                  attualmente scadano non potranno essere usufruiti in alcun
+                  modo e ciò fino alla scadenza del termine di due anni dopo il
+                  primo spettacolo che sarà dato nel costruendo cinema teatro,
+                  sotto comminatoria dei danni di cui ai patti.<br>
+                  e) Di converso il Comune a richiesta del proprietario del
+                  progetto Motto T.A. deve concedere ai medesimi licenza per
+                  spettacoli all'aperto, nonchè per ballo.<br>
+                  f) Qualora siano concessi prima della scadenza dei predetti
+                  due anni nuove licenze per gestione nel Comune di Alfonsine di
+                  cinema o teatro ovvero siano effettuate costruzioni di
+                  fabbricati da adibirsi a uso cinema o teatro, il Comune di
+                  Alfonsine sarà tenuto al risarcimento dei danni che
+                  risentiranno per tali fatti i proprietari del progetto Motto
+                  T.A. e valutati in un miglione (sic!) di lire per ogni anno di
+                  esclusività prevista dalla presente convenzione<br>
+                  g) ......................<br>
+                  tenuto ai proprietari non appena inizieranno ....&nbsp; di
+                  costruzione</font><p align="left">&nbsp;</td>
+              </tr>
+
+  <center>
+
+                <tr>
+                  <td width="100%" valign="top" colspan="2"><font size="6">h) Nell'ipotesi che
+                    la costruzione iniziata sia abbandonata per fatto e colpa
+                    dei proprietari prima che sia ultimato il primo blocco,
+                    questi saranno soggetti a una penalità a favore del Comune
+                    di L. 500.000 (cinquecentomila) oltre che alla perdita del
+                    terreno.<br>
+                    i) Nell'ipotesi invece che costruito il primo blocco i
+                    proprietari non completeranno per loro fatto e colpa la
+                    costruzione degli altri blocchi nei modi ...ni di cui sopra
+                    incorreranno in una penalità di L. 200.000 (duecentomila)
+                    in favore del Comune<br>
+                    l) Nell'ipotesi che l'inadempimento sia soltanto parziali e
+                    cioè riguardi il termine entro cui ciascun blocco deve
+                    essere ultimato la penalità resterà ma commutata a L.
+                    5.000 per ogni mese di ritardo sino ad un massimo di
+                    penalità di L. 200.000 (duecentomila). In caso di pagamento
+                    di penalità per il ritardo costruzione di un blocco, i
+                    termini per la costruzione dei blocchi successivi restano
+                    prorogati di un tempo uguale a quello del ritardo soggetto
+                    alla penalità. La somma prevista sulle penalità di cui alle
+                    lettere i) e l), all'atto dell'eventuale versamento sarà
+                    subordinata al valore&nbsp; monetario corrente ...&nbsp; del
+                    versamento stesso.<br>
+                    m) i termini fissati col patto terzo per la costruzione di
+                    ciascun blocco restano posticipati di un anno per ciascuno
+                    qualora la presente convenzione sia perfezionata con
+                    l'approvazione tutoria entro il mese di marzo 1947.<br>
+                    n) Il Comune avrà diritto per tre volte l'anno dell'uso
+                    gratuito del Cinema Teatro costruendo nei modi e nei tre
+                    giorni da convenirsi di comune accordo.<br>
+                    o) I proprietari del progetto Motto T.A. avranno la facoltà
+                    di cedere a terzi i diritti ed gli obblighi oggetto della
+                    presente convenzione<br>
+                    p) Nel caso che la costruzione iniziata o terminata in parte
+                    debba essere sospesa&nbsp; o comunque non sia concessa
+                    l'autorizzazione per il suo uso a cinema teatro da parte
+                    dell'autorità competente, il Comune si impegna a risarcire
+                    i danni incontrati dai proprietari del progetto Motto T.A.,
+                    sempre che tale divieto non dipenda da difetti relativi alla
+                    costruzione stessa.<br>
+                    Il presente verbale è stato letto ed approvato dal
+                    Consiglio in seduta stante.</font></td>
+              </tr>
+
+              </table>
+            </center></td>
+          </tr>
+        </table>
+<p align="center" style="text-autospace: justify"><a href="immagini/Alfonsine%202000/aurora-e-cassa-risparmio.jpg"><FONT face="Arial, Helvetica,sans-serif" size="6"><img border="0" src="immagini/aurora-e-cassa-risparmio_small.jpg" alt="aurora-e-cassa-risparmio.jpg (185428 byte)" width="788" height="486"></FONT></a></p>
+        <p align="center" style="text-autospace: justify" class="MsoNormal"><font size="6" color="#FF0000"><i><font face="Arial, Helvetica,sans-serif">Il
+cinema Aurora nel 1951&nbsp; </font></i><font face="Arial, Helvetica,sans-serif"> <br>
+ L’inaugurazione
+        c'era stata il 10 febbraio 1948 (o 47?)</font></font></p>
+        <table border="0" width="100%" cellpadding="10">
+          <tr>
+            <td width="63%" valign="top">
+              <i><font face="Arial, Helvetica,sans-serif" size="6">Delibera
+              del C.C. per l'alienazione del terreno per la costruzione del
+              Cinema Teatro Aurora.<br>
+              <br>
+              Vendita di un appezzamento di terreno al Sig. Gessi Ottorino
+              pubblicata il 28 4 1948.</font></i>
+              <p align="center"><a href="immagini/aurora-vendita-1948.jpg"><font size="6"><img border="1" src="immagini/aurora-vendita-1948_small.jpg" alt="aurora-vendita-1948.jpg (344632 byte)" width="521" height="337"></font></a></p>
+              <p align="center"><i><font face="Arial, Helvetica,sans-serif" size="6" color="#FF0000">Per
+ingrandire cliccare o toccare sopra l'immagine</font></i>
+              </p>
+              <p align="justify"><font face="Arial, Helvetica,sans-serif" size="6">In
+              questa delibera c'è qualcosa che non quadra, perché risulta che nel dicembre
+              1947 accadde un gravissimo incidente sul lavoro durante
+              l'intonacatura interna del cinema che era già quasi terminato.
+              Morirono due operai per la caduta di un'impalcatura.</font></p>
+              <p align="justify"><font face="Arial, Helvetica,sans-serif" size="6">Inoltre
+              il primo blocco della costruzione doveva essere fatta entro il
+              1947&nbsp;per delibera comunale.<br>
+              Come è possibile che abbiano stipulato la vendita del terreno
+              solo nell'aprile del 1948?
+              </font></p>
+              <p align="justify"><img border="0" src="immagini/gessi%20ed%20io.jpg" width="520" height="489"><font face="Arial, Helvetica,sans-serif" size="6"><b><br>
+              </b>
+              </font></p>
+            </td>
+            <td width="112%" valign="top">
+              <p align="center"><font size="6">L'ordine del giorno reca:</font><p align="center"><font size="6"><br>
+              Il Consiglio Comunale</font><p align="left"><font size="6"><br>
+              Vista la domanda del sig. Gessi Ottorino con la quale chiede la
+              cessione di area di proprietà Comunale di mq. 3430 esistente nel
+              nuovo centro per la costruzione di un Teatro;<br>
+              Tenuto presente che la costruzione del Teatro è prevista dal
+              piano di ricostruzione degli abitati di questo Comune approvato
+              con Decreto Ministeriale 29-7-1946 N°1543 Div XIX;<br>
+              Visto che il prezzo per la cessione dell'area attorno alla piazza
+              principale e per il Teatro è stata stabilito in L. 120 al mq. su
+              conforme avviso del dipendente Ufficio Tecnico;<br>
+              Con voti unanimi espressi per alzata di mano:</font><p align="center"><font size="6">Delibera</font><p align="left"><font size="6">1)
+              di vendere al Sig. Gessi Ottorino l'appezzamento di terreno
+              esistente nel nuovo centro di Alfonsine della superficie di mq.
+              3430 ed al prezzo complessivo di L. 411.600.<br>
+              2) di autorizzare il Sindaco a stipulare il contratto.<br>
+              3) di porre a carico dell'acquirente le spese di stipulazione,
+              registrazione e conseguenti.<br>
+              4) di investire il ricavato della vendita nell'acquisto di titoli
+              di rendita dello Stato intestati al Comune.</font></td>
+          </tr>
+          <tr>
+            <td width="100%" colspan="2">
+        <p align="center" style="text-autospace: justify" class="MsoNormal"><b><font face="Arial, Helvetica,sans-serif" size="6" color="#FF0000">Ma
+        allora quando iniziò e terminò la costruzione del cinema Aurora, e
+        quando fu inaugurato?</font></b></p>
+              <p align="center" style="text-autospace: justify" class="MsoNormal"><font size="6"><font face="Arial, Helvetica,sans-serif">Il
+              cinema fu inaugurato il 10 febbraio 1948&nbsp;<br>
+              (ma non ho ancora il documento
+              da cui sia stata rilevata tale data, e neppure di che anno)<br>
+              </font><i><font face="Arial, Helvetica,sans-serif" color="#FF0000">ma
+              la delibera di vendita del terreno fu del 28 aprile del 1948 (!?!)</font></i>
+              </font>
+<p align="center" style="text-autospace: justify" class="MsoNormal"><font face="Arial, Helvetica,sans-serif" size="6">Un
+fatto nuovo e uno scontro che durò un anno, contro la costruzione del nuovo
+Cinema Corso in Destra Senio</font></p>
+<p align="justify"><font size="6"><font face="Arial, Helvetica,sans-serif" color="#FF0000">La
+decisione del Consiglio Comunale venne
+scavalcata</font><font face="Arial, Helvetica,sans-serif"> grazie ai potenti appoggi in chiave politica nazionale, ottenuti dal
+noto industriale alfonsinese Marino Marini, che stava riavviando rilancio della
+fabbrica di suo padre Giuseppe.&nbsp;</font></font></p>
+<p align="justify"><font size="6" face="Arial, Helvetica,sans-serif"> La famiglia dei Marini, nonostante la tragica
+scomparsa del capostipite, prelevato e ucciso il 5 maggio del 1945, con altri
+tre alfonsinesi, da una banda di presunti partigiani, aveva deciso di investire
+di nuovo in Alfonsine, anche per amore verso il proprio paese, mantenendo la
+struttura produttiva di macchinari stradali, e
+inoltre riattivando il vecchio cinema Corso.&nbsp;</font></p>
+<p align="justify"><font size="6" face="Arial, Helvetica,sans-serif"> Fu proprio Marino Marini a premere
+su Prefettura e Governo per avere il permesso, per conto di suo suocero Ernesto
+Contessi che si era associato ai vecchi gestori del cinema Corso di destra
+Senio i fratelli Minarelli, di adibire, sistemare e adattare una delle poche costruzioni rimaste in piedi in corso
+Garibaldi, il vecchio magazzino dei Maré, a uso cinema.&nbsp;&nbsp;</font></p>
+<p align="justify"><font size="6" face="Arial, Helvetica,sans-serif"> Lo scontro fu
+durissimo e si ripropose, con una certa forzatura, la contrapposizione che, durante
+il fascismo, c’era stata fra il cinema del Corso e il vecchio cinema “Aurora”.&nbsp;</font></p>
+<p align="justify"><font size="6"><font face="Arial, Helvetica,sans-serif"> La
+realizzazione di avviare un secondo cinema, richiesta fatta da Ernesto Contessi
+genero di Marino Marini, fu presentata alla cittadinanza come uno
+sfregio al piano di ricostruzione e alle scelte democratiche della prima
+amministrazione di sinistra del dopoguerra, (per ottenerlo il Prefetto di
+Ravenna il 12 maggio 1949 commissariò, per alcuni mesi l’amministrazione
+comunale, solo su questa questione ).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;<font color="#FF0000">VEDASI DOCUMENTO </font> </font><font color="#FF0000">&quot;</font><font face="Arial, Helvetica,sans-serif"><font color="#FF0000">Giunta d'Intesa Social-Comunista&quot;
+</font>
+di
+        Alfonsine nel 1949, <font color="#FF0000"> PUBBLICATO SOTTO</font>.</font></font></p>
+        <p align="center" style="text-autospace: justify" class="MsoNormal"><font face="Arial, Helvetica,sans-serif" size="6">Un
+        documento pubblicato dalla Giunta d'Intesa Social-Comunista di
+        Alfonsine nel 1949&nbsp; </font></p>
+            </td>
+          </tr>
+          <tr>
+            <td width="50%">
+              <p align="center" style="text-autospace: justify" class="MsoNormal"><font size="6"><i><font face="Arial, Helvetica,sans-serif">Estratto
+              dal documento qui sotto &gt;</font></i></font>
+              <p>&nbsp;</td>
+            <td width="50%">
+              <font size="6"><img border="0" src="immagini/Alfonsine%202000/AURORA-delibera2.jpg" width="469" height="243">
+              </font></td>
+          </tr>
+        </table>
+              <p align="center"><i><font face="Arial, Helvetica,sans-serif" size="6" color="#FF0000">Per
+ingrandire cliccare o toccare sopra l'immagine</font></i>
+              </p>
+        <div align="center">
+          <center>
+        <table border="0" width="71%">
+          <tr>
+            <td width="46%" align="center"><a href="immagini/Alfonsine%202000/aurora-circolare-Giunta.jpg"><font size="6"><img border="1" src="immagini/Alfonsine%202000/aurora-circolare-Giunta_small.jpg" alt="aurora-circolare-Giunta.jpg (276472 byte)" width="350" height="525"></font></a></td>
+            <td width="54%" align="center"><a href="immagini/Alfonsine%202000/circolare-Giunta-pag2.jpg"><font size="6"><img border="1" src="immagini/Alfonsine%202000/circolare-Giunta-pag2_small.jpg" alt="circolare-Giunta-pag2.jpg (305046 byte)" width="375" height="527"></font></a></td>
+          </tr>
+          <tr>
+            <td width="46%" align="center"><a href="immagini/Alfonsine%202000/aurora-circolare-Giunta-pag.jpg"><font size="6"><img border="1" src="immagini/Alfonsine%202000/aurora-circolare-Giunta-pag_small.jpg" alt="aurora-circolare-Giunta-pag.jpg (309079 byte)" width="361" height="523"></font></a></td>
+            <td width="54%" align="center"><a href="immagini/Alfonsine%202000/circolare-Giunta-pag4.jpg"><font size="6"><img border="1" src="immagini/Alfonsine%202000/circolare-Giunta-pag4_small.jpg" alt="circolare-Giunta-pag4.jpg (123709 byte)" width="376" height="527"></font></a></td>
+          </tr>
+        </table>
+          </center>
+        </div>
+<p style="text-autospace:justify" align="center"><FONT face="Arial, Helvetica,sans-serif" size="6"><img border="0" src="immagini/Alfonsine%202000/aurora1.jpg" width="810" height="548"></FONT></p>
+<p style="text-autospace:justify" align="center" class="MsoNormal"><font size="6"><i><font face="Arial, Helvetica,sans-serif">29-30-31
+marzo 1953 era in
+programmazione il film &quot;Luci della ribalta&quot; con Charlie Chaplin al
+Cinema Aurora.<br>
+In piazza Gramsci c'era una manifestazione politica contro la cosiddetta&nbsp;<br>
+&quot;Legge truffa&quot; di De Gasperi, approvata proprio il 29 marzo 1953&nbsp;<b><br>
+<br>
+</b></font><font face="Arial, Helvetica,sans-serif" color="#FF0000">Per
+ingrandire cliccare o toccare sopra l'immagine</font></i></font>
+        </p>
+        <table border="0" width="100%">
+          <tr>
+            <td width="50%" valign="top"><font face="Arial, Helvetica,sans-serif" size="6"> I militanti
+dei partiti di sinistra (socialisti e comunisti), al governo del paese di
+Alfonsine, invitarono la gente a non frequentare il cinema Corso, ma solo
+l’Aurora. Dall’altro lato i Marini, con una mossa spiazzante, diedero in
+gestione il cinema a una cooperativa di operai della loro fabbrica.</font>
+              <p><font face="Arial, Helvetica,sans-serif" size="6">Ci
+vollero diversi anni, ma anche tale contrapposizione ideologico-cinematografica
+andò attenuandosi, fino al punto che<span style="font-family:&quot;Arial&quot;,sans-serif">
+              i Marini stessi diedero la gestione del Corso, dopo che la
+              cooperativa operai, non ce la fece più, </span>al sig. Errani di
+              Savarna, un ex-partigiano a cui fino ad allora era stato dato in
+              gestione il cinema Aurora<span style="font-family:&quot;Arial&quot;,sans-serif">.
+              Così <o:p>
+              </o:p>
+              </span>il Corso e
+l’Aurora vennero gestiti entrambi dall'Errani.</font></p>
+              <p><font size="6"><font face="Arial, Helvetica,sans-serif">&nbsp;Infine quando Errani lasciò,
+              nel 1980, più nessuno osò continuare tale
+attività e le due sale rimasero abbandonate,&nbsp;finché l’Aurora fu trasformato
+in negozi e appartamenti&nbsp;</font></font><font face="Arial, Helvetica,sans-serif" size="6">e il Corso in Pasticceria, Pizzeria e piccolo
+supermarket Conad, poi solo in Hotel, pizzeria ristorante da Nick e un negozio.</font></td>
+            <td width="50%" valign="top">
+              <p align="center"><a href="immagini/Alfonsine%202000/aurora_cassa_70-da-sede-PC.jpg"><FONT face="Arial, Helvetica,sans-serif" size="6"><img border="0" src="immagini/aurora_cassa_70-da-sede-PC_small.jpg" alt="aurora_cassa_70-da-sede-PC.jpg (144419 byte)" width="505" height="348"></FONT></a>
+              <p align="center"><font size="6"><img border="0" src="immagini/cinema%20corso/errani-corso.jpg" width="503" height="283"></font></p>
+              <p align="center"><i><font size="6" face="arial,helvetica,sans-serif">Egidio
+            Errani</font></i></p>
+              <p align="center">&nbsp;</p>
+            </td>
+          </tr>
+        </table>
+        <p align="center" style="text-autospace: justify" class="MsoNormal"><a href="immagini/aurora-oggi.jpg"><font size="6"><img border="0" src="immagini/aurora-oggi_small.jpg" alt="aurora-oggi.jpg (385990 byte)" width="786" height="450"></font></a>
+        </p>
+        <p align="center" style="text-autospace: justify" class="MsoNormal"><font size="6"><i><font face="Arial, Helvetica,sans-serif">Il
+cinema Aurora negli anni '60<br>
+        </font><font face="Arial, Helvetica,sans-serif" color="#FF0000">Per
+ingrandire&nbsp; cliccare o toccare sopra l'immagine</font></i></font>
+        </p>
+        <p align="center" style="text-autospace: justify" class="MsoNormal"><a href="immagini/aurora%20affresco%20entrata.jpg"><font size="6"><img border="0" src="immagini/aurora_affresco_entrata_small.jpg" alt="aurora affresco entrata.jpg (520587 byte)" width="698" height="450"></font></a>
+        </p>
+        <p class="MsoNormal" align="center" style="text-autospace: justify"><font size="6"><i><font face="Arial, Helvetica,sans-serif">La
+        foto qui sopra la scattò Domenico Guerrini poco prima che abbattessero
+        il teatro Aurora. Maurizio
+        Zoli aveva pensato di salvarlo, ma quando andò nell'atrio del teatro
+        per estrarlo dal muro i muratori l'avevano quasi distrutto
+        completamente. Comunque si sappia che un &quot; pezzo &quot; del Teatro
+        Aurora sopravvive ancora dentro al Gulliver: - è la macchina del cinema
+        - e lo schermo fo usato per anni nel Drive-In, in piazza Resistenza&nbsp;<o:p>
+        &nbsp;<br>
+        Quel disegno affrescato sull'ingresso del Cinema Aurora era stato
+        realizzato ad opera di importanti emergenti pittori romagnoli: Ruffini
+        di Mezzano, Folli di Massalombarda e Verlicchi di Fusignano</font></i></o:p>
+        </font>
+        </p>
+<p align="center"><font face="Arial, Helvetica,sans-serif" size="6"><font color="#FF0000">Ottorino
+Gessi</font>, scomparso nel 2006, aveva sempre auspicato che fosse messa
+all’ingresso dell’attuale edificio una targa commemorativa dedicata al
+vecchio Cinema Aurora.</font></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" height="48" valign="top">
+      <p align="center"><b><font face="Arial, Helvetica,sans-serif" size="6">RACCOLTA
+      DI RIFLESSIONI SUI CINEMA DI ALFONSINE</font></b>
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" height="332" valign="top">
+      <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal"><font size="6"><a href="https://www.facebook.com/groups/448366041851310/user/100003745308929/?__cft__%5b0%5d=AZUTQ1S9C4Gc0ve4DoiuMadsuwsnfXbRwl0BwYASMNyijfLkXaHbE9-n32LCgD8yssFGueDeH3NauT4OoreUf_MnXuK9BVa34NchaerO1Il1o5p9bxVcYrNpWng1F9lKA_beFtlGJcFioORn1a5QjGh_&amp;__tn__=R%5d-R"><i><font face="Arial, Helvetica,sans-serif">Loris
+      Pattuelli</font></i></a><i><font face="Arial, Helvetica,sans-serif"><o:p>
+      </o:p>
+      </font></i></font></p>
+      <p class="MsoNormal" style="line-height: 200%; background-color: #F0F2F5; background-repeat: repeat; background-attachment: scroll; margin-bottom: .0001pt; background-position: 0%"><font size="6"><i><font face="Arial, Helvetica,sans-serif">Il
+      Cinema Aurora era sempre pieno di rumore, fumo e bucce di arachidi. Nelle
+      prime file c'erano i teppisti, in galleria gli aspiranti tali e gli
+      innamorati, in mezzo ci stavano i gruppi di amici che si davano la voce,
+      nelle ultime file c'erano tutti gli altri.<br>
+      Il cinema (e cino) è quel posto dove gli umani del ventesimo secolo si
+      incontravano per sognare. Il cinema è un posto sacro come un tempio, ed
+      è anche un qualche cosa di terribilmente fragile come le pagine di un
+      libro o le ali di una farfalla.<br>
+      Cosa direbbero i cattolici se la loro chiesa fosse trasformata in un sexy
+      shop? Cosa direbbero i musulmani se la loro moschea fosse trasformata in
+      una porcilaia? Cosa direbbero gli ebrei se la loro sinagoga fosse
+      trasformata in una centrale termoelettrica.<br>
+      Noi abbiamo trasformato il Cinema Aurora in una specie di galleria piena
+      di negozi ed appartamenti.<br>
+      Siamo moderni, siamo geniali, siamo distratti? No, siamo un’altra cosa,
+      eccetera, eccetera.<br>
+      La chiusura del Cinema Aurora è un atto di barbarie che ancora non sono
+      riuscito a digerire.<br>
+      È
+      al Cinema (e cino) che i miei compaesani hanno imparato a sognare e a
+      pensare che questo mondo potesse anche cambiare.</font></i></font></p>
+      <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:#F0F2F5"><font size="6"><a href="https://www.facebook.com/groups/448366041851310/user/100004851906708/?__cft__%5b0%5d=AZUTQ1S9C4Gc0ve4DoiuMadsuwsnfXbRwl0BwYASMNyijfLkXaHbE9-n32LCgD8yssFGueDeH3NauT4OoreUf_MnXuK9BVa34NchaerO1Il1o5p9bxVcYrNpWng1F9lKA_beFtlGJcFioORn1a5QjGh_&amp;__tn__=R%5d-R"><i><span style="mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; color: blue; mso-border-alt: none windowtext 0cm; mso-fareast-language: IT; text-decoration: none; text-underline: none; border: 1.0pt none windowtext; padding: 0cm"><font face="Arial, Helvetica,sans-serif">Gianni
+      Contessi</font></span></i></a><span style="font-size:12.0pt;font-family:&quot;inherit&quot;,serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-language:IT"><o:p>
+      </o:p>
+      </span></font></p>
+      <p class="MsoNormal" style="line-height: 200%; background-color: #F0F2F5; background-repeat: repeat; background-attachment: scroll; margin-bottom: .0001pt; background-position: 0%"><i><font face="Arial, Helvetica,sans-serif" size="6">Tutte
+      le volte che iniziavano le prime scene del film Western, caposaldo del
+      Sabato sera, appena appariva il nostro eroe di turno, Casianì Morigi ,
+      esclamava &lt;BEL OM ! &gt; , e il GI' - Geminiani, con alle spalle una
+      vita da birocciaio, ribadiva &lt;BEL CAVAL ! &gt; . Risate per tutto il
+      teatro!&nbsp;<br>
+      Da notare che generalmente i posti dove ci si sedeva, erano quasi sempre
+      gli stessi, attorno avevi sempre gli stessi personaggi.<br>
+      Sempre a proposito di strafalcioni al cinema Aurora: una sera proiettavano
+      il film &quot;L'anno scorso a Marienbad &quot;, film a livello alto, ma
+      molto lento. Durante una scena notturna con poca luce, inquadrano una
+      protagonista che, sola sola, si aggirava all'interno di un grande giardino
+      con diversi vialetti.&nbsp;<br>
+      Dopo un lungo temporeggiare della scena, Renato è barbir, dalla platea,
+      esclamò forte: chi ca lè la zerca un post par caghè !&nbsp;<br>
+      E venne giù il teatro !</font></i></p>
+      <p class="MsoNormal" style="line-height: 200%; background-color: #F0F2F5; background-repeat: repeat; background-attachment: scroll; margin-bottom: .0001pt; background-position: 0% 50%"><font size="6"><i><font face="Arial, Helvetica,sans-serif">Negli
+      anni ruggenti della nostra gioventù seguivamo i vari fenomeni di
+      sviluppo, emancipazione e di costume dei giovani di tutta europa, ma con
+      un occhio di riguardo ai cugini francesi .<br>
+      Quando al cinema Aurora proiettarono &quot;Peccatori in blue jeans&quot;,
+      ci fu una marea di giovani che riempirono la sala, tanta era l'aspettativa
+      e l'attesa di quel film.<br>
+      Era una domenica del 1958 e, per me, fu il 1° film v.m.14 che vidi.<br>
+      Nel contempo al Corso proiettavano &quot;Bravados&quot;. Con il nostro
+      consueto gruppo, eravamo usi ad andare sempre tutti assieme. Ebbene, data
+      la rivalità esistente fra il Teatro Corso (identificato con &quot;La
+      MARINI officine&quot;) e l'Aurora, ci fu un nostro amico con il padre alla
+      Marini, che andò a vedere Bravados e, dopo la visione, sostenne per mesi,
+      e contro tutti, che lui aveva visto un film più bello del nostro.</font></i><span style="font-size:12.0pt;font-family:&quot;inherit&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-fareast-language:
+IT"><o:p>
+      </o:p>
+      </span></font></p>
+      <p class="MsoNormal" style="line-height: normal; background-color: #F0F2F5; background-repeat: repeat; background-attachment: scroll; margin-bottom: .0001pt; background-position: 0%"><font size="6"><a href="https://www.facebook.com/groups/448366041851310/user/100000942702778/?__cft__%5b0%5d=AZUTQ1S9C4Gc0ve4DoiuMadsuwsnfXbRwl0BwYASMNyijfLkXaHbE9-n32LCgD8yssFGueDeH3NauT4OoreUf_MnXuK9BVa34NchaerO1Il1o5p9bxVcYrNpWng1F9lKA_beFtlGJcFioORn1a5QjGh_&amp;__tn__=R%5d-R"><i><font face="Arial, Helvetica,sans-serif">Giancarlo
+      Argelli</font></i></a><i><font face="Arial, Helvetica,sans-serif" size="3"><o:p>
+      </o:p>
+      </font></i></font></p>
+      <p class="MsoNormal" style="line-height: 200%; background-color: #F0F2F5; background-repeat: repeat; background-attachment: scroll; margin-bottom: .0001pt; background-position: 0% 50%"><i><font face="Arial, Helvetica,sans-serif" size="6">I
+      mitici film del sabato sera, doppia proiezione un western e uno di arti
+      marziali e... tanto tanto fumo, andavo a casa con i vestiti che puzzavano
+      di fumo</font></i>
+      <p class="MsoNormal" style="line-height: normal; background-color: #F0F2F5; background-repeat: repeat; background-attachment: scroll; margin-bottom: .0001pt; background-position: 0%"><i><a href="https://www.facebook.com/gianni.bonafe.7?__tn__=R"><font face="Arial, Helvetica,sans-serif" size="6">Gianni
+      Bonafè</font></a><font face="Arial, Helvetica,sans-serif" size="6"><o:p>
+      </o:p>
+      </font></i></p>
+      <p class="MsoNormal" style="line-height: 200%; background-color: #F0F2F5; background-repeat: repeat; background-attachment: scroll; margin-bottom: .0001pt; background-position: 0% 50%"><i><font face="Arial, Helvetica,sans-serif" size="6">E
+      vogliamo mettere le due, se non ricordo male, signore che vendevano
+      brustole, lupini, cece americano tutto l'anno e carrube e mistocchine in
+      autunno/inverno, davanti al Corso?&nbsp;<br>
+      Mentre davanti all'Aurora c'erano i mitici Paganini e Tenore.&nbsp;<br>
+      Paganini con il suo carretto e il più tecnologico Tenor con il suo Ape
+      attrezzato.&nbsp;<br>
+      A Longastrino invece anche io ho avuto da bambino l'onore di vendere
+      quelle delizie davanti al cinema quando andavo a trovare i nonni. Infatti
+      lo zio di mio padre &quot;Rafichi&quot; aveva un fornitissimo banchetto.<o:p>
+      </o:p>
+      </font></i></p>
+      <p class="MsoNormal" style="line-height: 200%; background-color: #F0F2F5; background-repeat: repeat; background-attachment: scroll; margin-bottom: .0001pt; background-position: 0% 50%"><i><a href="https://www.facebook.com/groups/448366041851310/user/100007510722387/?__cft__%5b0%5d=AZWotbzEjpXDP_rqZ0b1awDGBUiudzgMm4AHHTANVQvFUo1Lnhn1Bn7veqrw-XMnfAHHj0AAWucmiaIFL5uiUfHvD6JIR6zSkjfea11vnO7fAvmADdHznIKRbYNv5uFLCIo&amp;__tn__=R%5d-R"><font face="Arial, Helvetica,sans-serif" size="6">Aurora
+      Bedeschi</font></a><font face="Arial, Helvetica,sans-serif" size="6"><o:p>
+      </o:p>
+      </font></i></p>
+      <p class="MsoNormal" style="line-height: 200%; background-color: #F0F2F5; background-repeat: repeat; background-attachment: scroll; margin-bottom: .0001pt; background-position: 0% 50%"><font size="6"><i><font face="Arial, Helvetica,sans-serif">La
+      Burdona!!!! Vendeva anche al mistuchen, le caldarroste e le castagne
+      bollite che così pubblicizzava : tabech ! Avnen che aio' la balusa bela
+      chelda!!&nbsp;<br>
+      E si soffiava sulle mani semicoperte da mezzi guanti neri. Che risate!</font></i><o:p>
+      </o:p>
+      <br>
+      <br>
+      <font face="Arial, Helvetica,sans-serif"><i>
+      <a href="https://www.facebook.com/groups/448366041851310/user/100000932472156/?__cft__%5b0%5d=AZUTQ1S9C4Gc0ve4DoiuMadsuwsnfXbRwl0BwYASMNyijfLkXaHbE9-n32LCgD8yssFGueDeH3NauT4OoreUf_MnXuK9BVa34NchaerO1Il1o5p9bxVcYrNpWng1F9lKA_beFtlGJcFioORn1a5QjGh_&amp;__tn__=R%5d-R">Domenico
+      Guerrini</a><o:p>
+      </i></font><font face="Arial, Helvetica,sans-serif" size="3"><i>
+      </o:p>
+      </i>
+      </font></font></p>
+      <p class="MsoNormal" style="line-height: 200%; background-color: #F0F2F5; background-repeat: repeat; background-attachment: scroll; margin-bottom: .0001pt; background-position: 0% 50%"><i><font face="Arial, Helvetica,sans-serif" size="6">ognuno
+      di noi conserva almeno un ricordo di un momento vissuto al cinema: un
+      bacio in galleria, i pipistrelli &quot;veri &quot; che zigzagavano nel
+      fumo durante i film di Dracula, le battute della gente, le discussioni
+      nell'intervallo, ecc.&nbsp;<br>
+      In quanti abbiamo sognato ad occhi aperti di attraversare quel confine di
+      plastica e diventare il protagonista che si abbandona tra le braccia di
+      Senta Berger in &quot; l'Amante dell'Orsa Maggiore &quot; o Charles
+      Bronson nei &quot; Magnifici Sette &quot;, e tutti questi ricordi assieme
+      sono una storia, la nostra storia, che attraversando la soglia del Teatro
+      Aurora mostrava la sua anima di comunità, forse un po' più solidale e
+      tollerante di oggi.</font></i></p>
+      <p class="MsoNormal" style="line-height: 200%; background-color: #F0F2F5; background-repeat: repeat; background-attachment: scroll; margin-bottom: .0001pt; background-position: 0% 50%"><font size="6"><a href="https://www.facebook.com/groups/448366041851310/user/100004097657555/?__cft__%5b0%5d=AZUTQ1S9C4Gc0ve4DoiuMadsuwsnfXbRwl0BwYASMNyijfLkXaHbE9-n32LCgD8yssFGueDeH3NauT4OoreUf_MnXuK9BVa34NchaerO1Il1o5p9bxVcYrNpWng1F9lKA_beFtlGJcFioORn1a5QjGh_&amp;__tn__=R%5d-R"><i><font face="Arial, Helvetica,sans-serif">Enzo
+      Donati Donati</font></i></a><i><font face="Arial, Helvetica,sans-serif" size="3"><o:p>
+      </o:p>
+      </font></i></font></p>
+      <p class="MsoNormal" style="line-height: 200%; background-color: #F0F2F5; background-repeat: repeat; background-attachment: scroll; margin-bottom: .0001pt; background-position: 0%"><i><font face="Arial, Helvetica,sans-serif" size="6">Quando
+      si andava al cinema Aurora si rideva, ci si incontrava con altre persone,
+      si parlava del più e del meno. Uscendo e andando al bar Fiocchi (nominato
+      Montecitorio) si incontravano i vari anziani anarchici che discutevano di
+      politica e i personaggi bizzarri che rallegravano la serata con le loro
+      zirudele e i loro fatti.&nbsp;<br>
+      Bei tempi quelli di allora .Ora la TV ci ha chiuso in casa e sdraiati in
+      poltrona e non ci si stacca più, come i nostri deputati.<o:p>
+      </o:p>
+      </font></i></p>
+      <p class="MsoNormal" style="line-height: 200%; background-color: #F0F2F5; background-repeat: repeat; background-attachment: scroll; margin-bottom: .0001pt; background-position: 0% 50%"><font size="6"><a href="https://www.facebook.com/groups/448366041851310/user/1662505900/?__cft__%5b0%5d=AZUTQ1S9C4Gc0ve4DoiuMadsuwsnfXbRwl0BwYASMNyijfLkXaHbE9-n32LCgD8yssFGueDeH3NauT4OoreUf_MnXuK9BVa34NchaerO1Il1o5p9bxVcYrNpWng1F9lKA_beFtlGJcFioORn1a5QjGh_&amp;__tn__=R%5d-R"><i><font face="Arial, Helvetica,sans-serif">Luciano
+      Lucci</font></i></a><i><font face="Arial, Helvetica,sans-serif" size="3"><o:p>
+      </o:p>
+      </font></i></font></p>
+      <p class="MsoNormal" style="line-height: 200%; background-color: #F0F2F5; background-repeat: repeat; background-attachment: scroll; margin-bottom: .0001pt; background-position: 0% 50%"><i><font face="Arial, Helvetica,sans-serif" size="6">Nel
+      1984 l'ARCI Provinciale di Ravenna, nella figura del suo presidente
+      Stefano Giunchi, con cui avevamo collaborato (io, Loris Pattuelli e altri,
+      sotto il nome Touareg Production) a varie iniziative ad Alfonsine e
+      Ravenna, su nostro suggerimento contattò il Comune di Alfonsine nella
+      persona dell'Assessore alla Cultura Giovanni Zanzi per verificare la
+      possibilità di prendere in gestione il cinema Aurora da anni in
+      disuso.&nbsp;<br>
+      L'idea era di creare nella parte della galleria un centro giovani e nella
+      parte della platea riaprire un'attività cinematografica. Si valutarono le
+      spese di investimento che erano nell'ordine di circa 400 milioni di lire
+      per l'acquisto e forse altrettanti per le ristrutturazioni e investimenti.
+      Il Comune sembrò interessato e per qualche mese le cose sembravano
+      fattibili, perché c'era in cantiere la vendita dell'ex-macello comunale,
+      che avrebbe permesso un'entrata sostanziosa.&nbsp;<br>
+      Ma nel giro di pochi giorni tutto cambiò e l'Assessore Zanzi ci informò
+      che il Comune aveva deciso di fare un Centro Giovani e un Cinema ex-novo:
+      era il progetto che poi si tradusse nel “Gulliver”.&nbsp;<br>
+      &nbsp;&nbsp;&nbsp; Lì fu la morte definitiva del cinema Aurora.&nbsp;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp; Vent'anni dopo, per vicissitudini varie, conobbi
+      e diventai amico di Ottorino Gessi, un ricco possidente degli anni del
+      primo dopoguerra ed ex-partigiano, ormai trasferitosi a Bologna dal 1956:
+      era colui che aveva costruito il Cinema Aurora nel 1948, e dopo averlo
+      gestito per qualche anno lo aveva poi venduto. Il Gessi ormai ultra
+      ottantenne mi disse che la trasformazione dell'Aurora in negozi, uffici e
+      appartamenti era stato per lui un colpo al cuore, e mi disse che nessuno
+      lo aveva interpellato, ma se fosse successo lui si sarebbe sicuramente
+      impegnato economicamente per un suo rilancio.&nbsp;<br>
+      Fu per un soffio che l'Aurora non poté rinascere.<o:p>
+      </o:p>
+      </font></i></p>
+      <p class="MsoNormal" style="line-height: 200%; background-color: #F0F2F5; background-repeat: repeat; background-attachment: scroll; margin-bottom: .0001pt; background-position: 0% 50%"><i><font face="Arial, Helvetica,sans-serif" size="6">Ma
+      il problema è sempre quello delle scelte della politica locale: invece di
+      scegliere di ri-vitalizzare Piazza Gramsci si scelse di puntare su Piazza
+      della Resistenza, così piazza Gramsci è diventata sempre più triste (a
+      parte le &quot;estati in piazza&quot; inventate da Zanzi, a cui va
+      comunque dato questo merito).&nbsp;<br>
+      E la storia si è ripetuta e si ripeterà con la questione dell'ex-mercato
+      coperto.<o:p>
+      </o:p>
+      </font></i></p>
+      <p class="MsoNormal" style="line-height: 200%; background-color: #F0F2F5; background-repeat: repeat; background-attachment: scroll; margin-bottom: .0001pt; background-position: 0% 50%"><font size="6"><i><font face="Arial, Helvetica,sans-serif">Serve
+      una visione nuova di come sviluppare la bella Alfonsine</font></i><span style="font-size:12.0pt;font-family:&quot;inherit&quot;,serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-fareast-language:IT"><o:p>
+      </o:p>
+      </span></font></p>
+      <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:#F0F2F5"><span style="font-family: inherit, serif; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Segoe UI Historic; color: #050505; mso-fareast-language: IT"><font size="6"><o:p>
+      </o:p>
+      <o:p>
+      </o:p>
+      </font>
+      </span>
+      <p style="text-autospace:justify" align="center">&nbsp;</p>
+       <p align="center">
+       <b><font face="arial,helvetica,sans-serif" size="6"> <script src="https://connect.facebook.net/it_IT/all.js#xfbml=1"></script><fb:like href="https://alfonsinemonamour.racine.ra.it/alfonsine/Alfonsine/aurora.htm" send="true" width="450" show_faces="true" font="arial"></fb:like></font></b>
+       </p>
+      <p style="text-autospace:justify" align="center">&nbsp;</p>
+    </td>
+  </tr>
+</table>
+</div>
+
+<div align="center">
+  <center>
+
+      <table border="0" width="752">
+        <tr>
+          <td width="97">
+            <p align="left"><b><font face="Arial, Helvetica,sans-serif" size="6">Nell'800</font></b></td>
+          <td width="173" align="center">
+            <p align="center"><b><a href="teatrocamerani.htm"><font face="Arial, Helvetica,sans-serif" size="6">Il
+            Teatro Camerani</font></a></b></td>
+          <td width="210" align="center">
+            <p align="center"><b><a href="teatromassaroli.htm"><font face="Arial, Helvetica,sans-serif" size="6">La
+            sala Massaroli</font></a></b></td>
+          <td width="264" align="center">
+            <p align="center"><b><a href="teatrocalderoni.htm"><font face="Arial, Helvetica,sans-serif" size="6">Il
+            Teatro Calderoni (e baracò)</font></a></b></td>
+        </tr>
+      </table>
+
+  </center>
+</div>
+
+<div align="center">
+  <center>
+  <table border="0" width="752">
+    <tr>
+          <td width="93"><b><font face="Arial, Helvetica,sans-serif" size="6" color="#FF0000">Nell'900</font></b></td>
+          <td width="118" align="center">
+            <FONT face="Arial, Helvetica,sans-serif" size="6">
+            <b>Il Teatro<br>
+            Cinema Aurora </b></FONT><i><font color="#FF0000" face="Arial, Helvetica,sans-serif" size="6">(sei
+            qui)</font></i></td>
+          <td width="118" align="center">
+            <p align="center"><b><a href="corso.htm"><font face="Arial, Helvetica,sans-serif" size="6">Il
+            Teatro<br>
+            Cinema del Corso</font></a></b></td>
+          <td width="135" align="center">
+            <font face="Arial, Helvetica,sans-serif" size="6">
+            <b>
+            Il cinema
+            parrocchiale&nbsp;<br>
+            </b>
+            <i>(scheda in costruzione)</i></font></td>
+          <td width="136" align="center">
+            <FONT face="Arial, Helvetica,sans-serif" size="6"><b>
+            Il teatro
+            parrocchiale &quot;Monti&quot;</b>&nbsp;<br>
+            <i>(scheda in
+            costruzione)</i></FONT></td>
+          <td width="124" align="center" valign="top">
+            <font face="Arial, Helvetica,sans-serif" size="6">
+            <b>
+            Il cinema
+            Gulliver </b>
+            <i>(scheda in costruzione)</i></font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<p align="center"><b><FONT face="Arial, Helvetica,sans-serif" size="6">
+      | <a href="alfonsine.htm">Alfonsine</a>
+      | <a href="edifici%20importanti.htm"> Gli
+      edifici importanti&nbsp;dal '900 ad oggi<font size="2" face="arial,helvetica,sans-serif" color="#0000FF">&nbsp;</font></FONT><font face="arial,helvetica,sans-serif" color="#0000FF" size="6">|&nbsp;</font><FONT face="Arial, Helvetica,sans-serif" size="6">
+      <br>
+      </FONT></a><font face="arial,helvetica,sans-serif" color="#0000FF" size="6">|
+</font><FONT face="Arial, Helvetica,sans-serif" size="6"><a href="mon-amour.htm">Ricerche
+      sull'anima di Alfonsine</a>
+      | <A href="lazzaretto.htm">Il Lazzaretto</A>
+|</FONT></b>
+</p>
+</body>
+
+</html>
