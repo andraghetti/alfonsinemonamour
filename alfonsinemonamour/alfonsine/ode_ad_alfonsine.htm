@@ -1,0 +1,237 @@
+<HTML>
+
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<style>A:link, A:visited { text-decoration: none }
+A:hover { text-decoration: none }
+</style>
+<style type="text/css">.menutitle{
+cursor: hand; cursor: pointer;
+margin-bottom: 2px;
+background-color: #ECECFF;
+color: #000000;
+width: 140px;
+padding: 2px;
+text-align: center;
+font-weight: bold;
+/*/*/border: 1px solid #000000;/* */
+}
+
+.submenu{
+margin-bottom: 0.5em;
+}
+</style>
+
+<script type="text/javascript">
+
+if (document.getElementById){
+document.write('<style type="text/css">\n')
+document.write('.submenu{display: none;}\n')
+document.write('</style>\n')
+}
+
+function SwitchMenu(obj){
+	if(document.getElementById){
+	var el = document.getElementById(obj);
+	var ar = document.getElementById("masterdiv").getElementsByTagName("span");
+		if(el.style.display != "block"){
+			for (var i=0; i<ar.length; i++){
+				if (ar[i].className=="submenu")
+				ar[i].style.display = "none";
+			}
+			el.style.display = "block";
+		}else{
+			el.style.display = "none";
+		}
+	}
+}
+
+</script>
+
+<script>
+
+var slideShowSpeed = 2000
+
+
+var crossFadeDuration = 3
+
+
+var Pic = new Array()
+
+Pic[0] = 'immagini/piazza_gramsci_color_2001.jpg'
+Pic[1] = 'immagini/piazza_gramsci_campanile_co.jpg'
+Pic[2] = 'immagini/piazza_gramsci.jpg' 
+Pic[3] = 'immagini/violina_ristrutturata3-2004.jpg' 
+Pic[4] = 'immagini/viulena_oggi_dal_ponte.jpg'
+Pic[5] = 'immagini/museo_monti_2.jpg'
+Pic[6] = 'immagini/museo_monti_3.jpg'
+Pic[7] = 'immagini/museo-senio.jpg'
+Pic[8] = 'immagini/Alfonsine 2000/Corso-garibaldi-oggi.jpg'
+Pic[9] = 'immagini/mappa_piazza_monti_1552_2.jpg'
+Pic[10] = 'immagini/corriera_3_particolare.jpg'
+Pic[11] = 'immagini/settimana/municipio_sett_rossa_gente2.jpg'
+Pic[12] = 'immagini/marini_gruppo-fascisti-2.jpg'
+Pic[13] = 'immagini/aerea_alf_1944_2.jpg'
+Pic[14] = 'immagini/aerea_alf_distrutta-orizzon.jpg'
+Pic[15] = 'immagini/pci50.jpg'
+Pic[16] = 'immagini/pci1demo.jpg'
+Pic[17] = 'immagini/aerea_gramsci2.jpg'
+Pic[18] = 'immagini/Alfonsine 2000/casa-popolo-oggi-3.jpg'
+Pic[19] = 'immagini/Alfonsine 2000/chiesa-sacro-cuore1.jpg'
+Pic[20] = 'immagini/Alfonsine 2000/corso-garibaldi-inferiore-o.jpg'
+Pic[21] = 'immagini/Alfonsine 2000/chiesa-e-sezione1.jpg'
+
+
+
+
+
+var t
+var j = 0
+var p = Pic.length
+
+var preLoad = new Array()
+for (i = 0; i < p; i++){
+   preLoad[i] = new Image()
+   preLoad[i].src = Pic[i]
+}
+
+function runSlideShow(){
+   if (document.all){
+      document.images.SlideShow.style.filter="blendTrans(duration=2)"
+      document.images.SlideShow.style.filter="blendTrans(duration=crossFadeDuration)"
+      document.images.SlideShow.filters.blendTrans.Apply()      
+   }
+   document.images.SlideShow.src = preLoad[j].src
+   if (document.all){
+      document.images.SlideShow.filters.blendTrans.Play()
+   }
+   j = j + 1
+   if (j > (p-1)) j=0
+   t = setTimeout('runSlideShow()', slideShowSpeed)
+}
+</script>
+
+<title>Ode per Alfonsine</title>
+
+</HEAD>
+<BODY  BGCOLOR="#FFFFFF" vlink="#0000FF" link="#0000FF" onload="runSlideShow()" background="Alfonsine/immagini/sfondi/sfondo_giallino.jpg" >
+
+  <center>
+  <table border="0" width="100%" cellspacing="0" cellpadding="9" height="1" bgcolor="#980519">
+    <tr>
+      <td width="55" align="center" height="1">
+  <p align="center">
+<img border="0" src="Alfonsine/immagini/mappa_piazza_monti_1552_2.jpg" width="95" height="53">
+      </td>
+      <th width="100%" align="center" height="1" valign="middle">
+          <b>
+ <p align="center"><a href="https://alfonsinemonamour.racine.ra.it/alfonsine/alfonsine.htm" target="_parent"><font face="Arial" size="7" color="#FFFFFF">Alfonsine</font></a></p></b>
+      <th width="55" align="center" height="1" valign="middle">
+          <p align="center">
+          <font face="Arial, Helvetica,sans-serif"><img border="0" src="Alfonsine/immagini/stemma_alfonsines%5B1%5D.jpg" width="55" height="65" align="absmiddle">
+          </font>
+    </tr>
+  </table>
+
+  </center>
+      <p align="center"><b><font face="arial,helvetica,sans-serif" size="3">
+      | <a href="https://alfonsinemonamour.racine.ra.it/alfonsine/alfonsine.htm">Alfonsine</a>
+      | <a href="https://alfonsinemonamour.racine.ra.it/alfonsine/mon-amour.htm">Ricerche
+      sull'anima di Alfonsine</a> |</font></b>
+
+  <center>   <p align="center">&nbsp;  <script src="http://connect.facebook.net/it_IT/all.js#xfbml=1"></script><fb:like href="http://alfonsinemonamour.racine.ra.it/alfonsine/Alfonsine/ode_ad_alfonsine.htm" send="true" width="450" show_faces="true" font="arial"></fb:like>
+
+
+<table border="0" cellspacing="1" width="765" cellpadding="5" height="1">
+  <tr>
+    <td width="22%" valign="top" align="left" rowspan="2" height="1">
+      <!--webbot bot="Include" U-Include="alfonsine_new.htm" TAG="BODY" startspan --><strong>[Web/alfonsine/alfonsine_new.htm]</strong><!--webbot bot="Include" endspan i-checksum="19893" -->
+
+    </td>
+  </tr>
+  <tr>
+    <td width="178%" valign="top" height="1">
+      <p align="center"><font face="Arial. helvetica,sans-serif" color="#FF0000"><b><font size="7">Ode
+      ad Alfonsine</font></b><i><br>
+      <font size="5">
+      di Luciano Lucci&nbsp;<br>
+      </font><font size="4">(libero adattamento da uno scritto di Tom Robbins)</font></i></font>
+      <p>&nbsp;</p>
+      <table border="0" width="100%" cellpadding="3" height="0">
+        <tr>
+          <td width="100%">
+            <p align="center"><b><font face="arial,helvetica,sans-serif" size="4"><font color="#FF0000">Alfonsine</font><font color="#000000"><br>
+      la fine del percorso per tutti.<br>
+      La capitale del nulla.<br>
+      Quelli che vengono da fuori<br>
+      non possono neppur immaginare<br>
+      quanto il nulla sia eccitante.<br>
+      Luogo
+      da sempre posto alla periferia,<br>
+      zona di frontiera ai margini<br>
+      tra grandi imperi e nebbiose paludi;<br>
+      inevitabile vicolo cieco<br>
+      dei viaggiatori a piedi.</font></font></b>
+            <p align="center"><b><font face="arial,helvetica,sans-serif" size="4"><font color="#FF0000">Alfonsine&nbsp;<br>
+            </font><font color="#000000"> origine
+      del mistero<br>
+      e mistero delle origini:<br>
+      sarà zingara o celtica&nbsp;?<br>
+            <br>
+            </font><font face="Arial. helvetica,sans-serif" size="4" color="#FF0000">
+      Alfonsine<br>
+            </font><font color="#000000">
+      rifugio finale del fuggiasco;<br>
+      remoto crocicchio<br>
+      dove l’Oscurità si scontra<br>
+      con Esotismo,<br>
+      e il Sogno-ad-occhi-aperti<br>
+      incrocia l’Esilio.</font></font></b>
+            <p align="center"><b><font face="arial,helvetica,sans-serif" size="4"><font color="#FF0000">Alfonsine<br>
+            </font><font color="#000000">
+      la lontananza oltre la quale<br>
+      non è possibile andare.<br>
+      Il vuoto.<br>
+      Più vicina alla Luna<br>
+      che alla Romagna.<br>
+      Luogo stupendo da pronunciare<br>
+      ma dove molti non vorrebbero mai vivere.</font></font></b>
+            <p align="center"><b><font color="#000000" face="arial,helvetica,sans-serif" size="4">Io
+            avrei potuto vivere solo qui<br>
+            e così ho fatto</font></b>
+          </td>
+        </tr>
+      </table>
+      <p align="center">
+      &nbsp;<img src="Alfonsine/immagini/mappa_piazza_monti_1552_2.jpg" name='SlideShow' align="center" width="467" height="285">
+<b><font color="#0000FF" size="2" face="arial,helvetica,sans-serif"><nobr><br>
+</nobr></font></b>
+
+      </p>
+      <p align="center">
+&nbsp;&nbsp;  <script src="http://connect.facebook.net/it_IT/all.js#xfbml=1"></script><fb:like href="http://alfonsinemonamour.racine.ra.it/alfonsine/Alfonsine/ode_ad_alfonsine.htm" send="true" width="450" show_faces="true" font="arial"></fb:like>
+
+
+
+
+      </p>
+      <p align="center">
+&nbsp;
+      <p align="center"><b><font face="arial,helvetica,sans-serif" size="3">
+      | <a href="https://alfonsinemonamour.racine.ra.it/alfonsine/alfonsine.htm">Alfonsine</a>
+      | <a href="https://alfonsinemonamour.racine.ra.it/alfonsine/mon-amour.htm">Ricerche
+      sull'anima di Alfonsine</a> |</font></b>
+
+    </td>
+  </tr>
+</table>
+
+  </center>
+
+  <p align="center">
+
+</BODY>
+</HTML>

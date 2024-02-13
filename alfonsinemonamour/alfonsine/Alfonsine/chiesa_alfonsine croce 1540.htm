@@ -1,0 +1,676 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="it">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>L’incontro di tre storie: croice e basamenti</title>
+</script>
+<style>A:link, A:visited { text-decoration: none }
+A:hover { text-decoration: none }
+</style>
+
+<style type="text/css">.menutitle{
+cursor: hand; cursor: pointer;
+margin-bottom: 2px;
+background-color: #ECECFF;
+color: #000000;
+width: 160px;
+padding: 2px;
+text-align: center;
+font-weight: bold;
+/*/*/border: 1px solid #000000;/* */
+}
+
+.submenu{
+margin-bottom: 0.5em;
+}
+</style>
+<style>A:link, A:visited { text-decoration: none }
+A:hover { text-decoration: none }
+</style>
+
+
+<script type="text/javascript">
+
+if (document.getElementById){
+document.write('<style type="text/css">\n')
+document.write('.submenu{display: none;}\n')
+document.write('</style>\n')
+}
+
+function SwitchMenu(obj){
+	if(document.getElementById){
+	var el = document.getElementById(obj);
+	var ar = document.getElementById("masterdiv").getElementsByTagName("span");
+		if(el.style.display != "block"){
+			for (var i=0; i<ar.length; i++){
+				if (ar[i].className=="submenu")
+				ar[i].style.display = "none";
+			}
+			el.style.display = "block";
+		}else{
+			el.style.display = "none";
+		}
+	}
+}
+
+</script>
+
+<script Language="Javascript">
+<!--    
+
+var isIE=document.all?true:false;
+var isDOM=document.getElementById?true:false;
+current = 0;
+PicVar = 0;
+
+PicVal = new Array();
+TitVal = new Array();
+DatVal = new Array();
+TxtVal = new Array();
+
+PicVal[PicVar] = "immagini/chiesa_1884.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria nel 1884";
+DatVal[PicVar] = "anno 1884";
+TxtVal[PicVar++] = "Questa è un disegno dal vero del 1884, realizzato da Giuseppe Marzocchi; è di proprietà di Luigi Mariani";
+
+PicVal[PicVar] = "immagini/chiesa1900.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria nei primi anni del secolo scorso";
+DatVal[PicVar] = "anno 1900";
+TxtVal[PicVar++] = "La chiesa Santa Maria: la cartolina è edita dalle Sorelle Gramantieri che gestivano un negozio di tessuti e robe varie, prima sotto i portici in corso Garibaldi e poi sul ponte vecchio. La cartolina è firmata Massaroli, che era la famiglia della Marchesa che abitava la villa sotto il fiume ";
+
+PicVal[PicVar] = "immagini/chiesa1910_rid.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria sempre uguale all'inizio secolo";
+DatVal[PicVar] = "anno 1910";
+TxtVal[PicVar++] = "La chiesa Santa Maria: si nota sopra la porta l'insegna in travertino con la scritta dei Calcagnini e sopra lo stemma";
+
+PicVal[PicVar] = "immagini/chiesa_1930_rid.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria negli anni '20";
+DatVal[PicVar] = "prima del 1924";
+TxtVal[PicVar++] = "La chiesa Santa Maria: si vede a sinistra che non era ancora stato costruito il caffé di Cai, né il Gallo, quindi siamo prima del 1924";
+
+
+PicVal[PicVar] = "immagini/chiesa1925.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria nel 1925";
+DatVal[PicVar] = "anno 1925";
+TxtVal[PicVar++] = "Si nota il palazzo Lanconelli a destra della chiesa, dopo la canonica";
+
+
+PicVal[PicVar] = "immagini/chiesa1927.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria nel 1927";
+DatVal[PicVar] = "anno 1927";
+TxtVal[PicVar++] = "Da notare l'angolo di fianco alla canonica, con botteghe che erano date in affitto";
+
+PicVal[PicVar] = "immagini/chiesa1929.jpg";
+TitVal[PicVar] = "La chiesa vista dai portici delle Pescherie";
+DatVal[PicVar] = "anno 1929";
+TxtVal[PicVar++] = "Visione insolita della Chiesa ripresa dai portici della palazzina delle Pescherie. Il caffé di Cai (caffé Vittoria) e il Gallo sono già stati costruiti";
+
+
+
+PicVal[PicVar] = "immagini/CHIESA2.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria negli anni '30";
+DatVal[PicVar] = "anno 1930";
+TxtVal[PicVar++] = "La chiesa nel 1930, con il caffé di Cai e il Gallo";
+
+PicVal[PicVar] = "immagini/chiesa_gallo.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria negli anni '30";
+DatVal[PicVar] = "anno 1930";
+TxtVal[PicVar++] = "La chiesa nel 1930, con il caffé di Cai (caffé Victoria) e il Gallo";
+
+PicVal[PicVar] = "immagini/chiesa_interno1.jpg";
+TitVal[PicVar] = "L'interno della chiesa Santa Maria";
+DatVal[PicVar] = "anno 1930";
+TxtVal[PicVar++] = "L'interno della Chiesa";
+
+PicVal[PicVar] = "immagini/chiesa_interno2.jpg";
+TitVal[PicVar] = "L'interno della chiesa Santa Maria da un altro punto di vista";
+DatVal[PicVar] = "anno 1930";
+TxtVal[PicVar++] = "L'interno della Chiesa";
+
+PicVal[PicVar] = "immagini/chiesadistrutta_rid.jpg";
+TitVal[PicVar] = "La chiesa distrutta";
+DatVal[PicVar] = "aprile 1945";
+TxtVal[PicVar++] = "La chiesa distrutta dopo il 1° aprile 1945";
+
+PicVal[PicVar] = "Cafe d cai/ricostruzione1.jpg";
+TitVal[PicVar] = "La prima costruzione usata come chiesa dal 1946 al 1953";
+DatVal[PicVar] = "anno '46";
+TxtVal[PicVar++] = "A sinistra si intravvede la nuova costruzione dove si andava a messa fino al 1953. Oggi è la canonica della chiesa del Sacro Cuore";
+
+
+PicVal[PicVar] = "immagini/chiesa_1960.jpg";
+TitVal[PicVar] = "La chiesa Sacro Cuore costruita sul vecchio sito";
+DatVal[PicVar] = "anni '60";
+TxtVal[PicVar++] = "La chiesa e la piazza Monti vista dal terrazzo del bar Tavalazzi (Frazché)";
+
+
+PicVal[PicVar] = "immagini/chiesa_oggi.jpg";
+TitVal[PicVar] = "La chiesa nel 2000";
+DatVal[PicVar] = "anno 2000";
+TxtVal[PicVar++] = "La chiesa è che si trova nella stesso punto di quella di prima della guerra non è più la Chiesa Santa Maria ma Chiesa del Sacro Cuore. La parrocchia Santa Maria e la nuova chiesa furono ricostruite negli anni '50 nel paese nuovo alla sinistra del Senio";
+
+PicVal[PicVar] = "immagini/chiesa_2000_col.jpg";
+TitVal[PicVar] = "La chiesa Sacro Cuore a cavallo del terzo millennio";
+DatVal[PicVar] = "anno 2000";
+TxtVal[PicVar++] = "La chiesa è che si trova nella stesso punto di quella di prima della guerra non è più la Chiesa Santa Maria ma Chiesa del Sacro Cuore. La parrocchia Santa Maria e la nuova chiesa furono ricostruite negli anni '50 nel paese nuovo alla sinistra del Senio";
+
+
+
+
+function Show_foto(newpic) {
+  if(isDOM)document.getElementById("_foto").src = PicVal[newpic];
+  else if(isIE) document._foto.src = PicVal[newpic];
+  document.form_foto.testo_foto.value=TxtVal[newpic];
+  document.form_foto.data_foto.value=DatVal[newpic];
+  SelectionBox = document.form_foto.menudrop;
+  SelectionBox.options[newpic].selected = true;
+  current = newpic;
+}
+function Previous_foto() {
+  TotalImages = document.form_foto.menudrop.options.length;
+  current--;
+  if(current<0) current = TotalImages - 1;
+  Show_foto(current);
+}
+function Next_foto() {
+  TotalImages = document.form_foto.menudrop.options.length;
+  current++;
+  if (current>=TotalImages) current = 0;
+  Show_foto(current);
+}
+// -->
+</script>
+<style fprolloverstyle>A:hover {color: #FF00FF; font-weight: bold}
+</style>
+
+</head>
+
+<body background="immagini/sfondi/sfondo_giallino.jpg" vlink="#0000FF" alink="#FF00FF">
+
+  <div align="center">
+    <center>
+
+  <table border="0" width="100%" cellspacing="0" cellpadding="5" height="1" bgcolor="#980519">
+    <tr>
+      <td width="1" align="center" height="1">
+  <p align="center"><a href="immagini/croce/margherite.jpg"><img border="0" src="immagini/croce/margherite_small.jpg" alt="margherite.jpg (376235 byte)" width="64" height="82"></a>
+      </td>
+      <th width="141%" align="center" height="1" valign="middle">
+          <b>
+ <p align="center"><a href="alfonsine.htm" target="_parent"><font face="Arial, helvetica,sans-serif" size="7" color="#FFFFFF">Alfonsine</font></a></p></b>
+      <th width="1" align="center" height="1" valign="middle">
+          <p align="center">
+          <font face="Arial, helvetica,sans-serif"><img border="0" src="immagini/stemma_alfonsines%5B1%5D.jpg" width="55" height="65" align="absmiddle">
+          </font>
+    </tr>
+  </table>
+
+    </center>
+  </div>
+
+  <p align="center"><b><font face="arial,helvetica,sans-serif" size="6">
+| <a href="chiesa_alfonsine.htm">La storia della chiesa Santa Maria e Sacro Cuore</a> |</font></b>
+
+  </p>
+
+  <p align="center"><b><font face="arial,helvetica,sans-serif" size="6">|<a href="mon-amour.htm">Ricerche
+      sull'anima di Alfonsine</a>
+  |&nbsp;</font></b>
+
+</p>
+
+      <p align="center"><b><script src="https://connect.facebook.net/it_IT/all.js#xfbml=1"></script><fb:like href="https://alfonsinemonamour.racine.ra.it/alfonsine/Alfonsine/chiesa_alfonsine croce 1540.htm" send="true" width="450" show_faces="true" font="arial"></fb:like><font face="Arial, helvetica,sans-serif" size="7" color="#FF0000"><br>
+      <font FACE="Liberation Sans" SIZE="7">L’incontro di tre storie</font></font></b></p>
+
+      <p align="center"><b><font FACE="Liberation Sans" SIZE="7" color="#FF0000">raccontate
+      dai più antichi reperti archeologici&nbsp;</font></b></p>
+
+      <p align="center"><b><font FACE="Liberation Sans" SIZE="7" color="#FF0000">della
+      vecchia chiesa S. Maria di Alfonsine</font></b></p>
+    <p align="center"><b><i><font face="Arial, helvetica,sans-serif" size="6">di
+    Luciano Lucci</font></i></b>
+
+  <p align="center">&nbsp;
+
+</p>
+
+  <div align="center">
+    <center>
+
+<table border="0" width="980" height="1" cellpadding="20">
+  <center>
+
+  <tr>
+    <td width="100%" height="1342">
+            <p align="center"><b><font face="Liberation Sans" size="6">I tre
+            reperti archeologici più antichi di Alfonsine</font></b></p>
+            <p align="center"><img border="0" src="immagini/croce/croce-benedetta.jpg" width="720" height="960"></p>
+  </center>
+    </center>
+  <p align="left"><font size="6">Domenica 20 novembre 2022&nbsp; al termine
+  della Santa Messa&nbsp; nel cortile di fianco alla Chiesa del S. Cuore ci fu
+  la a solenne benedizione di questo intreccio di reperti di varie epoche.</font></p>
+  <p align="left"><font size="6">Un</font><font size="6">  antico Crocifisso del
+  1780, posizionato sul basamento dell'antica fonte battesimale del 1530, il
+  tutto sostenuto da una base in travertino, che era essa stessa sostegno di
+  lesene che si trovavano nella facciata dell’ultima chiesa Santa Maria dal
+  1800 al 1945.</font></p>
+  <p align="center"><font size="6"><img border="0" src="immagini/croce/croce-con-date.jpg" width="567" height="756"></font></p>
+  <p align="left"><font size="6">Si tratta dei tre reperti archeologici più
+  antichi&nbsp; della vecchia chiesa S. Maria di Alfonsine (poi nel dopoguerra
+  “Sacro Cuore”), e in ciascuno dei tre pezzi che sono stati recuperati e
+  ri-assemblati solo nel 2022 nel prato della chiesa, c’è gran parte della
+  storia di Alfonsine dalle origini (1506) fino alla distruzione della guerra.</font></p>
+  <p align="left"><font size="6">Alla celebrazione presieduta da Don Stanislaw
+  Rafalko, parroco della Parrocchia del Sacro Cuore, parteciparono la vice-sindaca
+  di Alfonsine Elisa Vardigli e numerosi Alfonsinesi.</font></p>
+  <center>
+
+  <p align="center"><img border="0" src="immagini/croce/croce-con-parroco.jpg" width="688" height="515"></p>
+  </center>
+            <p align="left"><font size="6">Questo assemblaggio di tre reperti
+            con date diverse in un unico blocco potrebbe far sorridere qualche
+            esperto storico o archeologo, ma dopo che avrete ascoltato le loro
+            tre storie capirete che questo era il degno finale a cui dovevano
+            arrivare.</font>
+            <p align="center"><b><font face="Liberation Sans" size="7" color="#FF0000">LA
+            BASE</font></b>
+            <p align="center"><img border="0" src="immagini/croce/lesena1.jpg" width="805" height="498"><p align="center"><font size="6">Cominciamo
+  dalla base: essa era un basamento a sostegno di una delle quattro lesene con
+  funzione decorativa di finte colonne, che si trovavano nella facciata dell’ultima
+  chiesa Santa Maria dal 1800 al 1945.&nbsp;</font>
+  <center>
+
+            <p align="center"><img border="0" src="immagini/croce/basamento-colonne-chiesa.jpg" width="860" height="557">
+  <table border="0" width="100%">
+    <tr>
+      <td width="64%" valign="top">
+        <p align="center"><font size="6"><i>Nella foto sopra si vede la facciata
+        della Chiesa Santa Maria prima della distruzione della guerra.</i></font></p>
+        <p align="center"><font size="6"><i>La freccia bianca indica la base
+        della prima delle 4 lesene.&nbsp;</i></font></p>
+        <p align="center"><font size="6"><i>Nella foto a destra si vede il
+        particolare che mostra chiaramente il basamento.</i></font></p>
+        <p align="center">&nbsp;</p>
+  </center>
+      <p align="left"><font size="6">Con la distruzione della chiesa durante la
+      guerra, il basamento delle lesene era finito, con le altre macerie della
+      chiesa, interrato per costruirci sopra la chiesa del s. Cuore e la
+      canonica.</font></p>
+      <p align="center"><a href="immagini/croce/chiesa-distrutta.jpg"><img border="2" src="immagini/Corso%20Garibaldi/chiesa-distrutta_small.jpg" alt="chiesa-distrutta.jpg (117060 byte)" width="562" height="369"></a></p>
+              <p align="center"><font size="6" color="#FF0000"><b>Ma come ha
+              fatto&nbsp;<br>
+              a venir ancora alla luce?&nbsp;</b></font>
+              <p align="left"><font size="6"> Nel 2000 ci fu un incendio della canonica, per il cui rifacimento
+        furono rifatti i pavimenti e scavando per questo scopo in profondità,
+        emersero alcune vecchie macerie della chiesa S. Maria.&nbsp;</font>
+              <p align="left"><font size="6"> Il nuovo parroco Don Renato Frappi
+              (Don Genesio morì proprio in quell’anno) decise di posizionarle
+              nel cortile davanti alla chiesa: tra queste vi erano due basamenti
+              delle lesene della chiesa distrutta dalla guerra.&nbsp;<br>
+              <i><font color="#FF0000">(foto a destra)</font></i></font>
+        <center>
+
+      </center></td>
+      <td width="36%">
+        <p align="center"><img border="0" src="immagini/croce/base-lesene-part.jpg" width="200" height="515">
+        <p align="center">&nbsp;
+        <p align="center">&nbsp;
+        <p align="center">&nbsp;
+        <p align="center">&nbsp;
+        <p align="center">&nbsp;
+        <p align="center">&nbsp;
+        <p align="center">&nbsp;
+        <p align="center">&nbsp;
+        <p align="center">&nbsp;
+        <p align="center">&nbsp;
+        <p align="center"><img border="0" src="immagini/croce/lesene-due-recuperate.jpg" width="335" height="238">
+        <p align="center"><font size="6"><i> Uno di
+        questi è quello utilizzato nella composizione attuata dal restauratore.</i></font>
+    </td>
+    </tr>
+  </table>
+      <p align="center"><b><font face="Liberation Sans" size="7" color="#FF0000">Il
+      secondo reperto</font></b></p>
+      <p align="center"><b><font face="Liberation Sans" size="7" color="#FF0000">UN BASAMENTO IN MARMO DEL '500&nbsp;</font>
+      </b></p>
+            <p align="center"><a href="https://alfonsinemonamour.racine.ra.it/alfonsine/Alfonsine/immagini/croce/basamento%20oggi.jpg"><img border="2" src="immagini/croce/basamento_oggi_small.jpg" alt="basamento oggi.jpg (3931309 byte)" width="619" height="825"></a>
+            <p align="left">&nbsp;
+  <p align="left"><font size="6">Nella giornata del 21 aprile 2015 Luciano
+  Lucci&nbsp; fece la più grande scoperta archeologica di Alfonsine.&nbsp;&nbsp;</font></p>
+  <p align="left"><font size="6">Merito della sua nipotina Anita (all'epoca anni
+  2), che accompagnò in una passeggiata nel campetto dell'oratorio della chiesa
+  Sacro Cuore.&nbsp;</font></p>
+  <p align="left"><font size="6">Lì c'era una croce infilata in un basamento di
+  marmo: il tutto era&nbsp; abbandonato da anni.</font></p>
+  <p align="center"><font size="6"><a href="immagini/croce/croce1.jpg"><img border="2" src="immagini/croce/croce1_small.jpg" alt="croce1.jpg (1723463 byte)" width="440" height="584"></a>
+  <a href="immagini/croce/anita-margherite.jpg"><img border="2" src="immagini/croce/anita-margherite_small.jpg" alt="anita-margherite.jpg (554115 byte)" width="439" height="582"></a></font></p>
+  <p align="left"><font size="6">&nbsp;Anita raccolse alcune margherite dal
+  prato e le depositò sul basamento della croce. E così il Lucci notò, per
+  caso, una scritta scolpita nel marmo: 'Alphonso Paulutio tutore'.</font></p>
+  <p align="center"><a href="immagini/croce/base-scritta-alfonso.jpg"><img border="2" src="immagini/croce/base-scritta-alfonso_small.jpg" alt="base-scritta-alfonso.jpg (1759612 byte)" width="850" height="929"></a></p>
+  <p align="center"><a href="immagini/croce/croce%204.jpg"><img border="2" src="immagini/croce/croce_4_small.jpg" alt="croce 4.jpg (2754523 byte)" width="849" height="922"></a></p>
+  <p align="center"><b><font color="#FF0000" size="7">Ma chi era Alphonso
+  Paulutio?</font></b></p>
+  <p align="left"><font size="6">Una rapida ricerca su internet (bastò scrivere
+  su Google 'Alphonso Paulutio') ed ecco la sorpresa:</font></p>
+  <p align="left"><font size="6">&nbsp;In 'Opera aliquot' ('Opere varie') di
+  Celio Calcagnini pubblicata postuma nel 1544 viene citato Alphonso Paulutio,
+  in una lettera del Calcagnini del 1526 al vescovo di Imola Domenico Scribonio
+  dei Cerboni.</font></p>
+  <p align="center"><img border="0" src="immagini/croce/testo-alphonso.jpg" width="795" height="516"></p>
+              <p align="center"><b><font face="Baskerville Old Face" size="6" color="#FF0000"><i>(la
+              traduzione)</i></font></b></p>
+              <p align="center"><b><font face="Baskerville Old Face" size="6">Celio
+              C. al Vescovo di Imola Scribonio </font></b></p>
+              <blockquote>
+                <blockquote>
+                  <blockquote>
+                    <p align="justify"><b><font face="Baskerville Old Face" size="6">
+              Avrei
+              sempre gradito&nbsp;
+              padre, ovunque arrivi l'occasione, di ricevere i tuoi
+              scritti, sebbene si tratti di questioni pecuniarie, del cui studio
+              ora ti occupi, e avrei
+              preferito rinunciare tranquillamente alla tua benevolenza e
+              generosità, specialmente di fronte a&nbsp; quelli, che spesso
+              affermavano di esserti debitori. Dal
+              momento che le cose stanno così, è più agevole per loro
+              accusare di negligenza&nbsp; </font></b></p>
+                  </blockquote>
+                </blockquote>
+                <p align="justify"><font face="Baskerville Old Face" size="6"><b>o
+                di ingratitudine, che sanare: farò
+              in modo che tu abbia la mia attenzione, con nessun altro impegno. Sappi
+              che il ricordo dei tuoi favori verso di me mi accompagnerà nel
+              vivere e nell'agire.<br>
+              Certamente,
+              avendo ricevuto immediatamente le tue lettere, parlai con&nbsp;</b></font>
+                <b><font face="Arial, helvetica,sans-serif" color="#FF0000" size="6">Alfonso
+              Paulutio</font><font face="Baskerville Old Face" size="6"><font face="Arial, helvetica,sans-serif" size="6"> 
+                </font> quanto più accuratamente potei, e presi in
+              considerazione il tuo problema molto seriamente. Pregai anche qualcuno,
+              Speriamo veder maturare la vita e che&nbsp; possa durare.
+              Certamente qualsiasi sia <font color="#FF0000">la soluzione a cui lui
+              arriverà</font>, faremo
+              sì che ti sia reso noto perfino in anticipo. A tua volta, ti
+              sarò grato, occupati di quelle meravigliose cose inerenti al
+              giudizio e alla riflessione sulla musica ecclesiastica, come
+              quando alla fine prolungavi le discussioni notturne e di cui mi
+              hai dato talvolta un eccellente esempio.
+              Nel resto del comunicato&nbsp; non ti faremo mancare a lungo i
+              nostri auspici. Si proceda quanto più velocemente possibile,
+              davvero per noi un ottimo lavoro che veramente ti renderà famoso
+              per l'eternità.</font></b></p>
+              </blockquote>
+  <p align="center">&nbsp;</p>
+  <p align="center"><b><font color="#FF0000" size="7">Ma chi era Celio
+  Calcagnini,&nbsp;<br>
+  </font><font size="6" color="#FF0000">primo rettore della chiesa di Alfonsine?</font></b></p>
+  <p align="center"><img border="0" src="immagini/croce/celio2.jpeg" width="531" height="800"><img border="0" src="immagini/croce/celio3.jpeg" width="512" height="800"></p>
+  <p align="center">&nbsp;</p>
+  <p align="left"><font size="6"><font color="#FF0000"><b>Celio Calcagnini&nbsp;fu</b></font>
+  umanista, scienziato e diplomatico al servizio del Ducato di Ferrara, uno dei
+  più dotti sapienti dell'epoca rinascimentale, soldato, ecclesiastico,
+  professore, poeta, filosofo e storico, fu celebrato da Ludovico Ariosto
+  nell'Orlando furioso (XLII.90, XLVI.14).</font></p>
+  <p align="left"><font size="6">Gli Estensi esercitarono la loro influenza sui
+  meccanismi di assegnazione non solo dei vescovadi e dell'abbazia di Pomposa,
+  ma anche delle prebende minori pur dipendenti da diocesi fuori dello
+  Stato.&nbsp;</font></p>
+  <p align="left"><font size="6"><font color="#FF0000"><b>Nel 1510 Celio</b></font>
+  aveva abbracciato, certamente su sollecitazione del suo signore di Ferrara, il
+  Duca Alfonso I° d'Este, anche la carriera ecclesiastica. Ordinato sacerdote,
+  veniva provvisto, di un canonicato, cioè una rendita nella cattedrale di
+  Ferrara, tramite l'intervento di Ippolito d'Este, arcivescovo di Ferrara e
+  cardinale italiano, figlio di Ercole I d'Este, Duca di Modena e Ferrara e
+  della principessa Eleonora d'Aragona, di cui il Celio Calcagnini era maestro
+  precettore.&nbsp; II sistema beneficiale semplice penalizzava la cura delle
+  anime per la larga tolleranza sull'obbligo di residenza degli assenteisti
+  rettori della pieve di Fusignano</font></p>
+  <p align="left"><font size="6"><b><font color="#FF0000">Ricche prebende</font></b>
+  Celio Calcagnini poi riceveva da S. Giacomo di Ferrara e di Porotto, ampi
+  benefici a Riolo (nella diocesi di Faenza), a Ferrara (chiesa di S. Maria
+  Bianca).</font></p>
+  <p align="left"><font size="6"><font color="#FF0000"><b>Alfonso I° Calcagnini,
+  feudatario di Fusignano e Alfonsine (Leonino)</b></font> per conto degli
+  Estensi di Ferrara, assegnò la giurisdizione ecclesiastica della pieve
+  alfonsinese, col titolo di Rettore, al suo parente di chiesa più famoso,
+  proprio Celio Calcagnini, suo cugino, già intestatario della carica di
+  Arciprete per la chiesa di Fusignano. In questo modo riuscì a sottrarre alla
+  chiesa ravennate e ai signori di Ravenna i diritti su quei territori.</font></p>
+  <p align="left"><font size="6">&quot;<i>Disturbato dalla febbre terzana, Celio
+  si trattenne a Fusignano solo per quattro mesi, poi decise di recarsi nella
+  vicina Lugo. «ubi medicorum sed malorum maior est copia</i>», e tornò
+  deluso perché non trovò tanti unguenti medicinali quanti cercava.&quot;
+  (pag. 498 &quot;Storia di Fusignano&quot;).</font></p>
+  <p align="center"><font size="6" color="#FF0000"><b>Qui entrò in scena
+  Alphonso Paulutio</b></font></p>
+  <p align="left"><font size="6">A Celio Calcagnini interessavano le prebende e
+  i guadagni che gli spettavano di diritto. E per amministrare tali entrate
+  aveva incaricato un suo <font color="#FF0000"><b>uomo di fiducia tale Alphonso
+  Paulutio</b></font>, come amministratore, fattore, che all'epoca veniva
+  definito '<i><b><font color="#FF0000">tutore</font></b></i>'.<br>
+  Fu così che&nbsp;Alphonso Paulutio&nbsp;volle che fosse chiaro a tutti che
+  lui era l'amministratore di quella parrocchia di Alfonsine, e lo fece scrivere
+  sul basamento del battisterio che caratterizzò <b><font color="#FF0000">la
+  nuova chiesa, creata nel 1530 a una navata come ampliamento della vecchia
+  pieve posta ai confini del territorio dei feudatari di Fusignano fin dal 1502,
+  ormai inadeguata.</font></b>&nbsp;</font></p>
+  <p align="left"><font size="6"><font color="#FF0000">Alphonso Paulutio</font>
+  ristrutturò e migliorò il primo Oratorio, e siccome cominciavano anche a
+  nascere bambini, <font color="#FF0000">installò una fonte battesimale</font>.
+  Quel &quot;nostro&quot; basamento che è stato ritrovato ha proprio forma
+  ottagonale come era in uso in tutti i battisteri di quei tempi, per ricordare
+  l'ottavo giorno della creazione, giorno della Resurrezione di Cristo e quindi
+  l'inizio di una nuova era nel mondo, era quindi di sostegno della colonna con
+  una vasca battesimale sopra, in marmo di Istria e con la scritta incisa
+  &nbsp;'Alphonso Paulutio tutore'.&nbsp;</font></p>
+  <p align="center"><b><font color="#FF0000" size="7">La prova</font></b></p>
+  <p align="left"><font size="6">La prova che su quella fonte battesimale c'era
+  anche la data 1530, ce la dà lo storico Gianfranco Rambelli che nelle sue
+  &quot;Memorie Storiche dell'Alfonsine&quot; pubblicato nel 1833
+  scrisse&nbsp;(a pag. 45 nota 1), descrivendo il battisterio della Chiesa S.
+  Maria, che nel vaso dell'acqua santa del battistero era scritto 1530 (MDXXX) e
+  ALPHONSO PAULUTIO TUTORE. Nel piedistallo di quella fonte battesimale non
+  c'era la data (MDXXX), ma solo&nbsp; ALPHONSO PAULUTIO TUTORE.</font></p>
+  <p align="center"><img border="0" src="immagini/croce/battisterio-paulutio-tutore.jpg" width="584" height="352"></p>
+  <b><font FACE="Calibri" SIZE="4">
+  <p ALIGN="center">&nbsp;</p>
+  </font></b>
+  <p align="left"><font size="6"><font color="#FF0000">La pieve bastò per una
+  ventina di anni</font>, poi, crescendo la popolazione, e dovendo garantire un
+  miglior decoro, nel 1540 i nipoti di Alfonso 1° Calcagnini, i conti Alfonso
+  II e Teofilo II, figli di Tommaso I° Calcagnini e Costanza Rangoni, <font color="#FF0000">fecero
+  ristrutturare la vecchia pieve, sempre a una sola navata.</font>&nbsp;<font color="#FF0000"><b><br>
+  Celio Calcagnini, il primo Rettore della chiesa di Alfonsine morì nel 1541.</b></font></font></p>
+  <p align="left"><font size="6">Questa struttura durò fino al 1740 quando <font color="#FF0000">fu
+  abbattuta e ricostruita, ingrandita con due navate laterali</font>.&nbsp;</font></p>
+  <p align="left"><font size="6">Poi per tutto l’'800 ci fu un degrado totale
+  che vide l’abbattimento della chiesa dal 1825-1878 e una sua lenta
+  ricostruzione che terminò nel 1903. Poi ci fu l’incendio della Settimana
+  Rossa (1914), bombardamento americano (1944) e all'inizio febbraio 1945 crollo
+  finale della chiesa di Alfonsine minata da 30 bombe di mezzo quintale l'una,
+  appostate lungo la navata e le colonne, da alfonsinesi costretti dai tedeschi.</font></p>
+  <p align="center"><b><font color="#FF0000" size="6">Il nostro reperto, cioè
+  il basamento del battisterio, quindi sicuramente ha superato&nbsp; più di 500
+  anni di travagli e miracolosamente è arrivato fino a noi.</font></b></p>
+  <b>
+  <p ALIGN="center"><font face="Calibri" size="7" color="#FF0000">Ma come si
+  salvò?</font></p>
+  </b>
+  <p align="center"><a href="immagini/settimana%20rossa/chiesa_incendiata1914.jpg"><img border="2" src="immagini/croce/chiesa_incendiata1914_small.jpg" alt="chiesa_incendiata1914.jpg (157880 byte)" width="850" height="572"></a></p>
+  <p align="center"><i><font face="Arial, helvetica,sans-serif" size="6">(Anno 1914) Il davanti
+      della chiesa durante la 'settimana rossa',&nbsp;<br>
+      con i resti delle suppellettili distrutte e incendiate.&nbsp;<br>
+      </font>
+      </i></p>
+  <p align="justify"><font size="6" face="Bookman Old Style,Arial, helvetica,sans-serif">Fu
+  recuperato dalle macerie dell'incendio della chiesa nella &quot;Settimana
+  rossa&quot;, qualcuno degli abitanti vicino alla chiesa potrebbe aver preso
+  quel resto della fonte battesimale ed averlo posto nel cortile di casa come
+  vasiera, dopo che il battisterio era stato distrutto e fatto a pezzi.</font></p>
+  <p align="justify"><font size="6" face="Bookman Old Style,Arial, helvetica,sans-serif">Nella
+  foto qui sotto si vede&nbsp; la fonte battesimale della chiesa S. Maria.</font></p>
+  <p align="justify"><font size="6" face="Bookman Old Style,Arial, helvetica,sans-serif">Fa
+  da sfondo sulla parete l'affresco originale del Margotti in cui si vede il
+  Cristo-Baracca del Margotti. Il basamento della colonna è circolare e non
+  ottagonale, quindi si tratta di un nuovo battisterio. L'affresco fu fatto
+  subito dopo la &quot;Settimana rossa&quot; nel 1915.</font></p>
+  <p align="center"><a href="immagini/croce/battisterio-1930.jpg"><img border="2" src="immagini/croce/battisterio-1930_small.jpg" alt="battisterio-1930.jpg (218155 byte)" width="800" height="1180"></a></p>
+  <p align="justify"><font size="6" face="Bookman Old Style,Arial, helvetica,sans-serif">Secondo
+  la testimonianza di Iris Matulli, che ha gestito l'albergo &quot;Al
+  Gallo&quot; dal 1968, quel basamento in marmo fu ritrovato nell'immediato
+  dopoguerra quando la famiglia Bosi ('Sbaragnì'), a detta della Cenza Bosi,
+  per ricostruire la loro casa abbattuta, una casa proprio lì vicino alla
+  chiesa, utilizzarono anche le macerie della chiesa e vi ritrovarono quello
+  strano vaso in marmo che era finito nel cortile della casa Bosi (forse fin dal
+  1914).</font></p>
+<p align="center"><font size="6">&nbsp;<i><font color="#FF0000" face="Arial, helvetica,sans-serif">un
+      clic o un tocco per ingrandire l'immagine</O:P>
+      </font></i></font></p>
+      <p align="center"><a href="immagini/quartiere_chiesa_scritte.jpg"><font face="Arial, helvetica,sans-serif"><img border="0" src="immagini/quartiere_chiesa_scritte_small1.jpg" alt="quartiere_chiesa_scritte.jpg (62112 byte)" width="757" height="627"></font></a></p>
+      <p align="center">
+      <i>
+      <font face="Arial, helvetica,sans-serif" size="6">
+      (Anno 1930) Foto aerea del piazzale della chiesa</font></i></p>
+      
+  <p align="justify">&nbsp;</p>
+  <p align="center"><a href="immagini/croce/chiesa-macerie-con-scritte.jpg"><img border="2" src="immagini/croce/chiesa-macerie-con-scritte_small.jpg" alt="chiesa-macerie-con-scritte.jpg (111097 byte)" width="796" height="521"></a></p>
+  <p align="center">&nbsp;</p>
+  <font FACE="Liberation Sans" SIZE="7">
+  <p align="center"><b><font color="#FF0000">LA CROCE È DEL 1780</font></b></p>
+  <p align="center"><b><font color="#FF0000">DA DOVE VENIVA E COME FINÌ PROPRIO
+  LÌ ?</font></b></p>
+  </font>
+            <p align="center">&nbsp;
+  <p align="justify"><font face="Bookman Old Style,Arial, helvetica,sans-serif" size="6">Sulla
+  croce, dopo la recente pulitura, </font><font face="Bookman Old Style,Arial, helvetica,sans-serif" size="6">è
+  emersa una scritta che indica una data 1780.</font>
+  <font face="Bookman Old Style,Arial, helvetica,sans-serif" size="6">&nbsp;</font></p>
+  <p align="center"><a href="immagini/croce/croce-data.jpg"><img border="2" src="immagini/croce/croce-data_small1.jpg" alt="croce-data.jpg (44066 byte)" width="850" height="637"></a></p>
+            <p align="center"><font size="6"><b>LI</b></font><b><font size="6" FACE="Liberation Serif,Times New Roman" LANG="JA">
+            &#937;6 AGOSTO 1780 SI FECE</font></b>
+  <p align="center">&nbsp;</p>
+  <p align="justify"><font face="Bookman Old Style,Arial, helvetica,sans-serif" size="6">Quindi
+  faceva parte della Chiesa Santa Maria che fu trasformata da una navata a tre
+  navate nel 1752 dal Rettore Paolo Guerrini.</font></p>
+        <p align="left"><font face="Bookman Old Style,Arial, helvetica,sans-serif" size="6">
+            Su questa croce rimane l’incognita su quale sia la sua vera
+            origine:&nbsp;</font><p align="left"><font face="Bookman Old Style,Arial, helvetica,sans-serif" size="6"><b><font color="#FF0000">UNA
+        MIA IPOTESI</font></b> è che dopo che nel 1752 la chiesa S. Maria fu
+        trasformata da una a tre navate, si sia deciso di porre a fianco della
+        chiesa una croce, appunto questa croce, collocata in un basamento che è
+        arrivato fino a noi.&nbsp;</font><p align="left"><font face="Bookman Old Style,Arial, helvetica,sans-serif" size="6">Essa
+  indicava l'entrata a un vecchio cimitero.</font><p align="center"><img src="immagini/mappa_piazza_monti_1552.jpg" / width="768" height="426" /><p align="center"><font face="Bookman Old Style,Arial, helvetica,sans-serif" size="6"><i>mappa
+        del 1552: si legge fabbrica nuova che s'ha da far, e sembra proprio un
+        cimitero</i></font><p align="left"><font face="Bookman Old Style,Arial, helvetica,sans-serif" size="6">Infatti
+        ancora alla fine del '700, c'era, proprio vicino alla chiesa, il
+        cimitero che era lì da moltissimi anni.<br>
+        Lo cita anche il Dall'Ara, priore (sindaco) di Alfonsine dal 1831 al 36
+        e nel 1846, in un suo intervento contrario alla costruzione del nuovo
+        Municipio alla destra del fiume, in un terreno dei Corelli, posto dietro
+        la chiesa:&nbsp;<br>
+        &quot;<i>e poi riguardo la natura del terreno non sappiamo quanto possa
+        essere conveniente, e sana avendo servito per moltissimi anni al
+        Cimitero Comunale.</i>&quot;&nbsp;</font><p align="left"><font face="Bookman Old Style,Arial, helvetica,sans-serif" size="6">Ma
+  nel 1809 la croce in ferro fu sostituita da una grande croce di marmo, che era
+  già dei Cappuccini di Bagnacavallo, che &quot;<i>Paolo Massaroli ivi fe' innalzare a sue
+spese addì 22 Ottobre 1809.</i>&quot; (da &quot;<i>Memorie
+        Istoriche dell'Alfonsine</i>&quot; del 1833 di Gianfrancesco Rambelli). </font><p align="left"><font face="Bookman Old Style,Arial, helvetica,sans-serif" size="6">I
+  Massaroli erano una ricchissima famiglia di possidenti alfonsinesi di origini
+  bagnacavallesi.</font><p align="center"><a href="immagini/chiesa_15002_disegno.jpg"><img border="2" src="immagini/croce/chiesa_15002_disegno_small3.jpg" alt="chiesa_15002_disegno.jpg (185312 byte)" width="823" height="506"></a><p align="left"><font face="Bookman Old Style,Arial, helvetica,sans-serif" size="6">Poi
+  in seguito quella croce in travertino fu sistemata all'ingresso del vecchio
+  cimitero in via Reale, poi dal 1900 nel nuovo cimitero dove si trova
+  attualmente.&nbsp;&nbsp;</font><p align="center"><a href="immagini/croce/croce-massaroli.jpg"><img border="2" src="immagini/croce/croce-massaroli_small.jpg" alt="croce-massaroli.jpg (2479222 byte)" width="461" height="614"></a><a href="immagini/croce/croce-massaroli2.jpg"><img border="2" src="immagini/croce/croce-massaroli2_small.jpg" alt="croce-massaroli2.jpg (2964640 byte)" width="474" height="616"></a><font face="Bookman Old Style,Arial, helvetica,sans-serif" size="6"><br>
+  </font><p align="center"><font face="Bookman Old Style,Arial, helvetica,sans-serif" size="6">Può
+  essere che la croce di ferro abbia seguito gli stessi percorsi, e poi rimasta
+  collocata in qualche ripostiglio del cimitero.&nbsp;</font><p align="left"><font face="Bookman Old Style,Arial, helvetica,sans-serif" size="6">E
+  in seguito da lì riportata nella nuova saletta della canonica della chiesa
+  del Sacro Cuore nei primi anni '50.</font><p align="left"><font face="Bookman Old Style,Arial, helvetica,sans-serif" size="6">Infatti
+  <b><font color="#FF0000">negli anni '50-'60 era custodita nella vecchia
+  saletta della canonica della chiesa Sacro Cuore</font></b> ricostruita sulle
+  macerie della vecchia chiesa S. Maria, <font color="#FF0000"><b>inserita in un
+  altro tipo di basamento diverso dall'attuale</b></font>, poi nella sacrestia o
+  nella stanza attigua della chiesa Sacro Cuore.&nbsp;</font><p align="left">&nbsp;<p align="center"><img border="0" src="immagini/croce/croce-1955-gruppo-cillo.jpg" width="961" height="622">
+                  <p align="center"><font size="6"><a href="immagini/croce/croce%20testo.jpg"><i><font color="#FF0000">(</font></i></a><i><font color="#FF0000">un
+              click o un tocco sopra per averne un ingrandimento)</font></i></font></p>
+  <p align="center"><i><font face="Bookman Old Style,Arial, helvetica,sans-serif" size="6">Da
+  sinistra Gianfranco Cortese, Lucillo Cortese, Linda Lucci, altri&nbsp;
+  parentidei Cortese</font></i><font face="Bookman Old Style,Arial, helvetica,sans-serif" size="6"><br>
+                  Dietro
+                  la testa della seconda persona da sinistra si vede la croce
+                  misteriosa.&nbsp;</font><p align="center">&nbsp;<p align="center"><a href="immagini/croce/IMG_20150420_104133.jpg"><img border="2" src="immagini/croce/IMG_20150420_104133_small.jpg" alt="IMG_20150420_104133.jpg (1237586 byte)" width="508" height="672"></a>
+  <a href="immagini/croce/croce-base-1956.jpg"><img border="2" src="immagini/croce/croce-base-1956_small.jpg" alt="croce-base-1956.jpg (159685 byte)" width="366" height="679"></a><p align="left"><font face="Bookman Old Style,Arial, helvetica,sans-serif" size="6">Poiché
+  col passare degli anni la croce si sfilava da quel basamento fu inserita
+  in&nbsp; una struttura in metallo che potesse tenerla fissata. Col tempo
+  neanche questa struttura funzionava più <b><font color="#FF0000">allora Don
+  Genesio, parroco al Sacro Cuore di Alfonsine dal 1973 al 2000, decise di
+  infilarla in quella che sembrava una vasiera posta nel cortile della casa dei
+  Bosi.</font></b>&nbsp;</font><p align="left"><font face="Bookman Old Style,Arial, helvetica,sans-serif" size="6">Lo
+  chiese all’Iris Matulli del “Gallo”, che aveva acquistato la casa Bosi,
+  questa gliela regalò.</font><p align="left"><font face="Bookman Old Style,Arial, helvetica,sans-serif" size="6">E
+  lì rimase per 23 anni appoggiata al muro della saletta della chiesa che da
+  verso la trattoria &quot;al Gallo&quot;, finché: ....</font><p align="left"><font face="Bookman Old Style,Arial, helvetica,sans-serif" size="6"><i &nbsp;Ci
+  voleva il sole di una bella mattinata di primavera per rendere evidente una
+  cosa che<span class="Apple-converted-space">&nbsp;</i></font><p align="center"><img border="0" src="immagini/croce/croce1_small.jpg" width="528" height="705"><p align="left">&nbsp;<p align="left">&nbsp;
+  <p align="left"><font face="Bookman Old Style,Arial, helvetica,sans-serif" size="6">La
+  croce col basamento del ‘500 rimase poi abbandonata per più di vent’anni
+  nel cortile appoggiata al muro di fianco della chiesa fino al giorno in cui il
+  nuovo Parroco sacerdote don Stanislao Rafalko, avendo visto questa croce così
+  abbandonata, essendosi informato della sua storia e avendo preso la
+  consapevolezza che si trattasse di una “reliquia” così importante, deciso
+  di restaurarla ed esporla al dovuto culto pubblico. Uno dei parrocchiani
+  Alberto Tampieri generosamente si è offerto al restauro e posizionamento
+  affianco della chiesa.</font></p>
+  <p align="left">&nbsp;</p>
+  <b>
+  <p align="center"><font color="#FF0000" face="Liberation Sans" size="7">QUALE
+  IL SENSO DI TUTTO QUESTO?</font></p>
+  <p align="center"><font face="Calibri" size="7" color="#FF0000">NASCITA,
+  DISTRUZIONE, RINASCITA E RICOSTRUZIONE.</font></p>
+  <p align="center">&nbsp;</p>
+  </b>
+  <p ALIGN="LEFT"><font face="Calibri" size="6">Il finale degno di questa storia
+  sta proprio l’assemblaggio che il restauratore ha voluto fare, forse senza
+  rendersi conto che stava dando un senso a tutto questo.<br>
+  L’incontro di queste tre storie ha voluto mostrare <font color="#FF0000"><b>il
+  filo rosso che le unisce</b></font>, e che ci indica qual è <b><font color="#FF0000">il
+  “genius loci” “lo spirito del luogo”</font></b> l’anima di questa
+  chiesa e di tutta Alfonsine: nascite, distruzioni, risurrezioni, come
+ anche lo è sempre stato lo spirito degli abitanti di queste terre: grandi
+ sogni per grandi imprese, poi rovinose cadute, e ancora ricominciare
+  di nuovo.</font></p>
+  <p align="left">&nbsp;</p>
+            <p align="center"><img border="0" src="immagini/croce/croce-benedetta.jpg" width="720" height="960">
+    </td>
+  </tr>
+  <center>
+
+    </center>
+</table>
+</div>
+
+  <p align="center">&nbsp;<script src="https://connect.facebook.net/it_IT/all.js#xfbml=1"></script><fb:like href="https://alfonsinemonamour.racine.ra.it/alfonsine/Alfonsine/chiesa_alfonsine croce 1540.htm" send="true" width="450" show_faces="true" font="arial"></fb:like>  <p align="center"><b><font face="arial,helvetica,sans-serif" size="6">
+| <a href="chiesa_alfonsine.htm">La storia della chiesa Santa Maria e Sacro Cuore</a> |</font></b>
+
+</p>
+
+  <p align="center"><b><font face="arial,helvetica,sans-serif" size="6">| <a href="mon-amour.htm">Ricerche
+      sull'anima di Alfonsine</a>
+  |</font></b>
+
+</p>
+
+  <p align="center">&nbsp;
+
+</p>
+
+<p align="center">&nbsp;</p>
+
+</body>
+

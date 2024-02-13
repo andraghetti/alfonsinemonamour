@@ -1,0 +1,531 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="it">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Il cinema Corso</title>
+<style fprolloverstyle>A:hover {color: #FF00FF}
+</style>
+<style>A:link, A:visited { text-decoration: none }
+A:hover { text-decoration: none }
+</style>
+
+<style type="text/css">.menutitle{
+cursor: hand; cursor: pointer;
+margin-bottom: 2px;
+background-color: #ECECFF;
+color: #000000;
+width: 160px;
+padding: 2px;
+text-align: center;
+font-weight: bold;
+/*/*/border: 1px solid #000000;/* */
+}
+
+.submenu{
+margin-bottom: 0.5em;
+}
+</style>
+
+<script type="text/javascript">
+
+if (document.getElementById){
+document.write('<style type="text/css">\n')
+document.write('.submenu{display: none;}\n')
+document.write('</style>\n')
+}
+
+function SwitchMenu(obj){
+	if(document.getElementById){
+	var el = document.getElementById(obj);
+	var ar = document.getElementById("masterdiv").getElementsByTagName("span");
+		if(el.style.display != "block"){
+			for (var i=0; i<ar.length; i++){
+				if (ar[i].className=="submenu")
+				ar[i].style.display = "none";
+			}
+			el.style.display = "block";
+		}else{
+			el.style.display = "none";
+		}
+	}
+}
+
+</script>
+<script Language="Javascript">
+<!--    
+
+var isIE=document.all?true:false;
+var isDOM=document.getElementById?true:false;
+current = 0;
+PicVar = 0;
+
+PicVal = new Array();
+TitVal = new Array();
+DatVal = new Array();
+TxtVal = new Array();
+
+PicVal[PicVar] = "immagini/baraco1_particolare1.jpg";
+TitVal[PicVar] = "Gente di Alfonsine sul luogo dell'incendio.";
+DatVal[PicVar] = "Gennaio 1924";
+TxtVal[PicVar++] = "Non ne è stato ancora individuato il nome di qualcuno";
+
+PicVal[PicVar] = "immagini/baraco1_particolare3.jpg";
+TitVal[PicVar] = "Gente di Alfonsine sul luogo dell'incendio.";
+DatVal[PicVar] = "Gennaio 1924";
+TxtVal[PicVar++] = "Non ne è stato ancora individuato il nome di qualcuno";
+
+PicVal[PicVar] = "immagini/baraco3.jpg";
+TitVal[PicVar] = "Gente di Alfonsine sul luogo dell'incendio.";
+DatVal[PicVar] = "Gennaio 1924";
+TxtVal[PicVar++] = "Gente del Carraretto Venturi sulle ceneri del teatro Calderoni";
+
+
+PicVal[PicVar] = "immagini/seganti.jpg";
+TitVal[PicVar] = "Gruppo di persone riconosciute dalle foto precedenti";
+DatVal[PicVar] = "Gennaio 1924";
+TxtVal[PicVar++] = "La signora con un bambino in braccio e uno davanti si chiamava Angela Faccani detta l'Angiulina, moglie di Arturo Seganti, che faceva il falegname a due passi dal teatro. Il figlio piccolo in braccio è Nadalì (Natale Seganti), il bambino in piedi è il figlio più grande Angioletto (Angelo Seganti); l'Angiulina era sorella di Maria Faccani detta 'la biastména'; un'altra sorella era Domenica Faccani detta la Minghina, che aveva sposato Menelik (di cognome Bosi), che sarà incaricato della società elettrica di accendere e spegnere le nuovi luci elettriche (1925). Menelik è quello dietro sullo sfondo col cappello. La bella signora in nero è Mercedes";
+
+PicVal[PicVar] = "immagini/teatro_angiulina_seganti.jpg";
+TitVal[PicVar] = "I Seganti";
+DatVal[PicVar] = "Gennaio 1924";
+TxtVal[PicVar++] = "La signora con un bambino in braccio e uno davanti si chiamava Angela Faccani detta l'Angiulina, moglie di Arturo Seganti, che faceva il falegname a due passi dal teatro. Il figlio piccolo in braccio è Nadalì (Natale Seganti), il bambino in piedi è il figlio più grande Angioletto (Angelo Seganti)";
+
+
+PicVal[PicVar] = "immagini/baraco2_particolare1.jpg";
+TitVal[PicVar] = "Gente di Alfonsine sul luogo dell'incendio";
+DatVal[PicVar] = "Gennaio 1924";
+TxtVal[PicVar++] = "Non ne è stato ancora individuato il nome di qualcuno";
+
+PicVal[PicVar] = "immagini/baraco2_particolare2.jpg";
+TitVal[PicVar] = "Gente di Alfonsine sul luogo dell'incendio.";
+DatVal[PicVar] = "Gennaio 1924";
+TxtVal[PicVar++] = "La signora in fondo era la 'Minghina' Domenica Faccani, moglie di 'Menelik'. Non ne è stato ancora individuato il nome degli altri";
+
+
+
+function Show_foto(newpic) {
+  if(isDOM)document.getElementById("_foto").src = PicVal[newpic];
+  else if(isIE) document._foto.src = PicVal[newpic];
+  document.form_foto.testo_foto.value=TxtVal[newpic];
+  document.form_foto.data_foto.value=DatVal[newpic];
+  SelectionBox = document.form_foto.menudrop;
+  SelectionBox.options[newpic].selected = true;
+  current = newpic;
+}
+function Random_foto() {
+  TotalImages = document.form_foto.menudrop.options.length;
+  current = Math.floor(Math.random()*TotalImages);
+  Show_foto(current);
+}
+function Previous_foto() {
+  TotalImages = document.form_foto.menudrop.options.length;
+  current--;
+  if(current<0) current = TotalImages - 1;
+  Show_foto(current);
+}
+function Next_foto() {
+  TotalImages = document.form_foto.menudrop.options.length;
+  current++;
+  if (current>=TotalImages) current = 0;
+  Show_foto(current);
+}
+// -->
+</script>
+
+</head>
+
+<body background="immagini/sfondi/sfondo_giallino.jpg" vlink="#000080" link="#000080" alink="#FF00FF">
+<div align="center">
+  <center>
+  <table border="0" width="100%" cellspacing="0" cellpadding="9" height="1" bgcolor="#980519">
+    <tr>
+      <td width="55" align="center" height="1">
+  <p align="center"><a href="immagini/cinema%20corso/corso%20cinema.jpg"><img border="0" src="immagini/cinema%20corso/corso_cinema_small.jpg" alt="corso cinema.jpg (97982 byte)" width="84" height="58"></a></td>
+      <th width="100%" align="center" height="1" valign="middle">
+          <b>
+ <p align="center"><a href="alfonsine.htm" target="_parent"><font face="Arial" size="7" color="#FFFFFF">Alfonsine</font></a></p></b>
+      <th width="55" align="center" height="1" valign="middle">
+          <p align="center">
+          <font face="Arial, Helvetica,sans-serif"><img border="0" src="immagini/stemma_alfonsines%5B1%5D.jpg" width="55" height="65" align="absmiddle">
+          </font>
+    </tr>
+  </table>
+
+  </center>
+</div>
+<div align="center">
+  <center>
+
+<table border="0" width="803" cellspacing="1" cellpadding="6" height="207">
+  <tr>
+    <td width="1127" height="332" valign="top">
+      <p align="center"><b><font face="arial,helvetica,sans-serif" size="6">
+      &nbsp;| <a href="edifici%20importanti.htm"> Gli
+      edifici importanti&nbsp;dal '900 ad oggi<font size="2" face="arial,helvetica,sans-serif" color="#0000FF">&nbsp;</font><font color="#0000FF">|&nbsp;</font><font size="2" face="arial,helvetica,sans-serif" color="#0000FF"><br>
+      </font></a><font face="arial,helvetica,sans-serif">&nbsp;| </font><a href="mon-amour.htm">Ricerche
+      sull'anima di Alfonsine</a> |</font></b>
+      <p align="center">
+        <b><font face="arial,helvetica,sans-serif" size="7">I teatri e cinema
+        alfonsinesi&nbsp;<br>
+ dall'800 ad oggi</font></b>
+      <p align="center">
+<script src="https://connect.facebook.net/it_IT/all.js#xfbml=1"></script><fb:like href="https://alfonsinemonamour.racine.ra.it/alfonsine/Alfonsine/corso.htm" send="true" width="450" show_faces="true" font="arial"></fb:like>
+      <p align="center">
+        &nbsp;
+
+      <table border="0" width="876">
+        <tr>
+          <td width="90">
+            <p align="left"><b><font face="arial,helvetica,sans-serif" size="6" color="#FF0000">Nell'800</font></b></td>
+          <td width="180" align="center">
+            <p align="center"><b><a href="teatrocamerani.htm"><font face="arial,helvetica,sans-serif" size="6">Il
+            Teatro Camerani</font></a></b></td>
+          <td width="210" align="center">
+            <p align="center"><b><a href="teatromassaroli.htm"><font face="arial,helvetica,sans-serif" size="6">La
+            sala Massaroli</font></a></b></td>
+          <td width="373" align="center">
+            <p align="center"><b><a href="teatrocalderoni.htm"><font face="arial,helvetica,sans-serif" size="6">Il
+            Teatro Calderoni&nbsp;<br>
+ (e baracò)</font></a></b></td>
+        </tr>
+      </table>
+  </center>
+  <center>
+
+      <table border="0" width="846">
+        <tr>
+          <td width="71"><b><font face="arial,helvetica,sans-serif" size="6" color="#FF0000">Nel
+            '900</font></b></td>
+          <td width="117" align="center">
+            <p align="center"><b><a href="aurora.htm"><font size="6" face="arial,helvetica,sans-serif">Il
+            Teatro-<br>
+            Cinema Aurora</font></a></b></td>
+          <td width="116" align="center">
+            <p align="center"><font size="6"><font face="arial,helvetica,sans-serif"><b>&nbsp;Il
+            Teatro-<br>
+            Cinema del Corso </b><font color="#FF0000">(sei
+            qui)</font> </font></font></td>
+          <td width="202" align="center">
+            <font size="6" color="#FF0000">
+            <b>
+            <font face="arial,helvetica,sans-serif">
+            Il cinema della parrocchia<br>
+            &nbsp;<br>
+            </font>
+            </b>
+            <font face="arial,helvetica,sans-serif">
+            <i>(scheda in costruzione)</i></font></font></td>
+          <td width="193" align="center">
+            <font size="6" color="#FF0000"><b>
+            <font face="arial,helvetica,sans-serif">Il teatro&nbsp; &quot;Monti&quot;</font></b>&nbsp;<br>
+            <font face="arial,helvetica,sans-serif"><i>(scheda in
+            costruzione)</i></font></font></td>
+          <td width="178" align="center">
+            <font size="6" color="#FF0000">
+            <b>
+            <font face="arial,helvetica,sans-serif"><a href="e_cino.htm">Il cinema
+            Gulliver</a>&nbsp; </font> </b>
+            </font></td>
+        </tr>
+      </table>
+    <p align="center"><a name="corso">&nbsp;&nbsp;</a></p>
+    <p align="center"><b><font face="arial,helvetica,sans-serif" color="#FF0000" size="7">La
+    storia del Cinema Corso&nbsp;</font></b></p>
+      <p align="center">
+<script src="https://connect.facebook.net/it_IT/all.js#xfbml=1"></script><fb:like href="https://alfonsinemonamour.racine.ra.it/alfonsine/Alfonsine/corso.htm" send="true" width="450" show_faces="true" font="arial"></fb:like>
+      <p align="center">
+        &nbsp;
+
+    <p align="center">&nbsp;</p>
+    <p class="MsoNormal" style="text-autospace:justify;text-justify:1.0cm" align="center"><font face="Times New Roman" size="7">
+    <a href="immagini/1910_casarmo_uva.jpg"><img border="0" src="immagini/1910_casarmo_uva_small.jpg" alt="1910 casarmo uva.jpg (163198 byte)" width="821" height="550"></a>
+    </font>
+    <p class="MsoNormal" style="text-autospace: justify" align="center"><i><font face="arial,helvetica,sans-serif" size="6">1910:
+    cortile de &quot;e cantinò&quot;, che nel dopoguerra sarà arena del cinema
+    Corso.<br>
+    La cantina era
+    dei Marèn; i contadini portavano l’uva nella “castlë”<o:p>
+    </o:p>
+    .<br>
+    Quel magazzino diventerà poi nel dopoguerra il nuovo Cinema Corso.</font></i></p>
+<table border="0" width="97%">
+  <tr>
+    <td width="100%" valign="top">
+      <p align="center"><font face="arial,helvetica,sans-serif" color="#FF0000" size="6">Il
+      vecchio &quot;Cinema del Corso&quot;</font></p>
+      <p><font face="arial,helvetica,sans-serif" size="6">Di proprietà dei due fratelli
+Tereo e Luigi Minarelli (Terio e Gigì) fu intitolato ‘Cinema del Corso’.&nbsp;</font>
+      </p>
+      <p align="justify"><font face="arial,helvetica,sans-serif" size="6"> Fu
+costruito negli anni '30 dove oggi c’è il centro giovani ‘Free to Fly’. Anche qui si
+proiettavano film e c’era un palcoscenico da teatro. Il Cinema del Corso era
+un luogo più frequentato dalla cosiddetta gente bene del paese, mentre
+l’Aurora era alla portata della gente popolare.&nbsp;</font>
+      </p>
+      <p align="center"><font face="arial,helvetica,sans-serif" size="6"><br>
+      <a href="stradoAB.htm#littorio">(clicca
+      qui per sapere tutto del&nbsp;<br>
+      vecchio Cinema del Corso)</a></font>
+      </p>
+      <p align="center"><font face="arial,helvetica,sans-serif" color="#FF0000" size="6">Il
+      nuovo &quot;Cinema Corso&quot;</font></p>
+    <p><font face="arial,helvetica,sans-serif" size="6">L’edificio dove
+    fu collocato il cinema Corso nel dopoguerra&nbsp; è ricordato dai più vecchi di Alfonsine col nome
+    “e’ cantinò” mentre quelli nati a cavallo della fine dell’ultima
+    guerra lo chiamano ancora cinema Corso.</font></p>
+    <p><font face="arial,helvetica,sans-serif" size="6">Fu
+    costruito nel 1838 dalla famiglia Marini (i Marèn), ricchi proprietari
+    terrieri del tempo. Serviva come cantina per la vinificazione, come stalla
+    per i cavalli, e come magazzino per il grano.</font></p>
+    </td>
+    <td width="50%" valign="top">
+      <p align="center"><img border="0" src="immagini/Corso%20Garibaldi/cantinone/mappa-1800.jpg" width="384" height="284"></p>
+      <p align="center"><img border="0" src="immagini/corso-con-freccia.jpg" width="382" height="427"></p>
+      <p align="center" style="text-autospace: justify" class="MsoNormal"><i><font face="arial,helvetica,sans-serif" size="6">Il ‘Cinema del Corso’
+      prima della guerra era dove oggi c’è il centro giovani ‘Free to Fly’.
+      Fu distruttp durante la guerra come tutto corso Garibaldi</font></i></p>
+  <p align="center"><a href="immagini/corso-aerea.jpg"><img border="0" src="immagini/corso-aerea_small.jpg" alt="corso-aerea.jpg (104128 byte)" width="394" height="234"></a>
+  <p align="center" style="text-autospace: justify" class="MsoNormal"><i><font face="arial,helvetica,sans-serif" size="6">Foto
+  aerea di Fino Faccani</font></i>
+      <p align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150%" valign="top" colspan="2">
+    <p><font face="arial,helvetica,sans-serif" size="6">Durante
+    la “Settimana Rossa”, nel 1914 i rivoluzionari sequestrarono dal
+    magazzino diversi quintali di grano.</font></p>
+    <p><font face="arial,helvetica,sans-serif" size="6">
+    Negli anni successivi l’edificio fu acquistato da Luigiò (Luigi Randi),
+    il fattore dei “Marèn”, che vi fece costruire diverse camere che diede
+    in affitto a varie famiglie e continuò ad utilizzare i magazzini per la
+    raccolta del grano.</font></p>
+    <p><font face="arial,helvetica,sans-serif" size="6">Quando Luigiò morì, falciato da una
+    mitragliata di un aereo inglese, ereditò il tutto suo nipote Tugnazzé
+    (Antonio Randi), il quale non avendo soldi per pagare la tassa di successione di tutti i poderi che ereditò da
+    Luigiò, vendette “e’
+    cantinò” a Ernesto Contessi (Arnisté), suocero di Marino Marini.&nbsp;</font></p>
+    </td>
+  </tr>
+</table>
+      <table border="0" width="95%" cellpadding="10">
+        <tr>
+          <td width="100%" valign="top"><font face="arial,helvetica,sans-serif" size="6"> Fu
+    quest’ultimo a premere su Prefettura e Governo per avere il permesso di
+    adibire quella costruzione a uso cinema, contro la decisione del comune di
+    Alfonsine che aveva stabilito, nel suo piano di ricostruzione, la presenza di un
+    solo cinema nel nuovo centro del paese in piazza Gramsci e cioè
+    l’“Aurora”.&nbsp;&nbsp;</font>
+            <p>&nbsp;</td>
+          <td width="47%">
+            <p align="center"><a href="Famiglie/Marini/marino%20marini2.jpg"><img border="0" src="immagini/cinema%20corso/marino_marini2_small.jpg" alt="marino marini2.jpg (100239 byte)" width="471" height="596"></a></p>
+            <p align="center"><i><font face="arial,helvetica,sans-serif" size="6">Marino
+            Marini</font></i></td>
+        </tr>
+        <tr>
+          <td width="50%" valign="top">
+            <p align="justify"><font face="arial,helvetica,sans-serif" size="6">Lo scontro fu
+    duro e si ripropose, con una certa forzatura, la contrapposizione che,
+    durante il fascismo, c’era stata fra il cinema del Corso (detto anche
+    “Littorio”),&nbsp;</font></td>
+          <td width="100%" valign="top">
+            <p align="center">
+            <a href="immagini/cinema%20corso/corso%20cinema.jpg"><img border="0" src="immagini/cinema%20corso/corso_cinema_small.jpg" alt="corso cinema.jpg (97982 byte)" width="587" height="414"></a></p>
+          </td>
+        </tr>
+        <tr>
+          <td width="150%" valign="top" colspan="2">
+            <font face="arial,helvetica,sans-serif" size="6"> collocato dove oggi c’è il centro giovani “Free to fly”
+    in corso Garibaldi, caratterizzato dalle feste e veglioni dei fascisti, e il
+    cinema “Aurora”, che si trovava nel “Lazzaretto”, della famiglia
+    Gessi, ambiente più popolare, con alle spalle anche una storia di scontri
+    violenti tra i Gessi e i fascisti della prima ora.</font></td>
+        </tr>
+        <tr>
+          <td width="50%" valign="top">
+            <p align="justify"><font face="arial,helvetica,sans-serif" size="6">La
+    realizzazione di un secondo cinema fu uno sfregio al piano regolatore e alle
+    scelte democratiche della prima amministrazione di sinistra del dopoguerra,
+    (per ottenerlo il Prefetto di Ravenna commissariò, per alcuni mesi
+    l’amministrazione comunale), i militanti dei partiti di sinistra al
+    governo del paese di Alfonsine invitavano la gente a non frequentare il
+    cinema Corso, ma solo l’Aurora. <font color="#FF0000"><b>
+    Dall’altro lato i Marini</b></font>, con una mossa spiazzante, diedero in gestione il
+    cinema a una cooperativa di operai della loro fabbrica.</font></p>
+            <p align="justify">&nbsp;</p>
+          </td>
+          <td width="100%" valign="top">
+            <p align="center">
+            <font face="Times New Roman" size="4"><a href="immagini/gruppo-cinema-corso-dopogue.jpg"><img border="0" src="immagini/gruppo-cinema-corso-dopogue_small.jpg" alt="gruppo-cinema-corso-dopogue.jpg (93085 byte)" width="562" height="378"></a></font>
+<p class="MsoNormal" style="text-autospace: justify" align="center"><i><font face="arial,helvetica,sans-serif" size="6">Anno
+1956: davanti al Cinema Corso: da sinistra Mina Martina sorella di Domenico (il
+secondo da sinistra). Segue la Vera Martini (cugina dei primi due).&nbsp;
+Seguono Anna Zanzi, una cugina di Vera Martina che vive a Pesaro, e infine Rino Martini, fratello di Vera e cugino di
+Domenico.&nbsp;<br>
+ Nel cartellone sul muro del cinema c'è il film &quot;Canzoni sotto le
+stelle&quot; con Luciano Tajoli (1956).</font></i></p>
+      <p class="MsoNormal" style="text-autospace: justify" align="center"><i><font face="arial,helvetica,sans-serif" size="6">A
+      sinistra si vede una bancherella che era &quot;dla Salamena&quot;. La
+      &quot;salamena&quot;, era la più vecchia, moglie di Anselmo Morelli (da
+      cui derivava il nome &quot;salamé&quot;), madre di Gigino Morelli e di
+      Romana, lasciò la gestione della bancarella a Romana sposata con Iorio
+      Lasi</font></i></p>
+            <p align="center"><a href="immagini/cinema%20corso/corso%20salamena.jpg"><img border="0" src="immagini/corso_salamena_small.jpg" alt="corso salamena.jpg (169027 byte)" width="576" height="390"></a></td>
+        </tr>
+        <tr>
+          <td width="100%" valign="top" colspan="2">
+            <p align="justify"><font face="arial,helvetica,sans-serif" size="6">
+    Così, col passare degli anni, tale contrapposizione
+    ideologico-cinematografica andò attenuandosi, fino al punto che, dopo varie
+    gestioni, il Corso e l’Aurora vennero gestiti entrambi dal sig. Errani di
+            Savarna, un ex-partigiano.&nbsp;</font>
+            </p>
+            <p align="center"><img border="0" src="immagini/cinema%20corso/errani-corso.jpg" width="718" height="416"></p>
+            <p align="center"><i><font face="arial,helvetica,sans-serif" size="6">Egidio
+            Errani</font></i>
+            <p align="justify"><font face="arial,helvetica,sans-serif" size="6"> Infine quando Errani lasciò, (nel 1980) più nessuno osò
+    continuare tale attività e le due sale rimasero abbandonate, finché
+    l’Aurora fu trasformato in negozi e appartamenti.&nbsp;</font>
+            </p>
+            <p align="justify"><font face="arial,helvetica,sans-serif" size="6"> Poi è toccato al Cinema
+            Corso nel 2007. Oggi&nbsp;(2020) al posto del cinema c'è un
+            caffé-pasticceria, una pizzeria-ristorante
+e un piccolo negozio.&nbsp;</font>
+            </p>
+            <p align="justify"><font face="arial,helvetica,sans-serif" size="6"> Ma sopra
+            c'è ancora la vecchia galleria...</font>
+            <p>&nbsp;
+          </td>
+        </tr>
+      </table>
+<table border="0" width="100%">
+  <tr>
+    <td width="41%">
+    <p class="MsoNormal" style="text-autospace:justify" align="center"><font face="Times New Roman" size="5"><span style="font-style: 12.0pt; mso-fareast-hint: Times New Roman; mso-ascii-font-family: IT; mso-field-change: IT; mso-bookmark: HE">
+    <img width="370" height="230" src="immagini/cinema4.jpg" v:shapes="_x0000_i1025"></span></font></p>
+    <p class="MsoNormal" style="text-autospace:justify" align="center"><i><font face="arial,helvetica,sans-serif" size="6">L’edificio
+    di Corso Garibaldi, detto “e’ cantinò”<o:p>
+    &nbsp;</font></i></p>
+  </td>
+    <td width="99%" valign="top">
+    <p align="center"><img border="0" src="immagini/Alfonsine%202000/corso-con-torretta-2000.jpg" width="502" height="348">
+    <p align="center" class="MsoNormal" style="text-autospace: justify"><i><font face="arial,helvetica,sans-serif" size="6">L’edificio
+    di Corso Garibaldi, detto “e’ cantinò”<o:p>
+    &nbsp;dopo una prima restaurazione, con la pizzeria e la Torretta-albergo</font></i></td>
+  </tr>
+  <tr>
+    <td width="140%" colspan="2">
+    <p align="center"><a href="immagini/Alfonsine%202000/casarmone-conad.jpg"><img border="0" src="immagini/casarmone-conad_small.jpg" alt="casarmone-conad.jpg (102532 byte)" width="529" height="277"></a><img border="0" src="immagini/Corso%20Garibaldi/cantinone/18.jpg" width="347" height="274"></p>
+    <p align="center" class="MsoNormal" style="text-autospace: justify"><i><font face="arial,helvetica,sans-serif" size="6">Un
+    piccolo Hotel, Ristorante pizzeria da Nick, e caffé-Pasticceria &quot;La perla&quot;
+    (2021)</font></i>
+  </td>
+  </tr>
+</table>
+      <p align="center" class="MsoNormal" style="text-autospace: justify"><b><font face="arial,helvetica,sans-serif" color="#FF0000" size="7">C'è
+      rimasta solo la galleria</font></b></p>
+      <table border="0" width="100%">
+        <tr>
+          <td width="33%"><a href="immagini/cinema%20corso/cinema%20corso10.jpg"><img border="0" src="immagini/cinema%20corso/cinema_corso10_small.jpg" alt="cinema corso10.jpg (91464 byte)" width="437" height="327"></a></td>
+          <td width="67%">
+            <p align="center"><a href="immagini/cinema%20corso/cinema%20corso1.jpg"><img border="0" src="immagini/cinema%20corso/cinema_corso1_small.jpg" alt="cinema corso1.jpg (74370 byte)" width="446" height="335"></a></td>
+        </tr>
+        <tr>
+          <td width="33%">
+            <p align="center"><a href="immagini/cinema%20corso/cinema%20corso4.jpg"><img border="0" src="immagini/cinema%20corso/cinema_corso4_small.jpg" alt="cinema corso4.jpg (114602 byte)" width="440" height="330"></a></td>
+          <td width="67%">
+            <p align="center"><a href="immagini/cinema%20corso/cinema%20corso5.jpg"><img border="0" src="immagini/cinema%20corso/cinema_corso5_small.jpg" alt="cinema corso5.jpg (109005 byte)" width="447" height="333"></a></td>
+        </tr>
+        <tr>
+          <td width="33%"><a href="immagini/cinema%20corso/cinema%20corso6.jpg"><img border="0" src="immagini/cinema%20corso/cinema_corso6_small.jpg" alt="cinema corso6.jpg (60379 byte)" width="445" height="337"></a></td>
+          <td width="67%">
+            <p align="center"><a href="immagini/cinema%20corso/cinema%20corso7.jpg"><img border="0" src="immagini/cinema%20corso/cinema_corso7_small.jpg" alt="cinema corso7.jpg (83999 byte)" width="452" height="339"></a></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+    <p class="MsoNormal" align="center" style="text-align: center; tab-stops: 41.4pt; margin-top: 12.6pt">    &nbsp;
+    <p class="MsoNormal" align="center" style="text-align: center; tab-stops: 41.4pt; margin-top: 12.6pt">
+<script src="https://connect.facebook.net/it_IT/all.js#xfbml=1"></script><fb:like href="https://alfonsinemonamour.racine.ra.it/alfonsine/Alfonsine/corso.htm" send="true" width="750" show_faces="true" font="arial"></fb:like>  
+  </center>
+    </td>
+  </tr>
+</table>
+</div>
+
+  <div align="center">
+    <center>
+
+      <table border="0" width="752">
+        <tr>
+          <td width="90">
+            <p align="left"><b><font face="arial,helvetica,sans-serif" size="6">Nell'800</font></b></td>
+          <td width="180" align="center">
+            <p align="center"><b><a href="teatrocamerani.htm"><font face="arial,helvetica,sans-serif" size="6">Il
+            Teatro Camerani</font></a></b></td>
+          <td width="210" align="center">
+            <p align="center"><b><a href="teatromassaroli.htm"><font face="arial,helvetica,sans-serif" size="6">La
+            sala Massaroli</font></a></b></td>
+          <td width="249" align="center">
+            <p align="center"><b><a href="teatrocalderoni.htm"><font face="arial,helvetica,sans-serif" size="6">Il
+            Teatro Calderoni (e baracò)</font></a></b></td>
+        </tr>
+      </table>
+
+    </center>
+  </div>
+  <div align="center">
+    <center>
+
+      <table border="0" width="752">
+        <tr>
+          <td width="93"><b><font face="arial,helvetica,sans-serif" size="6">Nel
+            '900</font></b></td>
+          <td width="118" align="center">
+            <p align="center"><b><a href="aurora.htm"><font size="6" face="arial,helvetica,sans-serif">Il
+            Teatro-<br>
+            Cinema Aurora</font></a></b></td>
+          <td width="118" align="center">
+            <p align="center"><font size="6"><font face="arial,helvetica,sans-serif"><b>&nbsp;Il
+            Teatro-<br>
+            Cinema del Corso </b><font color="#FF0000">(sei
+            qui)</font> </font></font></td>
+          <td width="135" align="center">
+            <font size="6" color="#FF0000">
+            <b>
+            <font face="arial,helvetica,sans-serif">
+            Il cinema parrocchiale&nbsp;<br>
+            </font>
+            </b>
+            <font face="arial,helvetica,sans-serif">
+            <i>(scheda in costruzione)</i></font></font></td>
+          <td width="136" align="center">
+            <font size="6" color="#FF0000"><b>
+            <font face="arial,helvetica,sans-serif">Il teatro parrocchiale
+            &quot;Monti&quot;</font></b>&nbsp;<br>
+            <font face="arial,helvetica,sans-serif"><i>(scheda in costruzione)</i></font></font></td>
+          <td width="124" align="center">
+            <font size="6" color="#FF0000">
+            <b>
+            <font face="arial,helvetica,sans-serif">Il cinema Gulliver </font> </b>
+            <font face="arial,helvetica,sans-serif"><i>(scheda in costruzione)</i></font></font></td>
+        </tr>
+      </table>
+    </center>
+  </div>
+      <p align="center">
+<script src="https://connect.facebook.net/it_IT/all.js#xfbml=1"></script><fb:like href="https://alfonsinemonamour.racine.ra.it/alfonsine/Alfonsine/corso.htm" send="true" width="450" show_faces="true" font="arial"></fb:like>
+      <p align="center">
+        &nbsp;
+
+      <p align="center"><b><font face="arial,helvetica,sans-serif" size="6">
+      | <a href="mon-amour.htm">Alfonsine</a>
+      | <a href="edifici%20importanti.htm"> Gli
+      edifici importanti&nbsp;dal '900 ad oggi<font size="6" face="arial,helvetica,sans-serif" color="#0000FF">&nbsp;|<br>
+      </font><font color="#0000FF">
+      |</font></a><font color="#0000FF">&nbsp;</font><a href="mon-amour.htm#vagabondaggi1">Ricerche
+      sull'anima di Alfonsine</a>
+      <font color="#181512">|</font>
+      </font></b>
+
+</body>
+
+</html>

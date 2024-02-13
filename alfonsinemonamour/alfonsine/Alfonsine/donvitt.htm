@@ -1,0 +1,996 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="it">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<title>Don Dionisio Vittorietti</title>
+</script>
+<style>A:link, A:visited { text-decoration: none }
+A:hover { text-decoration: none }
+</style>
+
+<style type="text/css">.menutitle{
+cursor: hand; cursor: pointer;
+margin-bottom: 2px;
+background-color: #ECECFF;
+color: #000000;
+width: 160px;
+padding: 2px;
+text-align: center;
+font-weight: bold;
+/*/*/border: 1px solid #000000;/* */
+}
+
+.submenu{
+margin-bottom: 0.5em;
+}
+</style>
+<style>A:link, A:visited { text-decoration: none }
+A:hover { text-decoration: none }
+</style>
+
+
+<script type="text/javascript">
+
+if (document.getElementById){
+document.write('<style type="text/css">\n')
+document.write('.submenu{display: none;}\n')
+document.write('</style>\n')
+}
+
+function SwitchMenu(obj){
+	if(document.getElementById){
+	var el = document.getElementById(obj);
+	var ar = document.getElementById("masterdiv").getElementsByTagName("span");
+		if(el.style.display != "block"){
+			for (var i=0; i<ar.length; i++){
+				if (ar[i].className=="submenu")
+				ar[i].style.display = "none";
+			}
+			el.style.display = "block";
+		}else{
+			el.style.display = "none";
+		}
+	}
+}
+
+</script>
+
+<script Language="Javascript">
+<!--    
+
+var isIE=document.all?true:false;
+var isDOM=document.getElementById?true:false;
+current = 0;
+PicVar = 0;
+
+PicVal = new Array();
+TitVal = new Array();
+DatVal = new Array();
+TxtVal = new Array();
+
+PicVal[PicVar] = "immagini/chiesa_1884.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria nel 1884";
+DatVal[PicVar] = "anno 1884";
+TxtVal[PicVar++] = "Questa è un disegno dal vero del 1884, realizzato da Giuseppe Marzocchi; è di proprietà di Luigi Mariani";
+
+PicVal[PicVar] = "immagini/chiesa1900.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria nei primi anni del secolo scorso";
+DatVal[PicVar] = "anno 1900";
+TxtVal[PicVar++] = "La chiesa Santa Maria: la cartolina è edita dalle Sorelle Gramantieri che gestivano un negozio di tessuti e robe varie, prima sotto i portici in corso Garibaldi e poi sul ponte vecchio. La cartolina è firmata Massaroli, che era la famiglia della Marchesa che abitava la villa sotto il fiume ";
+
+PicVal[PicVar] = "immagini/chiesa1910_rid.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria sempre uguale all'inizio secolo";
+DatVal[PicVar] = "anno 1910";
+TxtVal[PicVar++] = "La chiesa Santa Maria: si nota sopra la porta l'insegna in travertino con la scritta dei Calcagnini e sopra lo stemma";
+
+PicVal[PicVar] = "immagini/chiesa_1930_rid.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria negli anni '20";
+DatVal[PicVar] = "prima del 1924";
+TxtVal[PicVar++] = "La chiesa Santa Maria: si vede a sinistra che non era ancora stato costruito il caffé di Cai, né il Gallo, quindi siamo prima del 1924";
+
+
+PicVal[PicVar] = "immagini/chiesa1925.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria nel 1925";
+DatVal[PicVar] = "anno 1925";
+TxtVal[PicVar++] = "Si nota il palazzo Lanconelli a destra della chiesa, dopo la canonica";
+
+
+PicVal[PicVar] = "immagini/chiesa1927.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria nel 1927";
+DatVal[PicVar] = "anno 1927";
+TxtVal[PicVar++] = "Da notare l'angolo di fianco alla canonica, con botteghe che erano date in affitto";
+
+PicVal[PicVar] = "immagini/chiesa1929.jpg";
+TitVal[PicVar] = "La chiesa vista dai portici delle Pescherie";
+DatVal[PicVar] = "anno 1929";
+TxtVal[PicVar++] = "Visione insolita della Chiesa ripresa dai portici della palazzina delle Pescherie. Il caffé di Cai (caffé Vittoria) e il Gallo sono già stati costruiti";
+
+
+
+PicVal[PicVar] = "immagini/CHIESA2.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria negli anni '30";
+DatVal[PicVar] = "anno 1930";
+TxtVal[PicVar++] = "La chiesa nel 1930, con il caffé di Cai e il Gallo";
+
+PicVal[PicVar] = "immagini/chiesa_gallo.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria negli anni '30";
+DatVal[PicVar] = "anno 1930";
+TxtVal[PicVar++] = "La chiesa nel 1930, con il caffé di Cai (caffé Victoria) e il Gallo";
+
+PicVal[PicVar] = "immagini/chiesa_interno1.jpg";
+TitVal[PicVar] = "L'interno della chiesa Santa Maria";
+DatVal[PicVar] = "anno 1930";
+TxtVal[PicVar++] = "L'interno della Chiesa";
+
+PicVal[PicVar] = "immagini/chiesa_interno2.jpg";
+TitVal[PicVar] = "L'interno della chiesa Santa Maria da un altro punto di vista";
+DatVal[PicVar] = "anno 1930";
+TxtVal[PicVar++] = "L'interno della Chiesa";
+
+PicVal[PicVar] = "immagini/chiesadistrutta_rid.jpg";
+TitVal[PicVar] = "La chiesa distrutta";
+DatVal[PicVar] = "aprile 1945";
+TxtVal[PicVar++] = "La chiesa distrutta dopo il 1° aprile 1945";
+
+PicVal[PicVar] = "Cafe d cai/ricostruzione1.jpg";
+TitVal[PicVar] = "La prima costruzione usata come chiesa dal 1946 al 1953";
+DatVal[PicVar] = "anno '46";
+TxtVal[PicVar++] = "A sinistra si intravvede la nuova costruzione dove si andava a messa fino al 1953. Oggi è la canonica della chiesa del Sacro Cuore";
+
+
+PicVal[PicVar] = "immagini/chiesa_1960.jpg";
+TitVal[PicVar] = "La chiesa Sacro Cuore costruita sul vecchio sito";
+DatVal[PicVar] = "anni '60";
+TxtVal[PicVar++] = "La chiesa e la piazza Monti vista dal terrazzo del bar Tavalazzi (Frazché)";
+
+
+PicVal[PicVar] = "immagini/chiesa_oggi.jpg";
+TitVal[PicVar] = "La chiesa nel 2000";
+DatVal[PicVar] = "anno 2000";
+TxtVal[PicVar++] = "La chiesa è che si trova nella stesso punto di quella di prima della guerra non è più la Chiesa Santa Maria ma Chiesa del Sacro Cuore. La parrocchia Santa Maria e la nuova chiesa furono ricostruite negli anni '50 nel paese nuovo alla sinistra del Senio";
+
+PicVal[PicVar] = "immagini/chiesa_2000_col.jpg";
+TitVal[PicVar] = "La chiesa Sacro Cuore a cavallo del terzo millennio";
+DatVal[PicVar] = "anno 2000";
+TxtVal[PicVar++] = "La chiesa è che si trova nella stesso punto di quella di prima della guerra non è più la Chiesa Santa Maria ma Chiesa del Sacro Cuore. La parrocchia Santa Maria e la nuova chiesa furono ricostruite negli anni '50 nel paese nuovo alla sinistra del Senio";
+
+
+
+
+function Show_foto(newpic) {
+  if(isDOM)document.getElementById("_foto").src = PicVal[newpic];
+  else if(isIE) document._foto.src = PicVal[newpic];
+  document.form_foto.testo_foto.value=TxtVal[newpic];
+  document.form_foto.data_foto.value=DatVal[newpic];
+  SelectionBox = document.form_foto.menudrop;
+  SelectionBox.options[newpic].selected = true;
+  current = newpic;
+}
+function Previous_foto() {
+  TotalImages = document.form_foto.menudrop.options.length;
+  current--;
+  if(current<0) current = TotalImages - 1;
+  Show_foto(current);
+}
+function Next_foto() {
+  TotalImages = document.form_foto.menudrop.options.length;
+  current++;
+  if (current>=TotalImages) current = 0;
+  Show_foto(current);
+}
+// -->
+</script>
+
+</head>
+
+<body background="immagini/sfondi/sfondo_giallino.jpg" vlink="#0000FF" alink="#FF00FF">
+
+  <div align="center">
+    <center>
+
+  <table border="0" width="100%" cellspacing="0" cellpadding="9" height="1" bgcolor="#980519">
+    <tr>
+      <td width="50" align="center" height="1">
+  <p align="center"><img border="0" src="immagini/don_vitt.jpg" width="44" height="47">
+      </td>
+      <th width="100%" align="center" height="1" valign="middle">
+          <p align="center">
+          <b>
+ <a href="alfonsine.htm" target="_parent"><font face="arial,helvetica,sans-serif" size="7" color="#FFFFFF">Alfonsine</font></a></b>
+      <th width="51" align="center" height="1" valign="middle">
+          <p align="center">
+          <b><font size="6" face="arial,helvetica,sans-serif"><img border="0" src="immagini/stemma_alfonsines%5B1%5D.jpg" width="42" height="47" align="absmiddle">
+          </font></b>
+    </tr>
+  </table>
+
+    </center>
+  </div>
+
+  <p align="center"><b><font face="Arial, helvetica,sans-serif" size="6"> |&nbsp;<a href="chiesa_alfonsine.htm">Chiesa
+  S. Maria e S. Cuore</a>   |  </font><font face="arial,helvetica,sans-serif" size="6"><a href="mon-amour.htm">Ricerche
+      sull'anima di Alfonsine</a> |</font></b>
+  </p>
+
+        <p align="center">
+        <font face="Arial, helvetica,sans-serif" size="6"><a href="Cafe%20d%20cai/Antonio%20Pagani%20Cai.htm" target="_top"><font color="#FF0000">Un
+        libro su Alfonsine</font><font color="#0000FF" face="Arial" size="6"><br>
+        &quot;E' Café d'Cài&quot;&nbsp;</font></a><font face="Arial" size="6"><br>
+        </font><a href="Cafe%20d%20cai/Antonio%20Pagani%20Cai.htm" target="_top"><font color="#FF0000" size="6"><i>(clicca
+        o tocca qui, è tutto sul web)</i></font></a></font></p>
+        <p align="center"><font face="Arial, helvetica,sans-serif" size="6">Questo
+        sito è ideato e gestito interamente da <a href="mailto:lucci@racine.ra.it"> Luciano Lucci</a></font>
+        </p>
+
+        <p align="center">&nbsp;
+<script src="https://connect.facebook.net/it_IT/all.js#xfbml=1"></script><fb:like href="https://alfonsinemonamour.racine.ra.it/alfonsine/Alfonsine/donvitt.htm" send="true" width="450" show_faces="true" font="arial"></fb:like>      <p align="center"><b><font face="Arial, helvetica,sans-serif" size="7" color="#FF0000">Don
+      Vittorietti</font></b>
+
+      <p align="center"><b><font face="Arial, helvetica,sans-serif" size="7" color="#FF0000">cappellano ad Alfonsine
+      dal 1950&nbsp;<br>
+ e poi parroco&nbsp; dal 1956 al 1973</font></b>
+      <p align="center"><i><font face="Arial, helvetica,sans-serif" size="6" color="#FF0000">(un
+      click o un tocco sulle foto per averne un ingrandimento)</font>
+      </i>
+
+  <div align="center">
+    <center>
+    <table border="0" width="1000">
+      <tr>
+        <td width="100%">
+          <p align="center"><font face="Arial, helvetica,sans-serif" size="6">Ognuno
+              di noi dovrebbe, nel corso della propria vita, costruirsi un
+              pantheon di miti, una specie di album di figurine con cui creare
+              una propria mitologia felice, fatta di esperienze, personaggi,
+              eventi che ci hanno tenuto caldo, che hanno acceso energie
+              positive, che hanno comunicato uno stato d’animo di armonia, che
+              hanno nutrito il nostro DNA con sentimenti di creazione.&nbsp;</font></p>
+          <p align="center"><img border="0" src="immagini/don_vitt.jpg" width="619" height="682"></p>
+              <p align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>Don
+              Dionisio Vittorietti</i></font>
+              <p align="center"><i><font face="Arial, helvetica,sans-serif" size="6">Don
+              Dionisio Vittorietti, meglio conosciuto come don Vitt, un piccolo
+              grande prete, che fu ad Alfonsine per 22 anni, dal 1950 al 1973,
+              occupa senz’altro uno dei primi posti per quegli alfonsinesi che
+              lo hanno conosciuto.</font></i>
+      <p align="justify"><font face="Arial, helvetica,sans-serif" size="6">Era nato a Faenza il 10 luglio 1927 da Antonietta e Antonio Vittorietti.<br>
+      Compiuti gli studi presso il Seminario faentino, fu ordinato prete il 16 luglio 1950.<br>
+      Ebbe subito l'incarico di cappellano presso la Parrocchia di S. Maria ad
+      Alfonsine, in sostituzione di Don Zanelli. Arrivò in
+      bicicletta in un pomeriggio assolato del settembre 1950. Alfonsine era il paese tutto in mano ai comunisti, rinomato per la settimana rossa del 1914, e per la lotta di resistenza. Paese di repubblicani e comunisti, tutti dei senza-dio. Affiancò come cappellano l’arciprete
+      <font color="#FF0000"> Don Liverani</font>, insieme a <font color="#FF0000">Don Domenico
+      Parmeggiani</font>.&nbsp;</font></p>
+      <p align="justify"><font face="Arial, helvetica,sans-serif" size="6"><font color="#FF0000">Don
+      Vitt</font> si inserì subito nella comunità alfonsinese come insegnante di
+      religione nella Scuola Media, e nell’attività estiva che don Liverani promuoveva con le colonie di gruppi di ragazzi di varie età sulle dolomiti.
+      Santa Brigida in Val Brembana (BG), Santa Giustina (BL), Mezzano di
+      Primiero (TN), Tenna  di Levico (TN).</font></p>
+            <p align="center"><a href="immagini/gruppo-scala-scuola-con-nom.jpg"><img border="0" src="immagini/gruppo-scala-scuola-con-nom_small1.jpg" alt="gruppo-scala-scuola-con-nom.jpg (190445 byte)" width="952" height="559"></a><a href="immagini/don-vitt-gruppo-scala-scuol.jpg"><br>
+            </a><font face="Arial, helvetica,sans-serif"><b><br>
+            </b><font size="6">
+            Interno scuola media di Alfonsine (anno sc. 1951-52)</font></font></p>
+          <p align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>Tommaso
+          Morigi, Gianni Bertoni, Bebbe Rossini, Don Vitt, Antonio Montanari, Andrea Pagani, Roberto
+          Graziani, Francesco Montanari (Pitadé)</i></font>
+          <p align="center"><font face="Arial, helvetica,sans-serif" size="6" color="#FF0000"><i>(un
+      click o un tocco sulle foto per averne un ingrandimento)</i></font>
+            <p align="center"><a href="immagini/gruppo-scuola-media.jpg"><img border="0" src="immagini/gruppo-scuola-media_small.jpg" alt="gruppo-scuola-media.jpg (171988 byte)" width="815" height="481"></a></p>
+            <p align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>Scuola
+            Media (anno sc. 1951-52)</i></font></p>
+            <p align="center"><font face="Arial, helvetica,sans-serif" size="6" color="#FF0000"><i>(un
+      click o un tocco sulle foto per averne un ingrandimento)</i></font></p>
+          <p align="center">&nbsp;
+<p><a href="immagini/don-vitt-inizi-con-elio-mar.jpg"><img border="0" src="immagini/don-vitt-inizi-con-elio-mar_small.jpg" alt="don-vitt-inizi-con-elio-mar.jpg (169631 byte)" width="911" height="643"></a>
+
+</p>
+<p><font face="Arial, helvetica,sans-serif" size="6"><i>Si
+            riconoscono da sinistra prof. di Matematica Poggiali, Luigi Ruiba
+            (bidello), Elio Marini, Don Vitt, Libera Martoni sposata Montanari,
+            mamma di Tino Montanari, Sebastiano Montanari, marito di Libera,
+            Giuseppina Gregori, una prof. di Lettere e Lidia Taroni</i></font>
+
+</p>
+      <p align="center"><i><font face="Arial, helvetica,sans-serif" color="#FF0000" size="6">
+      (un
+      click o un tocco sulle foto per averne un ingrandimento)</font></i></p>
+            <p align="center"><a href="immagini/gruppo-montagna-neve-con-no.jpg"><img border="0" src="immagini/gruppo-montagna-neve-con-no_small3.jpg" alt="gruppo-montagna-neve-con-no.jpg (110961 byte)" width="904" height="550"></a></p>
+            <p align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>Anno
+            1953: Gruppo vacanza della parrocchia di Alfonsine, a Santa Brigida,
+            in Val Brembana.</i></font></p>
+            <p align="center"><font face="Arial, helvetica,sans-serif" size="6">Accompagnatore
+            il cappellano Don Vittorietti.</font></p>
+            <p align="justify"><font face="Arial, helvetica,sans-serif" size="6"><i>(da
+            sinistra)</i> Gianni Faccani <i>(macellaio)</i>, Eligio Ravaglia, Gabriele
+            Argelli, ?, Adolfo Romagnoli, Gamberini (Gimmi), Francesco Montanari (Franz
+            d'Pitadé),
+            Don Vitt,&nbsp;<br>
+            Emanuele Faccani, Ballardini (?), Guido Cantoni, Roberto Bedeschi <i> (figlio della
+            maestra Verdiana)</i></font></p>
+            <p align="justify"><font face="Arial, helvetica,sans-serif" size="6">Nella
+            prima metà degli anni ‘50 i bambini e i giovani di Alfonsine
+            avevano due opportunità per andare in vacanza in montagna:
+            o con i preti della parrocchia, sfruttando le case di proprietà del
+            vescovado di Faenza, a S. Brigida, a Santa Giustina
+            di Belluno, a Mezzano di Primiero, a Tenna di Levico. Oppure in
+            colonia vacanza organizzata dal comune vicino
+            a Brunico. In genere le famiglie non di fede comunista mandavano i
+            figli col prete, quelle di fede comunista col comune.</font>
+            <p align="center"><a href="immagini/DonVitt-gruppone-colonia-19.jpg"><img border="0" src="immagini/DonVitt-gruppone-colonia-19_small1.jpg" alt="DonVitt-gruppone-colonia-19.jpg (126869 byte)" width="897" height="703"></a>
+            <p align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>Gruppo
+            in colonia a Santa Giustina
+            di Belluno<br>
+            </i><font color="#FF0000"><i>(un
+      click o un tocco sulle foto per averne un ingrandimento)</i></font></font></p>
+            <p><font face="Arial, helvetica,sans-serif" size="6"><i>(Seduti
+            da sinistra):</i>  Luciano Lucci?, Renzo Minguzzi (e' purcaèr), ?,?,?,?, Roberto
+            Montanari, Augusto Bragonzoni, Rino Montanari, Walter Conti,?,?,?,?,
+            Andrea Forlivesi (formazala)</font></p>
+            <p><font face="Arial, helvetica,sans-serif" size="6"><i>(File in
+            piedi) </i>si riconoscono tra gli altri Don Vitt al centro, Gianni Taroni, Renzo - Cenzino, Luciano, Bonavia, Andrea Pagani, Franco
+            Cortese, Bebbe Rossini, Rino Martini, 'Cecè' Gamberini</font></p>
+            <p align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>(Ultima
+            fila in alto): </i>Gamberini (Gimmi), Domenico Martini, Rino
+            Martini...</font></p>
+            <p align="center"><a href="immagini/don_vitt_gruppo_maschi_montagna3%20copia.jpg"><img border="0" src="immagini/don_vitt_gruppo_maschi_montagna3_copia_small1.jpg" alt="don_vitt_gruppo_maschi_montagna3 copia.jpg (346832 byte)" width="907" height="433"></a>
+            <p align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>Foto
+            sopra: in
+            colonia in montagna:<br>
+            si riconoscono Rino Martini, Bonavia, Cenzino, Franco Cortese, Lucianò,&nbsp;</i></font>
+            <p align="center"><a href="immagini/gruppo_ragazzi_montagna_renzo_cete.jpg"><img border="0" src="immagini/gruppo_ragazzi_montagna_renzo_cete_small1.jpg" alt="gruppo_ragazzi_montagna_renzo_cete.jpg (1161471 byte)" width="891" height="589"></a>
+            <p align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>In alto da sinistra Rino Martini, ?, ?<br>
+            ?, Renzo Tavalazzi, ... Pagani (Fefè) (?)</i><b><br>
+            </b></font><font face="Arial, helvetica,sans-serif" size="6" color="#FF0000"><i>(un
+      click o un tocco sulle foto per averne un ingrandimento)</i></font>
+            <p align="center">
+            <a href="immagini/foto%20don%20vittorietti.jpg"><img border="0" src="immagini/foto_don_vittorietti_small1.jpg" alt="foto don vittorietti.jpg (2047913 byte)" width="746" height="1131"></a>
+            </p>
+            <p style="language: it; direction: ltr; unicode-bidi: embed; mso-line-break-override: none; word-break: normal; punctuation-wrap: hanging; margin-left: 0in; margin-top: 0pt; margin-bottom: 0pt" align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>Anno
+            1955 a Mezzano di Primiero:&nbsp;</i></font></p>
+            <p style="language: it; direction: ltr; unicode-bidi: embed; mso-line-break-override: none; word-break: normal; punctuation-wrap: hanging; margin-left: 0in; margin-top: 0pt; margin-bottom: 0pt" align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>da
+            sinistra in basso:<br>
+            Emanuele
+            Faccani (manuvlaz), ? Roberto Bedeschi, Adolfo Romagnoli.&nbsp;<br>
+ In alto
+            Umberto Pagani, Trevisan, Don Vitt, Vittorio Rambelli, Guido Cantoni,
+            Secondo Miccoli.</i></font>
+            </p>
+            <p style="language: it; direction: ltr; unicode-bidi: embed; mso-line-break-override: none; word-break: normal; punctuation-wrap: hanging; margin-left: 0in; margin-top: 0pt; margin-bottom: 0pt" align="center">&nbsp;
+            </p>
+        <p align="center"><img border="0" src="immagini/Alfonsine%202000/inaugurazione%20sacro%20cuore%201.jpg" width="872" height="559">
+        <p align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>Piazza
+        Monti (o meglio piazzale della chiesa).&nbsp;<br style="color: rgb(20, 24, 35); font-family: helvetica, arial, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 16.08px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(246, 247, 248);">
+        Don Vittorietti (allora cappellano) da sinistra, poi don Domenico
+        Parmeggiani, il vescovo mons. Giuseppe Battaglia, e altri preti non
+        riconosciuti.&nbsp;<br>
+        Il
+        chierichetto era Valter Conti</i></font>
+        <p align="center"><a href="immagini/CHIESA-prima-pietr1a.jpg"><img border="0" src="immagini/CHIESA-prima-pietr1a_small2.jpg" alt="CHIESA-prima-pietr1a.jpg (404773 byte)" width="872" height="564"></a>
+        <p align="center">&nbsp;
+        <p align="center"><img border="0" src="immagini/Alfonsine%202000/inaugurazione%20sacro%20cuore%202.jpg" width="884" height="565">
+        <p align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>Era
+        il 7 aprile 1953:
+          posa della prima pietra della chiesa del Sacro Cuore</i></font>
+        <p align="center"><font face="Arial, helvetica,sans-serif" size="6" color="#FF0000"><i>(un
+      click o un tocco sulle foto per averne un ingrandimento)</i></font>
+        <p align="center"><a href="immagini/sacro-cuore-prima-pietra.jpg"><img border="0" src="immagini/sacro-cuore-prima-pietra_small.jpg" alt="sacro-cuore-prima-pietra.jpg (162496 byte)" width="883" height="574"></a>
+          <p align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>1953:
+          posa della prima pietra della chiesa del Sacro Cuore, in piazza Monti.</i></font><p align="center"><i><font face="Arial, helvetica,sans-serif" size="6">Si
+          nota da sinistra don Vittorietti, poi il vescovo mons. Giuseppe
+          Battaglia, il cappellano don Domenico, e un prete non riconosciuto.</font></i>
+      <p align="center"><font face="Arial, helvetica,sans-serif" size="6" color="#FF0000"><i>(un
+      click o un tocco sulle foto per averne un ingrandimento)</i></font>
+        <p align="center"><a href="immagini/CHIESA-prima-pietra5.jpg"><img border="1" src="immagini/CHIESA-prima-pietra5_small1.jpg" alt="CHIESA-prima-pietra5.jpg (78524 byte)" width="450" height="704"></a></p>
+        <p align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>Da
+        sinistra Don Vittorietti</i></font></p>
+            <p align="center"><img border="0" src="immagini/CHIESA-prima-pietra3.jpg" width="864" height="558">
+            </p>
+            <p align="center"><a href="immagini/don%20vitt%20e%20saluti%20a%20don%20liverani.jpg"><img border="0" src="immagini/don_vitt_e_saluti_a_don_liverani_small.jpg" alt="don vitt e saluti a don liverani.jpg (111358 byte)" width="860" height="585"></a>
+            </p>
+            <p align="justify"><font face="Arial, helvetica,sans-serif" size="6">
+      Quando qualche anno   dopo (1956) la parrocchia e la chiesa Santa Maria furono trasferite nel paese nuovo di Alfonsine, alla sinistra del Senio, Don Vitt divenne parroco della nuova costituita parrocchia del Sacro Cuore di Gesù, nella vecchia storica piazza Monti, alla destra del fiume.
+            Fu
+      insegnante di religione nella Scuola Media di Alfonsine</font>
+            <p align="center"><a href="immagini/don%20vitt%20matrimonio%20.jpg"><font size="6"><i><img border="1" src="immagini/don_vitt_matrimonio__small.jpg" alt="don vitt matrimonio .jpg (146374 byte)" width="892" height="528"></i></font></a></p>
+            <p align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>Il
+            primo matrimonio celebrato da Don Vitt: Angelo Montanari e Maria Montanari
+            (d'Marlé)</i></font>
+    <p align="center"><font face="Arial, helvetica,sans-serif" size="6" color="#FF0000"><i>(un
+      click o un tocco sulle foto per averne un ingrandimento)</i></font></p>
+      <p align="justify"><font size="2" face="Arial, helvetica,sans-serif"><br>
+      </font><font face="Arial, helvetica,sans-serif" size="6">
+      Don Vitt aprì l’oratorio parrocchiale a tutti i ragazzi del paese, sotto la sorveglianza ferrea del papà Antonio: si giocava a pallone dalle 15 alle 17, e poi ci si trasferiva nella saletta dove c’era pure la TV dei ragazzi.</font></p>
+            <p align="center"><a href="immagini/don-Vitt-con-chierichetti.jpg"><img border="1" src="immagini/don-Vitt-con-chierichetti_small1.jpg" alt="don-Vitt-con-chierichetti.jpg (136622 byte)" width="772" height="1137"></a>
+            <p align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>Don
+            Vitt con un gruppo di chierichetti, 1955</i></font></p>
+            <p align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>(da
+            sinistra)</i> ?, Luciano Lucci, Don Vitt, Gilberto Pazzeschi,
+            Gilberto Barattoni-Fini</font>
+            <p align="center">&nbsp;
+      <p style="language:it;margin-top:0pt;margin-bottom:0pt;margin-left:0in;
+text-align:center;direction:ltr;unicode-bidi:embed;mso-line-break-override:
+none;word-break:normal;punctuation-wrap:hanging"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; mso-color-index: 7; mso-font-kerning: 12.0pt; font-weight: bold; mso-style-textfill-type: solid; mso-style-textfill-fill-themecolor: accent4; mso-style-textfill-fill-color: #FFC000; mso-style-textfill-fill-alpha: 100.0%"><font face="Arial, helvetica,sans-serif" size="7" color="#FF0000">Don
+      <span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; mso-color-index: 7; mso-font-kerning: 12.0pt; language: it; font-weight: bold; mso-style-textfill-type: solid; mso-style-textfill-fill-themecolor: accent4; mso-style-textfill-fill-color: #FFC000; mso-style-textfill-fill-alpha: 100.0%">Vitt
+      sempre in movimento</span></font></span></p>
+      <p style="language:it;margin-top:0pt;margin-bottom:0pt;margin-left:0in;
+text-align:center;direction:ltr;unicode-bidi:embed;mso-line-break-override:
+none;word-break:normal;punctuation-wrap:hanging"><span style="mso-ascii-font-family: Calibri; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; mso-color-index: 7; mso-font-kerning: 12.0pt; language: it; font-weight: bold; mso-style-textfill-type: solid; mso-style-textfill-fill-themecolor: accent4; mso-style-textfill-fill-color: #FFC000; mso-style-textfill-fill-alpha: 100.0%"><font face="Arial, helvetica,sans-serif" size="7" color="#FF0000"><span style="mso-spacerun: yes; mso-ascii-font-family: Calibri; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; mso-color-index: 7; mso-font-kerning: 12.0pt; language: it; font-weight: bold; mso-style-textfill-type: solid; mso-style-textfill-fill-themecolor: accent4; mso-style-textfill-fill-color: #FFC000; mso-style-textfill-fill-alpha: 100.0%">&nbsp;</span>con
+      i suoi parrocchiani</font></span></p>
+    <p align="center"><font face="Arial, helvetica,sans-serif" size="6" color="#FF0000"><i>(un
+      click o un tocco sulle foto per averne un ingrandimento)</i></font></p>
+          <p align="center">
+          &nbsp; <a href="immagini/gruppo%20don%20vitt%202%20con%20nomi.jpg"><img border="0" src="immagini/gruppo_don_vitt_2_con_nomi_small2.jpg" alt="gruppo don vitt 2 con nomi.jpg (377885 byte)" width="935" height="656"></a>
+                <p align="center"> <i><font face="Arial, helvetica,sans-serif" size="6">La
+                località, potrebbe essere una chiesa o monastero in Carpegna</font></i></p>
+              <p align="center">&nbsp;</td>
+      </tr>
+    </table>
+    </center>
+  </div>
+  <center>
+
+      </center>
+
+<div align="center">
+  <center>
+
+<table border="0" width="1000" height="2457" cellpadding="15">
+  <tr>
+          <td width="100%" valign="top">
+      <p align="center"><i><font face="Arial, helvetica,sans-serif" size="6" color="#FF0000">(un
+      click o un tocco sulle foto per averne un ingrandimento)</font></i></p>
+                <p align="center"><a href="immagini/don_vitt_palle_di_neve_smal.jpg"><img border="0" src="immagini/don_vitt_palle_di_neve_smal_small.jpg" alt="don_vitt_palle_di_neve_smal.jpg (36304 byte)" width="685" height="650"></a></p>
+      <p align="center">
+                <i><font face="Arial, helvetica,sans-serif" size="6">Don
+                Vitt e Marraffa</font></i>
+      </p>
+            <p align="center"><a href="immagini/don%20vitt%20re%20savoia.jpg"><img border="0" src="immagini/don_vitt_re_savoia_small.jpg" alt="don vitt re savoia.jpg (97324 byte)" width="870" height="602"></a>
+          <p align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>Con
+          il Re di Maggio, Umberto II di Savoia: 1962</i></font></p>
+      <p align="center" style="text-indent: 13"><font face="Arial, helvetica,sans-serif" size="6" color="#FF0000"><i>(un
+      click o un tocco sulle foto per averne un ingrandimento)</i></font>
+          </p>
+      <p align="justify" style="text-indent: 14; line-height: 200%; margin-top: 3" ><font face="Arial, helvetica,sans-serif" size="6">Gita
+      in Spagna-Portogallo, in autobus da Alfonsine, anno 1962. Organizzata da
+      Don Vitt e da
+            <span style="color: rgb(29, 33, 41); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none">Vittorio
+            Forlivesi, che era un grande</span>
+            <span style="color: rgb(29, 33, 41); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none"> estimatore della monarchia sabauda.
+            Questi decise che si doveva passare prima da Montpellier in Francia
+            dove era sepolta, al cimitero Saint-Lazare, la Regina Madre Elena di
+            Savoia. Qui Vittorio portò i fio</span><span class="text_exposed_show" style="display: inline; color: rgb(29, 33, 41); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">ri
+      sulla tomba, seguito dai più affezionati al tema, ma non da altri che non
+      gradivano. Poi andarono anche a Cascais, in Portogallo fino a Villa
+      Italia, dove abitavano il re Umberto II e le sue figlie. La foto
+      testimonia l’incontro. Il re Umberto in quei giorni aveva avuto un ictus
+      ed era ancora ‘inscimunito’ (così me l’ha raccontata Hedda
+      Forlivesi che era presente). Hedda ha scritto con Alberto Minguzzi e
+      Utilla Geminiani, e stampato in italiano e in dialetto un diario di quella
+      gita, dove è pubblicata tra l’altro la sua prima poesia in dialetto.
+      Presto andrò a procurarmi questo eccezionale documento.<br>
+      Nella foto vi sono alcune persone di Lugo che si erano aggregate alla gita
+      e, oltre a quelle già riconosciute vi è una certa Fedora che era la zia
+      di Utilla e insegnava a Longastrino.</span>
+      </font>
+      </p>
+            <p align="center">&nbsp;
+            <p align="center"><b><font face="Arial, helvetica,sans-serif" size="6" color="#FF0000">Gita
+            a Trieste, di fronte a San Giusto, aprile 1963</font></b>
+            <p align="center"><a href="immagini/don%20vitt%20a%20trieste%20con%20nomi.jpg"><img border="0" src="immagini/don_vitt_a_trieste_con_nomi_small.jpg" alt="don vitt a trieste con nomi.jpg (634956 byte)" width="843" height="580"></a>
+      <p align="center"><font face="Arial, helvetica,sans-serif" size="6" color="#FF0000"><i>(un
+      click o un tocco sulle foto per averne un ingrandimento)</i></font></p>
+            <p align="center"></center>
+          </td>
+  </tr>
+  <tr>
+          <td width="100%" valign="middle">
+          <p align="center">
+          <a href="immagini/don%20vitt%20e%20don%20marcucci%20%20una%20manifestazione.jpg"><img border="2" src="immagini/don_vitt_e_don_marcucci__una_manifestazione_small.jpg" alt="don vitt e don marcucci  una manifestazione.jpg (2100101 byte)" width="893" height="630"></a>
+          </p>
+          <p align="center"><span><i><font face="Helvetica,Arial" color="#141823" size="6">Don
+          Vitt (parroco del Sacro Cuore) e Don Marcucci (parroco della Santa
+          Maria) a una manifestazione in piazza Gramsci (forse per la pace).</font></i></span>
+          </td>
+  </tr>
+  <tr>
+          <td width="100%">
+            <p align="center"><img border="0" src="immagini/don-vitt-gita-a-pompei.jpg" width="983" height="653"></p>
+            <p align="center">&nbsp;
+            <p align="center"><font size="6"><i><font face="Arial, helvetica,sans-serif">Gita a
+            Pompei <span class="Apple-converted-space">&nbsp;</span></font><span class="Apple-converted-space">&nbsp;</span><font face="Arial, helvetica,sans-serif">La
+            foto la scattò Adis Pasi. Tra gli altri nel gruppo c'è la prof.
+            Liana Martini, e&nbsp;le
+            ultime due in basso a destra: Brunella Guerra e Giustina Baioni.&nbsp;&nbsp;La
+            prof. Martini fece recitare ad Adis, - il ricordo è di Giustina
+            Baioni - all'andata, mentre erano in Umbria, l'ode di Giosuè
+            Carducci &quot;Alle Fonti del Clitunno&quot;</font></i></font></p>
+            <p>&nbsp;
+            <p align="center"><a href="immagini/wpe12.gif"><img border="2" src="immagini/donvit1.gif" alt="wpe12.gif (186128 byte)" width="488" height="335"></a>
+            <a href="immagini/wpe14.gif"><img border="2" src="immagini/donvit2.gif" alt="wpe14.gif (204340 byte)" width="476" height="337"></a>
+            <p align="center">
+          <font size="6"><i>
+          S<font face="Arial, helvetica,sans-serif">i riconoscono la
+          Cenza, Pierina Minguzzi, Idelba Savini, l'Utilla, la Polgrossi, in
+          alto Gilberto Pazzeschi e Don Vitt ,&nbsp;</font>
+          </i></font>
+            <p align="center">&nbsp;
+          <p align="center">
+          <img border="0" src="immagini/don%20vitt%20idelba.jpg" width="972" height="681">
+            <p align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>Rosetta
+            Contarini (mulino ‘Satariv’),&nbsp;Don Vitt, Sergio
+            Mazzotti,&nbsp;Peppino Felice, Italo Gregori, Jader Troncossi detto
+            “La Marchesa” o anche “Vigorone”, Idelba Savini e Alberto
+            Minguzzi.</i></font>
+          <p align="center">&nbsp;
+          </td>
+  </tr>
+  <tr>
+    <td width="100%" height="1521" valign="top">
+      <p style="language:it;margin-top:0pt;margin-bottom:0pt;margin-left:0in;
+text-align:center;direction:ltr;unicode-bidi:embed;mso-line-break-override:
+none;word-break:normal;punctuation-wrap:hanging">&nbsp;</p>
+      <p align="center"><b><font color="#FF0000" face="Arial, helvetica,sans-serif" size="7">Anno 1958 un
+      filmato con don Vitt&nbsp;<br>
+      </font>
+      </b>
+      <font face="Arial, helvetica,sans-serif" size="6" color="#FF0000"><i>(un
+      click o un tocco sulle foto per averne un ingrandimento)</i></font>
+    <p align="center"><a href="http://www.youtube.com/watch?v=H73A1idOZAc" target="_blank"><img border="0" src="immagini/don-vitt-azzurro_small.jpg" alt="don-vitt-azzurro.jpg (156574 byte)" width="876" height="625"><br>
+    </a>      
+    <i><font color="#FF0000" face="Arial, helvetica,sans-serif" size="6">Spezzone
+    tratto dal filmato successivo</font></i><p align="center">&nbsp;      
+      <p align="center"><font face="Arial, helvetica,sans-serif"><b>&nbsp;<iframe width="560" height="315" src="https://www.youtube.com/embed/BuMA11OJC1U" frameborder="0" allowfullscreen></iframe>&nbsp;</b></font>      
+      <p align="center"><font face="Arial, helvetica,sans-serif" size="6" color="#FF0000"><b>L'inaugurazione
+      della Chiesa Santa Maria 1958&nbsp;<br>
+ (le riprese furono di Bruno Gamberini)</b></font>      
+      <p align="center">&nbsp;      
+      <p align="center"><a href="immagini/gruppo-collodi-con-nomi-tag.jpg"><img border="0" src="immagini/gruppo-collodi-con-nomi-tag_small4.jpg" alt="gruppo-collodi-con-nomi-tag.jpg (293388 byte)" width="959" height="511"></a><p align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>Gita
+      a Collodi della scuola media di Alfonsine&nbsp;<br>
+ (anno 1957)</i></font>      
+      <p align="center"><font face="Arial, helvetica,sans-serif" size="6" color="#FF0000"><i>(un
+      click o un tocco sulle foto per averne un ingrandimento)</i></font></p>
+      <p align="center"><font face="Arial, helvetica,sans-serif"><b>&nbsp;</b></font>
+    <div align="center">
+      <center>
+      <table border="0" width="76%">
+        <tr>
+          <td width="100%">
+            <p align="center"><a href="immagini/don_vitt_gruppo_comunione.jpg"><img border="2" src="immagini/don_vitt_gruppo_comunione_small3.jpg" alt="don_vitt_gruppo_comunione.jpg (165117 byte)" width="937" height="588"></a></p>
+            <p align="center"><font face="arial,helvetica,sans-serif" size="6"><i>Anno
+            1957, nel
+            campetto dell'oratorio, foto di gruppo della Prima Comunione e
+            Cresima<br>
+            (da
+            sinistra)  Claudio Tamburini, Roberto Bragonzoni, Roberto
+            Dragoni, Don Vitt, Roberto Visani, Andrea Tarroni, ?, Luigi
+            Geminiani, Adriano Fini-Barattoni<br>
+            Da
+            notare i due pioppi appena piantati e confrontarli con quelli
+            odierni</i></font>
+            <p align="center">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="100%">
+            <p align="center"><a href="immagini/gruppo-cresima-con-nomi-don.jpg"><img border="0" src="immagini/gruppo-cresima-con-nomi-don_small.jpg" alt="gruppo-cresima-con-nomi-don.jpg (344229 byte)" width="923" height="628"></a></p>
+            <p align="center"><font face="arial,helvetica,sans-serif" size="6"><i>Anno
+            1960, nel
+            campetto dell'oratorio, foto di gruppo della Prima Comunione e
+            Cresima</i></font>
+            </p>
+            <p align="center">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="100%">
+            <p align="center"><img border="0" src="immagini/don-vitt-con-dorian-1960-se.jpg" width="913" height="655"></p>
+            <p align="center"><font face="arial,helvetica,sans-serif" size="6"><i>Anno
+            1960<br>
+            (da
+            sinistra)  Adriano Fini-Barattoni, Roberto Brunetti, Giuseppe
+            Masetti, Don Vittorietti, Andrea (Dorian) Zaffagnini, Gianni Zanzi,
+            Antonio (Tonino) Zanzi</i></font></p>
+            <p align="center"><font face="Arial, helvetica,sans-serif" size="6" color="#FF0000"><i>(un
+      click o un tocco sulle foto per averne un ingrandimento)</i></font></p>
+            <p align="center">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="100%">
+            <p align="center">
+  <a href="immagini/don-vitt-e-comunicandi-con-.jpg"><img border="2" src="immagini/don-vitt-e-comunicandi-con-_small2.jpg" alt="don-vitt-e-comunicandi-con-.jpg (387562 byte)" width="950" height="644"></a>
+          </td>
+        </tr>
+        <tr>
+          <td width="100%">
+            <p align="center">&nbsp;</p>
+            <p align="center"><font face="arial,helvetica,sans-serif" size="6"><i>Anno
+            1965, nel
+            campetto dell'oratorio, foto di gruppo della Prima Comunione:<br>
+            sopra i maschi, sotto le femmine</i></font></p>
+            <p align="center"><font face="Arial, helvetica,sans-serif" size="6" color="#FF0000"><i>(un
+      click o un tocco sulle foto per averne un ingrandimento)</i></font></td>
+        </tr>
+        <tr>
+          <td width="100%">
+            <p align="center"><a href="immagini/don-vitt-e-ragazze-comunica.jpg"><img border="0" src="immagini/don-vitt-e-ragazze-comunica_small4.jpg" alt="don-vitt-e-ragazze-comunica.jpg (346680 byte)" width="943" height="613"></a></td>
+        </tr>
+      </table>
+      </center>
+    </div>
+      <p align="center"><i><font face="Arial, helvetica,sans-serif" color="#FF0000" size="6">(un
+      click o un tocco sulle foto per averne un ingrandimento)</font></i>
+      <p align="center"><b><font face="Arial, helvetica,sans-serif" size="7" color="#FF0000"><i>&quot;Ci sentivamo come dèi e ci comportavamo come
+      tali&quot;</i></font></b>
+      <p align="center">&nbsp;
+    <div align="center">
+      <center>
+      <table border="0" width="100%" cellpadding="10">
+        <tr>
+          <td width="100%" valign="top" align="center"><a href="immagini/rita%20e%20le%20altre.jpg"><img border="0" src="immagini/rita_e_le_altre_small.jpg" alt="rita e le altre.jpg (1299345 byte)" width="702" height="1003"></a>
+            <p align="center"><i><font face="Arial, helvetica,sans-serif" size="6">Rita
+            Marini, Don Vitt, Anna Tavalazzi, Giustina Baioni (1960)</font></i>
+            <p><font face="Arial, helvetica,sans-serif" size="6">Ma fu negli anni ‘60 che la parrocchia del Sacro Cuore, con quel pretino vivace e simpatico dal nome così rapido, ebbe un sussulto. C’era stato Papa Giovanni
+            XXIII, il Concilio Vaticano II, pieno di spirito innovatore e con l’idea di rilevare ciò che c’è di buono nella cultura contemporanea
+            , aprendo una nuova fase di dialogo col mondo moderno, cercando innanzitutto "ciò che unisce invece di ciò che divide".<br>
+            </font></p>
+          </td>
+        </tr>
+        <tr>
+          <td width="100%" valign="top">
+            <p><font face="Arial, helvetica,sans-serif" size="6">
+      Attorno a Don Vitt si formò un gruppo di giovani che cominciarono a proporsi come comunità per tutti i fedeli.<br>
+      Quel gruppo di giovani, ragazzi e ragazze, condivise con Don Vitt un’esperienza di intensità unica, carica di energia, di momenti di grazia e di fede.</font></p>
+            <p><font face="Arial, helvetica,sans-serif" size="6">“L’idea nuova che fin da giovanissimi Don Vitt cercò di imprimerci bene nel cuore - ricorda uno di loro - era che Gesù è in ogni persona, compresi noi stessi: un Gesù  quindi veramente umano, quindi vicino, “fratello” per dirla con una parola fin troppo usata. Ciò rendeva possibile a ogni persona cercare la “divinità” dentro di sé e nei rapporti interpersonali. Ci sentivamo come dèi e ci comportavamo come tali.”</font></td>
+        </tr>
+      </table>
+      </center>
+    </div>
+      <p align="center"><font face="Arial, helvetica,sans-serif" size="3"><br>
+      </font><b><font face="Arial, helvetica,sans-serif" color="#FF0000" size="7">Dialogo e
+      intreccio di culture</font></b>
+      <p align="justify"><font size="2" face="Arial, helvetica,sans-serif"><br>
+      </font>
+      <font face="Arial, helvetica,sans-serif" size="6">
+      Quando poi a metà degli anni ‘60, in piena epoca psichedelica, qualcuno in California comunicò da un microfono del palco a un grande raduno
+      hippy “Siete tutti Dèi, comportatevi come tali”, alcuni di quei giovani alfonsinesi sentirono di essere in sintonia col mondo e di essere pronti a condividere con altre culture quella sensazione estatica. Don Vitt insegnò loro anche a vivere la fede nella vita quotidiana, nella storia del proprio tempo. Quelle esperienza di comunità cristiana si intrecciarono così ad esperienze forti del periodo e della cultura hippy e visionaria di quegli anni e, poi, al periodo delle lotte operaie e studentesche.<br>
+      Anticipando la cultura psichedelica del film Jesus Christ Superstar con la passione visionaria della figura di Gesù dei Vangeli, alcuni arrivarono fin quasi a prendere Gesù come modello di vita anche esteriore.&nbsp;<br>
+      “Iniziammo a muoverci come gruppo andando a visitare i vecchi dell’ospizio e passando con loro interi pomeriggi domenicali. Incontravamo giovani di altre comunità vicine, per condividere con loro le nostre
+      sensazione  e il nostro nuovo modo di vivere la fede.</font>
+      <p align="center"><font size="2" face="Arial, helvetica,sans-serif">&nbsp;</font>
+      <p align="center"><b><font face="Arial, helvetica,sans-serif" color="#FF0000" size="7">Alcuni
+      brani della Messa Beat</font></b>
+    <div align="center">
+      <center>
+      <table border="0" width="91%">
+        <tr>
+          <td width="50%"><iframe width="560" height="315" src="https://www.youtube.com/embed/EhZPD_fGlVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe></td>
+          <td width="50%"><iframe width="560" height="315" src="https://www.youtube.com/embed/EHyPQKJBmtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+        </tr>
+      </table>
+      </center>
+    </div>
+      <p align="center"><b><font face="Arial, helvetica,sans-serif" color="#FF0000" size="6">Una messa
+      beat, poi l'incontro con i focolarini e con Francesco Guccini</font></b>
+      <p align="center">&nbsp;
+      <p align="justify"><font face="Arial, helvetica,sans-serif" size="6">Scoprirono il bisogno di una liturgia più coinvolgente  e meno fredda,
+      inventandosi una prima “messa beat” (che a qualcuno ora, e anche allora, può fare accapponare la pelle) dove a tempo di rock, con tanto di chitarre e batteria poste nell’altare laterale di S. Antonio, accompagnavamo la S. Messa, dal vivo, alternando un Padre Nostro cantato a ritmo di rock, con un “Blow’ in the wind” di Bob Dylan in versione italianizzata.”<br>
+      </font>
+    <div align="center">
+      <center>
+      <table border="0" width="82%">
+        <tr>
+          <td width="27%"><font face="Arial, helvetica,sans-serif" size="3"><img src="https://ilpanettone.files.wordpress.com/2009/06/panettone-alemagna-900g.jpg?w=262&amp;h=300" alt="Panettone Alemagna 900g" / width="319" height="358" /></font></td>
+          <td width="73%" valign="top"><font face="Arial, helvetica,sans-serif" size="6">
+      Quei giovani  mettevamo la passione anche nel costruire il presepe della chiesa, legandolo ai momenti di attualità come la guerra del
+            Vietnam, o nell'esporre un cartello in chiesa nella notte della
+            vigilia di Natale con scritto: Natale non è &quot;Alemagna&quot;
+            (&quot;Alemagna&quot; era ed è ancora oggi una celebre marca di
+            panettoni)&nbsp;</font></td>
+        </tr>
+      </table>
+      </center>
+    </div>
+      <p align="justify"><font face="Arial, helvetica,sans-serif" size="6"> Visitarono la comunità dei Focolarini e là incontrarono giovani che vivevano a contatto con la natura, in piena libertà e pieni del mito di Gesù. Una vera comune, come quelle di cui avevamo sentito narrare in America, nel movimento hippy. Là, quel giorno incontrarono Francesco Guccini, anche lui in visita a quella comunità cristiana. Fu invitato a cantare "Dio è morto", con la partecipazione corale di tutti. E pensare che in TV era un brano ancora censurato.&nbsp;</font>
+      <p align="justify">&nbsp;
+    <div align="center">
+      <center>
+      <table border="0" width="100%" cellpadding="10">
+        <tr>
+          <td width="100%" colspan="2">
+            <p align="center">&nbsp;
+            <p align="center">&nbsp;<iframe width="560" height="315" src="https://www.youtube.com/embed/KhJ2eeLBqAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+        </tr>
+        <tr>
+          <td width="41%" rowspan="2">
+            <p align="center"><img border="0" src="immagini/guccini1.jpg" width="398" height="591"></p>
+            <p align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>Francesco
+            Guccini com'era quando i giovani della parrocchia di Alfonsine lo
+            incontrarono a Loppiano</i></font></p>
+          </td>
+          <td width="59%">
+            <p align="center"><span style="font-size:18.0pt;font-family:Arial;mso-ascii-font-family:Arial;
+mso-fareast-font-family:+mn-ea;mso-bidi-font-family:Arial;mso-fareast-theme-font:
+minor-fareast;color:red;mso-font-kerning:12.0pt;language:it;font-weight:bold;
+mso-style-textfill-type:solid;mso-style-textfill-fill-color:red;mso-style-textfill-fill-alpha:
+100.0%"><br>
+ </span><font size="6"><span style="font-family: Arial; mso-ascii-font-family: Arial; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: Arial; mso-fareast-theme-font: minor-fareast; color: red; mso-font-kerning: 12.0pt; language: it; mso-style-textfill-type: solid; mso-style-textfill-fill-color: red; mso-style-textfill-fill-alpha: 100.0%">
+            «E poco dopo andai anche a Loppiano, e mi esibii, anzi, fui preso di forza e piacevolmente costretto a
+            cantare davanti ai focolarini.»</span></font></p>
+            <p align="center"><font size="6"><a href="http://www.vatican.va/news_services/or/or_quo/interviste/2010/012q05a1.html"><span style="font-family: Arial; mso-ascii-font-family: Arial; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: Arial; mso-fareast-theme-font: minor-fareast; color: red; mso-font-kerning: 12.0pt; language: it; mso-style-textfill-type: solid; mso-style-textfill-fill-color: red; mso-style-textfill-fill-alpha: 100.0%">(dichiarazione
+            di Francesco Guccini)
+            </span></a><span style="font-family: Arial; mso-ascii-font-family: Arial; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: Arial; mso-fareast-theme-font: minor-fareast; color: red; mso-font-kerning: 12.0pt; language: it; mso-style-textfill-type: solid; mso-style-textfill-fill-color: red; mso-style-textfill-fill-alpha: 100.0%"><br>
+            </span><a href="http://www.vatican.va/news_services/or/or_quo/interviste/2010/012q05a1.html">(cliccami)</a></font></td>
+        </tr>
+        <tr>
+          <td width="59%"><font size="6"><span style="font-family: Arial; mso-ascii-font-family: Arial; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: Arial; mso-fareast-theme-font: minor-fareast; color: red; mso-font-kerning: 12.0pt; language: it; mso-style-textfill-type: solid; mso-style-textfill-fill-color: red; mso-style-textfill-fill-alpha: 100.0%">Regista
+            di questo incontro era stato l'arzillo &quot;nonno Pippo&quot;,
+            Antonio Prandi, zio di Guccini, fratello di mamma Ester. Di area
+            cattolica, ha sempre stimato il nipote &quot;anarchico&quot; tanto
+            da proporlo agli amici di Loppiano perfino quando ancora Francesco si
+            considerava un poeta-paroliere.</span></font></td>
+        </tr>
+      </table>
+      </center>
+    </div>
+      <p align="center"><b><font face="Arial, helvetica,sans-serif" size="6" color="#FF0000">&nbsp;I problemi sociali, le lotte operaie, il Vietnam, il movimento studentesco.&nbsp;</font></b>
+      <p align="justify"><font face="Arial, helvetica,sans-serif" size="6">
+      Legarono la loro religiosità alla teologia della libertà dei paesi del terzo mondo: e quando qualcuno di loro scrisse sulla facciata della chiesa  a vernice rossa "La chiesa è dei poveri" , don Vitt li corresse direttamente durante l'omelia in
+      chiesa, dicendo che la nostra "è la chiesa dei poveri", non che "la chiesa è dei poveri". Non fu semplicemente una gioco di parole, per accontentare capre e cavoli: in quel modo Don Vitt segnò in modo positivo l'avventura, in cui alcuni poi si tuffarono nel 1968, di nuovo con tutta la passione di cui erano capaci: i problemi sociali, le lotte operaie, il Vietnam, il movimento studentesco. Forse è per merito di Don Vitt  ("Gli ultimi saranno i primi, ma non i soli"), che riuscirono a salvarsi l'anima da quel periodo turbinoso, che vide molti di loro, cattolici della comunità del Sacro Cuore, attivamente coinvolti nelle lotte studentesche e operaie di quel momento (fecero davanti alla chiesa una raccolta di soldi in favore degli operai della "Marini" in sciopero): ma sempre con la tolleranza nel cuore e col rifiuto di ogni violenza e
+      fondamentalismo.</font>
+      <p align="justify">&nbsp;
+      <table border="0" width="96%" cellpadding="10">
+        <tr>
+          <td width="100%" valign="top">
+            <p align="center"><img border="0" src="immagini/gruppo%20con%20rita%20,%20renzo,%20anna%20e%20altri%20io%20no.jpg" width="938" height="679"></p>
+            <p align="center"><i><font face="Arial, helvetica,sans-serif" size="6">Un
+            incontro con missionari saveriani nel giardino della Villa 'Marini',
+            in corso Garibaldi: da sinistra: Renzo Ricci, Marisa Gregori, Rita
+            Marini, Andrea Mazzotti, Roberto Zambelli, Vincenzo Minguzzi, Giancarlo Faccani
+            (Bagarò), la figlia di Vistoli,
+            Letizia Marini, Missionario Saveriano, Sergio Mazzotti, cugina della
+            Marisa Gregori, Giustina
+            Baioni, Anna Tavalazzi.</font></i>
+      <p align="center"><b><font face="Arial, helvetica,sans-serif" color="#FF0000" size="7">Scontro con la
+      chiesa-istituzione</font></b>
+      <p align="justify"><font face="Arial, helvetica,sans-serif" size="6">
+      L'approfondimento delle letture (Vangelo, Encicliche, documenti del Concilio Vaticano
+      II) che Don Vitt chiamava a fare, cominciò a portare alcuni verso limiti non accettabili dalla chiesa-istituzione. Emerse visione radicale del Vangelo e del Concilio Vaticano II che spingeva ad ancora
+      &quot;piu' oltre".&nbsp;</font>
+          </td>
+        </tr>
+        <tr>
+          <td width="100%"><font face="Arial, helvetica,sans-serif" size="6">
+      “<i>Noi ritenevamo possibile raggiungere stati di grazia estatici  rendendo alcuni sacramenti più vicini al nostro modo di sentire, e modellati sulle prime
+      comunità cristiane: l'eucaristia e il rito della messa praticate in luoghi naturali e non solo in chiesa, il rito dello spezzare il pane di bere il vino praticati come se fossimo a un semplice e comune banchetto, la confessione come pratica intima con la propria coscienza senza il bisogno del sacerdote, la sessualità, anche fuori dal matrimonio, vissuta come atto d'amore e mai come peccato, per cui non era più necessario confessare alcunché…</i>”&nbsp;</font>
+            <p><font face="Arial, helvetica,sans-serif" size="6">
+ Questi erano i temi in discussione e diventarono terreno di scontro con Don
+      Vitt. In quel periodo Don Vitt portò a termine gli studi di giurisprudenza  conseguendo la laurea  all'Università di Bologna.&nbsp;</font></p>
+          </td>
+        </tr>
+      </table>
+      <p align="center"><font size="2" face="Arial, helvetica,sans-serif">
+      <br>
+      </font>
+      <p align="center"><b><font face="Arial, helvetica,sans-serif" color="#FF0000" size="7">Don Vitt fu
+      trasferito&nbsp;<br>
+ in altra parrocchia</font></b>
+      <p align="justify"><font face="Arial, helvetica,sans-serif" size="6">
+      Forse fu anche per aver dato spazio a queste occasioni di meditazione e di discussione che fu costretto nel 1973 a lasciare la parrocchia, accusato di essere un prete comunista, e trasferito dal vescovo della diocesi Mons. Bergonzini a Faenza, dove gli fu affidata la Parrocchia di San Giuseppe artigiano. Le strade di quel gruppo si separarono… la vita segnò per tutti altri percorsi… altre storie.&nbsp;</font>
+      <p align="center"><b><font face="Arial, helvetica,sans-serif" size="6" color="#FF0000">Una nuova
+      avventura a Faenza</font></b>
+      <p align="justify"><font face="Arial, helvetica,sans-serif" size="6">
+      Nella nuova parrocchia di Faenza mantenne l’incarico fino al 1995, quando per motivi di salute rinunciò, pur rimanendo  presente fino alla morte come vicario parrocchiale.&nbsp;
+      Seppe anche là conquistare il cuore dei suoi parrocchiani. Così si legge nel sito web della parrocchia  “San Giuseppe artigiano” di Faenza:<br>
+      “Don Vitt ebbe vari incarichi nel presbiterio faentino come Priore del Collegio Parroci, Vicario urbano e membro di tante Commissioni e Consigli. Attento ai movimenti ecclesiali post-conciliari e alle novità sociali, fu promotore  di nuovi modi di “farsi prossimo” a chi era in difficoltà nel nostro Paese e nel mondo missionario. Vale la pena ricordare il “pullman amico”, un vecchio tram ricevuto in dono dalla Amministrazione Comunale che, attrezzato da camper, fu utile per realizzare interventi consistenti, quali due fabbricati in muratura, in Friuli prima, dopo il terremoto del 1976 ed in Irpinia poi, dopo il terremoto del 1980. Diede spazio a Giorgio Nonni, reduce dal Mato Grosso, accogliendo una delle prime esperienze di obiettore di coscienza  in Italia, e collaborò perchè il movimento “Operazione Mato Grosso” di Padre Ugo de Censi  si consolidasse a Faenza. Fu anche vicino ad altri movimenti missionari faentini; basti ricordare l'AMI e MANI TESE, per il quale in varie occasioni, ultima la ricorrenza del suo 50° anniversario di ordinazione sacerdotale, raccolse fondi per la perforazione di pozzi.&nbsp;<br>
+      Nel 1998 fu operato di un tumore al rene: un’operazione ben riuscita.&nbsp;</font>
+      <p align="center"><b><font face="Arial, helvetica,sans-serif" color="#FF0000" size="7">L'ultimo
+      incontro con Alfonsine nel 2000,&nbsp;<br>
+ nel 50° di sacerdozio</font></b>
+      <table border="0" width="100%" cellpadding="10">
+        <tr>
+          <td width="100%">
+            <font face="Arial, helvetica,sans-serif" size="6">Una domenica di settembre del 2000
+      gli alfonsinesi della parrocchia Sacro Cuore si ritrovarono ancora tutti, insieme a Don Vitt… ormai cinquantenni e oltre, alcuni neanche più appartenenti alla comunità cristiana.&nbsp;</font>
+            <p><font face="Arial, helvetica,sans-serif" size="6"> L’occasione fu la ricorrenza del 50° del
+      suo sacerdozio.&nbsp;</font></p>
+            <p><font face="Arial, helvetica,sans-serif" size="6"> E ancora una volta, durante la messa di Don Vitt, captarono una forza creativa e un'energia positiva, già sperimentate.&nbsp;&nbsp;</font></p>
+            <p><font face="Arial, helvetica,sans-serif" size="6">
+      Un incontro piacevolissimo per tutti,&nbsp;</font></p>
+            <p><font face="Arial, helvetica,sans-serif" size="6"> Don Vitt era in gran forma.&nbsp;</font><p><font face="Arial, helvetica,sans-serif" size="6">Dopo
+            la fine della giornata commemorativa, chiese di incontrarsi con
+            quelli che considerava il 'suo primo gruppo attivo'.&nbsp;</font></td>
+        </tr>
+      </table>
+    <div align="center">
+      <center>
+      <table border="0" width="90%">
+        <tr>
+          <td width="50%">
+            <p align="center"><a href="immagini/donvitt4.gif"><img border="2" src="immagini/donvit3.gif" alt="wpeF.gif (105606 byte)" align="left" width="413" height="483"></a></td>
+          <td width="50%">
+            <img border="0" src="immagini/don%20vitt%202000.jpg" width="454" height="493"></td>
+        </tr>
+      </table>
+      </center>
+    </div>
+      <p align="justify">&nbsp;
+      <div align="center">
+        <center>
+      <table border="0" width="100%" cellpadding="10">
+        <tr>
+          <td width="25%" align="center"><a href="immagini/don%20vitt%202000%20chiesa.jpg"><img border="0" src="immagini/don_vitt_2000_chiesa_small1.jpg" alt="don vitt 2000 chiesa.jpg (436612 byte)" width="650" height="436"></a></td>
+          <td width="41%" align="center" rowspan="2">
+            <p align="center"><i><font face="Arial, helvetica,sans-serif" size="6">2000:
+            Don Vitt torna a dir messa nella chiesa Sacro Cuore</font></i></p>
+            <p align="center"><i><font face="Arial, helvetica,sans-serif" size="6" color="#FF0000">(un
+      click o un tocco sulle foto per averne un ingrandimento)</font>
+            </i>
+            <p>&nbsp;</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="33%">
+            <p align="center"><a href="immagini/don%20vitt%20a%20Alfonsine%2050esino%20in%20chiesa%20copia.jpg"><img border="0" src="immagini/don_vitt_a_Alfonsine_50esino_in_chiesa_copia_small1.jpg" alt="don vitt a Alfonsine 50esino in chiesa copia.jpg (6123028 byte)" width="666" height="416"></a>
+          </td>
+        </tr>
+        <tr>
+          <td width="66%" colspan="2">
+            <p align="center">
+  <a href="immagini/gruppo-don-vitt-2000.jpg"><img border="0" src="immagini/gruppo-don-vitt-2000_small2.jpg" alt="gruppo-don-vitt-2000.jpg (594870 byte)" width="898" height="539"></a>
+            </p>
+            <p align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>Da sinistra fila dietro: Umberto Pagani,
+            Zofia Martini, Luciano
+            Lucci, Alma Capucci, moglie di Paolo
+            Zambelli, Rita Marini,
+            Anna Pirazzini, moglie di Cesare Baldi, Felice, Stefania
+            Marini, Elio Marini, Domenico Martini, Liana Costa.</i></font></p>
+            <p align="center"><i><font face="Arial, helvetica,sans-serif" size="6">&nbsp;In prima fila da
+            sinistra: Zofia Martini moglie di Martini, dott. Sgarbi, Don Vitt, Hedda
+            Forlivesi.</font></i></p>
+          </td>
+        </tr>
+        <tr>
+          <td width="66%" colspan="2">
+            <p align="center"><a href="immagini/don%20vitt%20a%20Alfonsine%2050esino%20in%20chiesa2.jpg"><img border="0" src="immagini/don_vitt_a_Alfonsine_50esino_in_chiesa2_small1.jpg" alt="don vitt a Alfonsine 50esino in chiesa2.jpg (5277211 byte)" width="897" height="598"></a>
+            <p align="center"><i><font face="Arial, helvetica,sans-serif" size="6">Hedda
+            Forlivesi</font></i><p align="center"><i><font face="Arial, helvetica,sans-serif" size="6" color="#FF0000">(un
+      click o un tocco sulle foto per averne un ingrandimento)</font>
+            </i>
+            <p align="center">&nbsp;
+            <p align="center">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="66%" colspan="2">
+            <p align="center"><a href="immagini/don%20vitt%20a%20faenza%2050esino5%20copia.jpg"><img border="0" src="immagini/don_vitt_a_faenza_50esino5_copia_small1.jpg" alt="don vitt a faenza 50esino5 copia.jpg (6622428 byte)" width="898" height="542"></a></p>
+            <i><font face="Arial, helvetica,sans-serif" size="6">Carla, moglie
+            di Franco Cortese, Andrea Pagani, moglie di Pietro Graziani, Pietro
+            Graziani, Paola Minguzzi, Vittorio Forlivesi, Utilla Geminiani,&nbsp;
+            Don Vitt, Hedda, Rina Bellini, Tina Foschini, sposata Vecchi.</font></i><p align="center"><i><font face="Arial, helvetica,sans-serif" size="6" color="#FF0000">(un
+      click o un tocco sulle foto per averne un ingrandimento)</font>
+            </i>
+          </td>
+        </tr>
+        <tr>
+          <td width="66%" colspan="2" align="center">
+            <a href="immagini/don_vitt_a_faenza_50esino2.jpg"><img border="0" src="immagini/don_vitt_a_faenza_50esino2_small2.jpg" alt="don_vitt_a_faenza_50esino2.jpg (4716465 byte)" width="897" height="743"></a>
+            <p align="center"><i><font face="Arial, helvetica,sans-serif" size="6">Carla
+            moglie di Franco Cortese, Luisa Contarini, moglie di Pietro Graziani,
+            Lino Gaudenzi (Tagiò), Vittorio Forlivesi, Pietro Graziani, Andrea
+            Pagani, Utilla Geminiani, Don Vitt, Stenlio Fabbri, Hedda Forlivesi,
+            Laura Ferretti (moglie di Tagiò), Rina Bellini, Tina Foschini
+            (sposata Vecchi, ?</font></i><p align="center"><i><font face="Arial, helvetica,sans-serif" size="6" color="#FF0000">(un
+      click o un tocco sulle foto per averne un ingrandimento)</font>
+            </i>
+            <p>&nbsp;</p>
+          </td>
+        </tr>
+      </table>
+        </center>
+      </div>
+      <p align="justify"><font size="6"><font face="Arial, helvetica,sans-serif"> Nei primi giorni del 2003 fu ricoverato in Ospedale, prima al Civile di
+      Faenza, poi alla Clinica S. Pier Damiano,  per un susseguirsi di scompensi che lo hanno portato alla morte il 29 maggio 2003, nel giorno della ricorrenza della festa dell'Ascensione di Nostro Signore, assistito, specialmente  negli ultimi mesi, giorno e notte dai suoi amici parrocchiani di Faenza.</font>
+      </font>
+    </td>
+  </tr>
+  <center>
+
+  <tr>
+    <td width="100%" height="958">
+
+      <p align="center"><a href="immagini/piazzale-chiesa-sacro-cuore.jpg"><img border="0" src="immagini/piazzale-chiesa-sacro-cuore_small.jpg" alt="piazzale-chiesa-sacro-cuore.jpg (235443 byte)" width="945" height="654"></a></p>
+      <p align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>Anno 1960: il piazzale
+      ricostruito con la chiesa del
+      Sacro Cuore, dopo che la chiesa Santa Maria fu ricostruita alla sinistra
+      del Senio nel paese nuovo.</i></font> </p>
+      <p align="center"><a href="immagini/Alfonsine%202000/chiesa-sacro-cuore.jpg"><img border="0" src="immagini/chiesa-sacro-cuore_small.jpg" alt="chiesa-sacro-cuore.jpg (116525 byte)" width="955" height="666"></a>
+      <p align="center"><font face="Arial, helvetica,sans-serif" size="6"><i>Anno 2000: chiesa del
+      Sacro Cuore</i></font>
+<p align="center"><b><font face="Arial, helvetica,sans-serif" size="7" color="#FF0000">In
+memoria di Don Vittorietti</font></b></p>
+<p class="MsoNormal"><font face="Arial, helvetica,sans-serif" size="6"><i>di Luciano
+Lucci<b><br>
+<br>
+</b><font color="#FF0000">(un click
+o un tocco sull'articolo qui sotto per averne un ingrandimento)</font></i></font></p>
+      <table border="0" width="100%" cellpadding="10" height="1181">
+        <tr>
+          <td width="42%" height="1159" valign="top"><a href="immagini/articolo%20su%20voce%20del%20senio.pdf"><img border="2" src="immagini/articolo_su_voce_del_senio_copia_small.jpg" alt="articolo su voce del senio copia.jpg (7717294 byte)" width="421" height="1361"></a></td>
+  </center>
+        <td width="58%" valign="top" height="1159">
+          <p align="justify"><font face="Times New Roman" size="6">Ho scritto di Don
+Vittorietti su Internet nel 2008 a cinque anni dalla sua scomparsa, perché
+sono sicuro che ne sarebbe stato contento.&nbsp;</font></p>
+          <p align="justify"><font face="Times New Roman" size="6"> Già un’altra volta avevo
+pubblicato, insieme a Giustina Baioni, questi pensieri su di lui, in un giornale locale &quot;La Voce del
+Senio&quot; del mese di settembre del 2000 (qui a sinistra). Lo facemmo per fargli sapere che
+nonostante le nostre strade si fossero divise, lui era ancora ben presente nelle
+          nostre menti e nei nostri cuori.&nbsp;Dopo qualche tempo
+ci sentimmo per telefono e mi disse che l’articolo che avevamo scritto su di lui
+gli era piaciuto molto, lo aveva fatto leggere al suo vescovo, per fargli capire
+chi era lui e cosa aveva fatto ad Alfonsine.</font></p>
+          <p align="justify"><font face="Times New Roman" size="6">Don Vitt era arrivato
+a quel punto della vita in cui uno si chiede se ha lasciato qualche segno
+positivo, magari nella speranza di essere ricordato un po’ oltre la morte.&nbsp;</font></p>
+        </td>
+      </tr>
+        <tr>
+          <td width="100%" height="1159" valign="top" colspan="2">
+          <p align="justify"><font face="Times New Roman" size="6"> Ma
+mentre per chi ha famiglia-figli-nipoti, l’essere ricordati almeno per 80 anni
+è quasi una certezza, per un prete la domanda è “<i>Chi si ricorderà di me,
+qualche anno dopo la mia morte?</i>”.</font></p>
+<p class="MsoNormal" align="justify"><font face="Times New Roman" size="6">In tutti gli ultimi
+incontri pubblici in cui è stato presente qui ad Alfonsine, nella “sua”
+chiesa “Sacro Cuore” ha avuto la certezza di aver seminato bene e questo lo
+rincuorava molto. Chiedeva a tutti se si ricordavano i momenti, le esperienze
+vissute insieme a lui, chiedeva di raccontarle, quasi si fosse accorto di quanto
+la sua memoria rischiasse di perdere colpi. La speranza era che ciascuno dei
+suoi vecchi parrocchiani ne conservasse un pezzetto in modo che il puzzle lo si
+potesse sempre ricostruire insieme.</font></p>
+<p class="MsoNormal" align="justify"><font face="Times New Roman" size="6">Oggi che non è più
+tra noi, penso a una cosa bella e importante che ho imparato da lui: salvare il
+mondo non significa modificare le cose, fare rivoluzioni, abbattere sistemi,
+quello che bisogna fare è vivificare il mondo, aumentare la percezione della
+sua sacralità, e l’unico modo è cominciare a scoprire in noi stessi dove sta
+la vita, e diventare noi stessi esseri sacri, déi.</font></p>
+  <center>
+
+<p class="MsoNormal" align="justify"><font face="Times New Roman" size="6">Forse non era proprio questo che Don Vitt intendeva insegnarci quando
+diceva che dobbiamo vedere Gesù in ogni persona, o che Dio è ovunque e va
+cercato anche dentro di noi, o che dobbiamo testimoniare il Gesù che è in
+noi…&nbsp;</font></p>
+<p class="MsoNormal" align="justify"><font face="Times New Roman" size="6">Come sempre sono
+andato oltre…&nbsp; e spero che Don
+Vitt non si scandalizzi se ora lo saluto con una citazione di Alan Watts (un
+prete cattolico americano che diffuse la filosofia Zen in America negli anni
+’60, e che fu spretato) che sintetizza ciò che ho creduto di aver imparato
+anche da Don Vitt, (ma sono certo lui non condividerà…):</font></p>
+<p class="MsoNormal" align="justify"><font face="Times New Roman" size="6">“Come è possibile
+che un essere con gioielli sensibili come gli occhi, strumenti musicali magici
+come le orecchie, un favoloso arabesco di nervi come il cervello possa credere
+di essere qualcosa di inferiore a un dio?”</font></p>
+<p class="MsoNormal" align="center"><font face="Times New Roman" size="6" color="#FF0000"><b>Ciao don Vitt, suonerò
+per te ogni mattina le mie&nbsp;<br>
+ “Canne del vento”, così te ne accorgi che non ti
+dimentico.</b></font>
+  </center>
+          </td>
+      </tr>
+    </table>
+  <center>
+
+  </center>
+</table>
+</div>
+
+  <p align="center">&nbsp;<script src="https://connect.facebook.net/it_IT/all.js#xfbml=1"></script><fb:like href="https://alfonsinemonamour.racine.ra.it/alfonsine/Alfonsine/donvitt.htm" send="true" width="450" show_faces="true" font="arial"></fb:like>  <p align="center"><b><font size="6"><font face="Arial, helvetica,sans-serif"> |&nbsp;<a href="donvitt.htm">Chiesa
+  S. Maria e S. Cuore</a> |&nbsp; </font><a href="mon-amour.htm"><font face="arial,helvetica,sans-serif" size="2"><br>
+  </font><font face="arial,helvetica,sans-serif">
+  | Ricerche
+      sull'anima di Alfonsine</font></a> <font face="arial,helvetica,sans-serif"> |</font></font></b>
+  </p>
+
+  <p align="center">&nbsp;</p>
+</body>
+

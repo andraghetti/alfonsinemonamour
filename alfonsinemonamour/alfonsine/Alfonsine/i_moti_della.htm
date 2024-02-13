@@ -1,0 +1,518 @@
+<HTML>
+
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<TITLE>Alfonsine Alfonsine</TITLE>
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<meta name="Keywords" content="Alfonsine, alfonsine, Ravenna, piazza Gramsci, ricerca su Alfonsine, le scuole di Alfonsine, foto su Alfonsine">
+<meta name="Description" content="Sito web sul paese di Alfonsine. Fotografie e informazioni">
+<style>A:link, A:visited { text-decoration: none }
+A:hover { text-decoration: none }
+</style>
+
+<style type="text/css">.menutitle{
+cursor: hand; cursor: pointer;
+margin-bottom: 2px;
+background-color: #ECECFF;
+color: #000000;
+width: 160px;
+padding: 2px;
+text-align: center;
+font-weight: bold;
+/*/*/border: 1px solid #000000;/* */
+}
+
+.submenu{
+margin-bottom: 0.5em;
+}
+</style>
+
+<script type="text/javascript">
+
+if (document.getElementById){
+document.write('<style type="text/css">\n')
+document.write('.submenu{display: none;}\n')
+document.write('</style>\n')
+}
+
+function SwitchMenu(obj){
+	if(document.getElementById){
+	var el = document.getElementById(obj);
+	var ar = document.getElementById("masterdiv").getElementsByTagName("span");
+		if(el.style.display != "block"){
+			for (var i=0; i<ar.length; i++){
+				if (ar[i].className=="submenu")
+				ar[i].style.display = "none";
+			}
+			el.style.display = "block";
+		}else{
+			el.style.display = "none";
+		}
+	}
+}
+
+</script>
+<script Language="Javascript">
+<!--    
+
+var isIE=document.all?true:false;
+var isDOM=document.getElementById?true:false;
+current = 0;
+PicVar = 0;
+
+PicVal = new Array();
+TitVal = new Array();
+DatVal = new Array();
+TxtVal = new Array();
+
+PicVal[PicVar] = "immagini/chiesa_1884.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria nel 1884";
+DatVal[PicVar] = "anno 1884";
+TxtVal[PicVar++] = "Questa è un disegno dal vero del 1884, realizzato da Giuseppe Marzocchi; è di proprietà di Luigi Mariani";
+
+PicVal[PicVar] = "immagini/chiesa1900.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria nei primi anni del secolo scorso";
+DatVal[PicVar] = "anno 1900";
+TxtVal[PicVar++] = "La chiesa Santa Maria: la cartolina è edita dalle Sorelle Gramantieri che gestivano un negozio di tessuti e robe varie, prima sotto i portici in corso Garibaldi e poi sul ponte vecchio. La cartolina è firmata Massaroli, che era la famiglia della Marchesa che abitava la villa sotto il fiume ";
+
+PicVal[PicVar] = "immagini/chiesa1910_rid.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria sempre uguale all'inizio secolo";
+DatVal[PicVar] = "anno 1910";
+TxtVal[PicVar++] = "La chiesa Santa Maria: si nota sopra la porta l'insegna in travertino con la scritta dei Calcagnini e sopra lo stemma";
+
+PicVal[PicVar] = "immagini/chiesa_1930_rid.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria negli anni '20";
+DatVal[PicVar] = "prima del 1924";
+TxtVal[PicVar++] = "La chiesa Santa Maria: si vede a sinistra che non era ancora stato costruito il caffé di Cai, né il Gallo, quindi siamo prima del 1924";
+
+
+PicVal[PicVar] = "immagini/chiesa1925.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria nel 1925";
+DatVal[PicVar] = "anno 1925";
+TxtVal[PicVar++] = "Si nota il palazzo Lanconelli a destra della chiesa, dopo la canonica";
+
+
+PicVal[PicVar] = "immagini/chiesa1927.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria nel 1927";
+DatVal[PicVar] = "anno 1927";
+TxtVal[PicVar++] = "Da notare l'angolo di fianco alla canonica, con botteghe che erano date in affitto";
+
+PicVal[PicVar] = "immagini/chiesa1929.jpg";
+TitVal[PicVar] = "La chiesa vista dai portici delle Pescherie";
+DatVal[PicVar] = "anno 1929";
+TxtVal[PicVar++] = "Visione insolita della Chiesa ripresa dai portici della palazzina delle Pescherie. Il caffé di Cai (caffé Vittoria) e il Gallo sono già stati costruiti";
+
+
+
+PicVal[PicVar] = "immagini/CHIESA2.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria negli anni '30";
+DatVal[PicVar] = "anno 1930";
+TxtVal[PicVar++] = "La chiesa nel 1930, con il caffé di Cai e il Gallo";
+
+PicVal[PicVar] = "immagini/chiesa_gallo.jpg";
+TitVal[PicVar] = "La chiesa Santa Maria negli anni '30";
+DatVal[PicVar] = "anno 1930";
+TxtVal[PicVar++] = "La chiesa nel 1930, con il caffé di Cai (caffé Victoria) e il Gallo";
+
+PicVal[PicVar] = "immagini/chiesa_interno1.jpg";
+TitVal[PicVar] = "L'interno della chiesa Santa Maria";
+DatVal[PicVar] = "anno 1930";
+TxtVal[PicVar++] = "L'interno della Chiesa";
+
+PicVal[PicVar] = "immagini/chiesa_interno2.jpg";
+TitVal[PicVar] = "L'interno della chiesa Santa Maria da un altro punto di vista";
+DatVal[PicVar] = "anno 1930";
+TxtVal[PicVar++] = "L'interno della Chiesa";
+
+PicVal[PicVar] = "immagini/chiesadistrutta_rid.jpg";
+TitVal[PicVar] = "La chiesa distrutta";
+DatVal[PicVar] = "aprile 1945";
+TxtVal[PicVar++] = "La chiesa distrutta dopo il 1° aprile 1945";
+
+PicVal[PicVar] = "immagini/chiesa_1960.jpg";
+TitVal[PicVar] = "La chiesa Sacro Cuore costruita sul vecchio sito";
+DatVal[PicVar] = "anni '60";
+TxtVal[PicVar++] = "La chiesa e la piazza Monti vista dal terrazzo del bar Tavalazzi (Frazché)";
+
+
+PicVal[PicVar] = "immagini/chiesa_oggi.jpg";
+TitVal[PicVar] = "La chiesa nel 2000";
+DatVal[PicVar] = "anno 2000";
+TxtVal[PicVar++] = "La chiesa è che si trova nella stesso punto di quella di prima della guerra non è più la Chiesa Santa Maria ma Chiesa del Sacro Cuore. La parrocchia Santa Maria e la nuova chiesa furono ricostruite negli anni '50 nel paese nuovo alla sinistra del Senio";
+
+PicVal[PicVar] = "immagini/chiesa_2000_col.jpg";
+TitVal[PicVar] = "La chiesa Sacro Cuore a cavallo del terzo millennio";
+DatVal[PicVar] = "anno 2000";
+TxtVal[PicVar++] = "La chiesa è che si trova nella stesso punto di quella di prima della guerra non è più la Chiesa Santa Maria ma Chiesa del Sacro Cuore. La parrocchia Santa Maria e la nuova chiesa furono ricostruite negli anni '50 nel paese nuovo alla sinistra del Senio";
+
+
+
+
+function Show_foto(newpic) {
+  if(isDOM)document.getElementById("_foto").src = PicVal[newpic];
+  else if(isIE) document._foto.src = PicVal[newpic];
+  document.form_foto.testo_foto.value=TxtVal[newpic];
+  document.form_foto.data_foto.value=DatVal[newpic];
+  SelectionBox = document.form_foto.menudrop;
+  SelectionBox.options[newpic].selected = true;
+  current = newpic;
+}
+function Previous_foto() {
+  TotalImages = document.form_foto.menudrop.options.length;
+  current--;
+  if(current<0) current = TotalImages - 1;
+  Show_foto(current);
+}
+function Next_foto() {
+  TotalImages = document.form_foto.menudrop.options.length;
+  current++;
+  if (current>=TotalImages) current = 0;
+  Show_foto(current);
+}
+// -->
+</script>
+
+
+<style fprolloverstyle>A:hover {color: #FF00FF; text-decoration: blink}
+</style>
+<!--<base target="principale">-->
+
+
+</HEAD>
+<BODY  BGCOLOR="#000000" vlink="#0000FF" link="#0000FF" background="sfondo_giallino.jpg" alink="#0000FF">
+
+  <table border="0" width="100%" cellspacing="0" cellpadding="9" height="1" bgcolor="#980519">
+    <tr>
+      <td width="55" align="center" height="1">
+  <p align="center"><font face="Arial,helvetica,sans-serif"><img border="0" src="immagini/settimana_rossa_small2.jpg" width="107" height="67"></font>
+      </td>
+      <th width="100%" align="center" height="1" valign="middle">
+          <b>
+ <p align="center"><a href="alfonsine.htm" target="_parent"><font face="Arial" size="7" color="#FFFFFF">Alfonsine</font></a></p></b>
+      <th width="55" align="center" height="1" valign="middle">
+          <p align="center">
+          <font face="Arial, Helvetica,sans-serif"><img border="0" src="stemma_alfonsines1.jpg" width="55" height="65" align="absmiddle">
+          </font>
+    </tr>
+  </table>
+
+  <p align="center"><b><font face="arial,helvetica,sans-serif" size="6">| <a href="mon-amour.htm" target="_top">Alfonsine</a>
+  | <a name="Eventi" href="eventi.htm" target="_top">Eventi
+      vari</a> |</font></b></p>
+<div align="center">
+  <center>
+
+<table border="0" width="961" bgcolor="#FF0000" height="1">
+  <tr>
+    <td width="953" valign="middle" height="1">
+      <p align="center">&nbsp; 
+    </td>
+  </tr>
+</table>
+
+  </center>
+</div>
+
+  <div align="center">
+    <center>
+    
+      <table border="0" width="851" height="650" cellspacing="1" cellpadding="8">
+        <tr>
+              <td class="themecolor" vAlign="top" width="179" height="118" bgcolor="#FFFFFF">
+                <p align="center">&nbsp;
+                </p>
+                <p align="center"><b><i><a href="sett_rossa_documenti_.htm#video" target="_top"><blink><font face="Arial,helvetica,sans-serif" color="#FF0000" size="5">Speciale:</font></blink>
+                <font face="Arial,helvetica,sans-serif" color="#FF0000" size="5">
+                Interviste a vari personaggi della Settimana
+                Rossa<br>
+                (Clicca o tocca qui)</font></a></i></b>
+                </p>
+              </td>
+              <td bgColor="#FFFFFF" vAlign="top" width="1008" height="118">
+                <p align="center"><font size="7" color="#FF0000"><b><font face="Arial,helvetica,sans-serif">I moti della Settimana Rossa<br>
+        </font></b></font>
+        <b><font face="Arial,helvetica,sans-serif" color="#FF0000" size="6">7-8-9-10-11-12
+        giugno 1914<br>
+        </font><font color="#FF0000" face="Arial,helvetica,sans-serif" size="3"><br>
+        </font></b>
+                <i><font face="Arial,helvetica,sans-serif" size="6">La  settimana
+      rossa del 1914: all'alba del secolo nuovo il sogno breve di una
+      rivoluzione contadina: con i loro gesti, anche strampalati, le loro
+      vicende, anche bizzarre, ci raffigurano non tanto l'eterna dura
+      lotta&nbsp;&nbsp; per la&nbsp; vita, quanto l'incessante amore per la
+      vita.&nbsp;</font></i>
+                <p align="center"><font size="3" face="Arial,helvetica,sans-serif"><b><i>&nbsp;</i></b></font>
+              </td>
+        </tr>
+        <tr>
+              <td class="themecolor" vAlign="top" width="179" height="524"><!-- *****************Spazio motore di ricerca********************* -->
+                <!-- <hr> -->
+                <!--SEARCH-GENERAL $search~[Cerca <b>]#[</b> - <b>Documenti trovati: $total</b>]^[Niente da ricercare]<br>-->
+                <!--SEARCH-RESULTS-->
+                <!--SEARCH-NEXT-->
+                <!--<a href="http://www.vestris.com/alkaline"><img src="http://www.vestris.com/alkaline/images/apower.gif" border="0"></a>-->
+                <!--SET MAP--<dl><dt><font size="2" face="Arial"><font color="gray"><a href="$url"><b>$Titolo</b></a></font><dd><font size="1" face="Arial"><br><b><font color="gray">Dimensione: $size bytes; <br>Data di ultima modifica: $modif</b></font><br>url: <a href="$url">$url</a></font></dl>-->
+                <!--SET SEARCH-NORESULTS--Nessun risultato trovato <img src="http://www.vestris.com/agnes.sti/faces/casus/sad.gif" align="absmiddle"><hr noshade>-->
+                <!--SET NEXT--<b>Successiva >></b>-->
+                <!--SET C-BEFORE--<b><font color="red">-->
+                <!--SET C-AFTER--</b></font>-->
+                <!--SET N-BEFORE--<b>-->
+                <!--SET N-AFTER--</b>-->
+                <!-- *****************Spazio motore di ricerca********************* -->
+                <!-- ***************** Loghi e link Eco - spalla sinistra  ********************* -->
+                <script language="JavaScript"></script>
+                <table border="1" cellPadding="3" cellSpacing="1" width="100%" height="167" bordercolordark="#000000">
+                  <tbody>
+                    <tr>
+    <TD height=19 vAlign=top width="100%">
+      <font size="5">
+      <font face="arial,helvetica,sans-serif"><img border="0" src="immagini/freccina_rossa_d.gif" width="13" height="13">
+ </font>
+      <font size="6" face="Arial,helvetica,sans-serif"><font color="#FF0000">La
+      settimana rossa nei vari paesi di Romagna</font><br>
+      </font><font face="Arial,helvetica,sans-serif" color="#000000">(siete
+      qui)</font></font></TD>
+                    </tr>
+                    <tr>
+    <TD height=21 vAlign=top width="100%"><a href="cosa_fu_la_settimana_rossa.htm" target="_top"><font size="5" face="Arial,helvetica,sans-serif">Cosa
+      fu la Settimana Rossa</font></a></TD>
+                    </tr>
+                    <tr>
+    <TD height=21 vAlign=top width="100%"><a href="le_cause_della_settimana_rossa.htm" target="_top"><font size="5" face="Arial,helvetica,sans-serif">Le
+      cause</font></a></TD>
+                    </tr>
+                    <tr>
+    <TD height=1 vAlign=top width="100%"><font size="5"><a href="settimana_rossa_dove.htm" target="_top"><font face="Arial,helvetica,sans-serif">Dove
+      avvenne<br>
+      </font></a><font size="2" face="Arial,helvetica,sans-serif">&nbsp;&nbsp;</font></font></TD>
+                    </tr>
+                    <tr>
+    <TD height=1 vAlign=top width="100%">
+      <h1 align=left><font size="5" color="#000000" face="Arial,helvetica,sans-serif">Personaggi
+      storici coinvolti:</font></h1>
+      <ul>
+        <li>
+      <h1 align=left><a href="mussolini_settimana_rossa.htm" target="_top"><font size="5" face="Arial,helvetica,sans-serif">Mussolini</font></a></h1></li>
+        <li>
+      <h1 align=left><a href="malatesta_settimana_rossa.htm" target="_top"><font size="5" face="Arial,helvetica,sans-serif">Malatesta</font></a></h1></li>
+        <li>
+      <h1 align=left><a href="nenni_settimana_rossa.htm" target="_top"><font size="5" face="Arial,helvetica,sans-serif">Nenni</font></a></h1></li>
+      </ul>
+    </TD>
+                    </tr>
+                    <!-- <tr> 
+	<td width="125" align="center"><a href="http://www.noiclub.it" target="_blank"><img src="/images/noiclub.gif" width="116" height="32" border="0" alt="NoiClub"></a></td>
+      </tr> --><!--<tr>
+   <td width="125" align="center"><a href="javascript:cnOpenWindowBanner('/ecoonline/addons/promozioni/pinocchio.html', 282, 400);"><img src="/ecoonline/addons/promozioni/images/pinocchio_banner.gif" width="116" height="37" border="0"></a></td>
+              </tr>-->
+                    <tr>
+    <TD height=18 vAlign=top width="100%">
+      <a href="archivio_foto_settimana.htm" target="_top"><font size="5" face="Arial,helvetica,sans-serif">Le
+      foto</font></a></TD>
+                    </tr>
+                    <tr>
+    <TD height=9 vAlign=top width="100%">
+      <a href="sett_rossa_documenti_.htm" target="_top">
+      <font face="Arial,helvetica,sans-serif" size="5">Documenti</font></a></TD>
+                    </tr>
+                    <tr>
+    <TD height=9 vAlign=top width="100%">
+      <a href="sett_rossa_documenti_.htm#video" target="_top">
+      <font face="Arial,helvetica,sans-serif" size="5">Video-interviste</font></a></TD>
+                    </tr>
+                    <tr>
+    <TD height=9 vAlign=top width="100%">
+      <a href="giornali-sett_rossa.htm" target="_top">
+      <font face="Arial,helvetica,sans-serif" size="5">Giornali
+      e periodici dell'epoca</font></a></TD>
+                    </tr>
+                    <tr>
+    <TD height=9 vAlign=top width="100%">
+      <a href="bibliografia-sett_rossa.htm" target="_top">
+      <font face="Arial,helvetica,sans-serif" size="5">Bibliografia</font></a></TD>
+                    </tr>
+                    <tr>
+    <TD height=18 vAlign=top width="100%">
+      <a href="settimana_rossa_narrativa.htm" target="_top">
+      <font face="Arial,helvetica,sans-serif" size="5">Narrativa
+      sulla &quot;Settimana Rossa&quot;</font></a></TD>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- ***************** Loghi e link Eco - spalla sinistra ********************* -->
+              </td>
+              <td vAlign="top" width="1008" height="524"><!-- Inizio tabella dedicata ai contenuti -->
+                <div align="center">
+                  <center>
+                  <table border="0" width="83%" height="435" bgcolor="#F73328">
+                    <tr>
+                      <td width="100%" colspan="5" height="40">
+                        <p align="center"><a href="settimana_rossa_fusignano.htm" target="_top"><b><font face="Arial,helvetica,sans-serif" color="#FFFF00" size="7">
+                                        La
+                                          settimana&nbsp; rossa a...</font></b></a></td>
+                    </tr>
+                    <tr>
+                      <td width="20%" height="96" align="center">
+                        <p align="center"><b><font size="5"><a href="settimana_rossa_home.htm" target="_top"><font face="Arial,helvetica,sans-serif" color="#00FFFF">Alfonsine
+                        </font></a><font color="#FFFF00"><font face="Arial,helvetica,sans-serif" size="3"><br>
+                        </font><a href="settimana_rossa_home.htm" target="_top"><font face="Arial,helvetica,sans-serif" color="#0000FF"><img border="2" src="immagini/masetti3_small_small.jpg" alt="masetti3_small.jpg (9332 byte)" width="100" height="72"></font></a></font></font></b></td>
+                      <td width="20%" height="96" align="center">
+                        <p align="center"><b><a href="settimana_rossa_fusignano.htm" target="_top"><font color="#00FFFF"><font face="Arial,helvetica,sans-serif" size="5">Fusignano<br>
+                        <img border="2" src="immagini/settimana_rossa_fusignano1_small1.jpg" alt="settimana_rossa_fusignano1.jpg (122702 byte)" width="93" height="72">
+                        </font></font></a></b></td>
+                      <td width="20%" align="center" height="96"><font size="5"><b><a href="settimana_rossa_mezzano.htm" target="_top"><font face="Arial,helvetica,sans-serif" color="#00FFFF">Mezzano<br>
+                        </font>
+                        </a></b><font color="#FFFF00"><a href="settimana_rossa_mezzano.htm" target="_top"><img border="2" src="immagini/madonna%20del%20Bosco/mezzano_chiesa_incendiata_small.jpg" alt="mezzano_chiesa_incendiata.jpg (126505 byte)" width="100" height="72"></a></font></font></td>
+                      <td width="20%" align="center" height="96"><b><font size="5"><a href="settimana_rossa_ravenna.htm" target="_top"><font face="Arial,helvetica,sans-serif" color="#00FFFF">Ravenna<br>
+                        </font>
+                        <font face="Arial,helvetica,sans-serif" color="#FFFF00"><img border="2" src="immagini/settimana_rossa_ravenna_small.jpg" alt="settimana_rossa_ravenna.jpg (139564 byte)" width="100" height="72"></font>
+                        </a>
+                        </font></b></td>
+                      <td width="100%" align="center" height="96"><b><a href="settimana_rossa_savio.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#00FFFF">Savio<br>
+                        <img border="2" src="immagini/madonna%20del%20Bosco/savio1914_small.jpg" alt="savio1914.jpg (172635 byte)" width="100" height="72">
+                        </font>
+                        </a></b></td>
+                    </tr>
+                    <tr>
+                      <td width="20%" height="47" align="center"><b><a href="settimana_rossa_villanova.htm" target="_top"><font size="5"><font face="Arial,helvetica,sans-serif" color="#FFFF00"><br>
+                        </font><font face="Arial,helvetica,sans-serif" color="#00FFFF">
+                        Villanova
+                        di Bagnacavallo</font><font face="Arial,helvetica,sans-serif" color="#FFFF00"><img border="1" src="immagini/settimana/chiesa_mezzano_distrutta_small3.jpg" alt="chiesa_mezzano_distrutta.jpg (180186 byte)" width="100" height="66">
+                        </font></font></a></b></td>
+                      <td width="20%" height="47" align="center">
+                        <p align="center"><b><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Glorie
+                        di Bagnacavallo</font></b></td>
+                      <td width="20%" align="center" height="47"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Bagnacavallo</font></a></b></td>
+                      <td width="20%" align="center" height="47"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Voltana</font></a></b></td>
+                      <td width="20%" align="center" height="47"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Giovecca</font></a></b></td>
+                    </tr>
+                    <tr>
+                      <td width="20%" height="22" align="center">
+                        <p align="center"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Lavezzola</font></a></b></td>
+                      <td width="20%" height="22" align="center">
+                        <p align="center"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Conselice</font></a></b></td>
+                      <td width="20%" align="center" height="44"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Savarna</font></a></b></td>
+                      <td width="20%" align="center" height="44"><b><a href="giornali-sett_rossa.htm" target="_top">
+      <font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Sant'Alberto</font></a></b></td>
+                      <td width="20%" align="center" height="44"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Mandriole</font></a></b></td>
+                    </tr>
+                    <tr>
+                      <td width="20%" align="center" height="44">
+                        <p align="center"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Passogatto</font></a></b></td>
+                      <td width="20%" align="center" height="44"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">S.
+                        Lorenzo</font></a></b></td>
+                      <td width="20%" align="center" height="44"><b><a href="giornali-sett_rossa.htm" target="_top">
+      <font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">San
+      Bernardino</font></a></b></td>
+                      <td width="20%" align="center" height="44"><b><a href="giornali-sett_rossa.htm" target="_top">
+      <font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Bruciata</font></a></b></td>
+                      <td width="20%" align="center" height="44"><b><a href="giornali-sett_rossa.htm" target="_top">
+      <font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Villa S.
+      Martino</font></a></b></td>
+                    </tr>
+                    <tr>
+                      <td width="20%" height="44" align="center"><b><a href="giornali-sett_rossa.htm" target="_top">
+      <font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Lugo</font></a></b></td>
+                      <td width="20%" height="44" align="center"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Sant'Agata</font></a></b></td>
+                      <td width="20%" align="center" height="44"><b><a href="giornali-sett_rossa.htm" target="_top">
+      <font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Massa<br>
+      lombarda</font></a></b></td>
+                      <td width="20%" align="center" height="44"><b><a href="giornali-sett_rossa.htm" target="_top">
+      <font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Castel<br>
+      bolognese</font></a></b></td>
+                      <td width="20%" align="center" height="44"><b><a href="giornali-sett_rossa.htm" target="_top">
+      <font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Russi</font></a></b></td>
+                    </tr>
+                    <tr>
+                      <td width="20%" height="44" align="center"><b><a href="giornali-sett_rossa.htm" target="_top">
+      <font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Faenza</font></a></b></td>
+                      <td width="20%" height="44" align="center"><b><a href="giornali-sett_rossa.htm" target="_top">
+      <font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Granarolo
+      Faentino</font></a></b></td>
+                      <td width="20%" align="center" height="44"><b><a href="giornali-sett_rossa.htm" target="_top">
+      <font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Forlì</font></a></b></td>
+                      <td width="20%" align="center" height="44"><b><a href="giornali-sett_rossa.htm" target="_top">
+      <font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Cesena</font></a></b></td>
+                      <td width="20%" align="center" height="44"><b><a href="giornali-sett_rossa.htm" target="_top">
+      <font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Imola</font></a></b></td>
+                    </tr>
+                    <tr>
+                      <td width="20%" height="44" align="center"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Cervia</font></a></b></td>
+                      <td width="20%" height="44" align="center"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Cesenatico</font></a></b></td>
+                      <td width="20%" align="center" height="44"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Rimini</font></a></b></td>
+                      <td width="20%" align="center" height="44">&nbsp;</td>
+                      <td width="20%" align="center" height="44">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="20%" height="22" align="center"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Ancona</font></a></b></td>
+                      <td width="20%" height="22" align="center"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Roma</font></a></b></td>
+                      <td width="20%" align="center" height="22"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Firenze</font></a></b></td>
+                      <td width="20%" align="center" height="22"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Torino</font></a></b></td>
+                      <td width="20%" align="center" height="22"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Parma</font></a></b></td>
+                    </tr>
+                    <tr>
+                      <td width="20%" height="22" align="center"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Napoli</font></a></b></td>
+                      <td width="20%" height="22" align="center"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Milano</font></a></b></td>
+                      <td width="20%" align="center" height="22"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Bologna</font></a></b></td>
+                      <td width="20%" align="center" height="22"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Modena</font></a></b></td>
+                      <td width="20%" align="center" height="22"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Reggio&nbsp;<br>
+                        Emilia</font></a></b></td>
+                    </tr>
+                    <tr>
+                      <td width="20%" height="22" align="center"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Venezia</font></a></b></td>
+                      <td width="20%" height="22" align="center"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Genova</font></a></b></td>
+                      <td width="20%" align="center" height="22"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Savona</font></a></b></td>
+                      <td width="20%" align="center" height="22"><b><a href="giornali-sett_rossa.htm" target="_top"><font face="Arial,helvetica,sans-serif" size="5" color="#FFFF00">Bari</font></a></b></td>
+                      <td width="20%" align="center" height="22">&nbsp;</td>
+                    </tr>
+                  </table>
+                  </center>
+                </div>
+                <p align="center"> <font face="arial,helvetica,sans-serif" size="6">(clicca
+                o tocca qui)</font>
+                <p align="center"><b><a href="settimana_rossa_italia.htm"><font face="Arial,helvetica,sans-serif" color="#FF0000" size="7">La
+                settimana
+                rossa in Italia</font></a></b>
+                <div align="center">
+                  <center>
+                  <table border="0" width="782" cellpadding="12">
+                    <tr>
+          <TD vAlign=center noWrap align=middle width="759" 
+height=82>
+            <p align="center"><b><a href="settimana%20rossa%20libro.pdf"><font size="6"><font color="#FF0000" face="Arial">Un
+            libro sulla Settimana Rossa alfonsinese
+            </font></font></a>
+            </b>
+            <p align="center"><font size="6"><a href="settimana%20rossa%20libro.pdf"><img border="0" src="immagini/libro-sett-rossa-copertina_small.jpg" alt="libro-sett-rossa-copertina.jpg (675580 byte)" width="155" height="220"></a></font><b><a href="settimana%20rossa%20libro.pdf"><font color="#FF0000" face="Arial"><br>
+            </font><font face="Arial" size="7">Quando Alfonsine divenne famosa<br>
+            </font><font size="6" face="Arial"><font color="#FF0000">
+            (scritto da Luciano Lucci)<br>
+            </font>(clicca o tocca qui, è tutto sul web in pdf)</font></a>
+            </b></TD>
+                    </tr>
+                    <tr>
+          <TD vAlign=center noWrap align=middle width="759" 
+height=82>
+        <p align="center"><b><font face="Comic Sans MS,arial, helvetica, sans-serif" size="5">Questo
+        sito è ideato e gestito interamente da <a href="mailto:lucci@racine.ra.it"> Luciano
+        Lucci</a></font></b></p>
+                <p align="center"><b><a href="mailto:lucci@racine.ra.it"><font size="5" face="Arial,Helvetica,sans-serif"><img border="0" src="immagini/bottoni/posta.gif" width="45" height="52"></font></a></b></p>
+
+  <p align="center"><b><font face="arial,helvetica,sans-serif" size="6">| <a href="mon-amour.htm" target="_top">Alfonsine</a>
+  | <a name="Eventi" href="eventi.htm" target="_top">Eventi
+      vari</a> |</font></b></p>
+          </TD>
+                    </tr>
+                  </table>
+                  </center>
+                </div>
+              </td>
+        </tr>
+      </table>
+    
+    </center>
+  </div>
+
+</BODY>
+</HTML>
